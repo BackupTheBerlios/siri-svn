@@ -6,5 +6,9 @@
  * Time: 20:07:26
  * To change this template use File | Settings | File Templates.
  */
-public class Nisse {       adf asdfa
+public class Nisse {       adf a
+
+
+
+    sdfa
 }
