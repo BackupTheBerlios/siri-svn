@@ -6,4 +6,8 @@
  * Time: 20:07:26
  * To change this template use File | Settings | File Templates.
  */
-public class Nisse {     }
+public class Nisse {    
+
+
+
+ }
