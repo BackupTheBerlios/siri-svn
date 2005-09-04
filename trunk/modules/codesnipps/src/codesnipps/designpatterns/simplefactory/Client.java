@@ -12,10 +12,11 @@ public class Client {
 	public static void main(String[] args) {
 		CarFactory factory = new CarFactory();
 		Car myCar = factory.createCar(CarType.AUDI);
-		
-		String mycolor = myCar.getColor();
-		
-		System.out.println(mycolor);
+		String mycolor = myCar.getColor();		
+		System.out.println("All audi cars are of color : " + mycolor);
+		myCar = factory.createCar(CarType.VOLVO);
+		mycolor = myCar.getColor();		
+		System.out.println("All volvo cars are of color : " + mycolor);
 
 	}
 	
