@@ -5,7 +5,7 @@ package codesnipps.designpatterns.simplefactory;
  * 
  * @author gepo
  */
-public class CarFactory {
+public class SimpleCarFactory {
 	Car acar;
 	public enum CarType {
 		AUDI, VOLVO

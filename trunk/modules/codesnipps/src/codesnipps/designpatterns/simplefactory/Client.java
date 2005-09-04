@@ -1,6 +1,6 @@
 package codesnipps.designpatterns.simplefactory;
 
-import codesnipps.designpatterns.simplefactory.CarFactory.CarType;
+import codesnipps.designpatterns.simplefactory.SimpleCarFactory.CarType;
 
 /**
  * Client useing a fsimple actory to retrieve a car.
@@ -8,7 +8,7 @@ import codesnipps.designpatterns.simplefactory.CarFactory.CarType;
  *
  */
 public class Client {
-	private static CarFactory factory = new CarFactory();
+	private static SimpleCarFactory factory = new SimpleCarFactory();
 	
 	public static void main(String[] args) {
 		Car myCar = factory.createCar(CarType.AUDI);
