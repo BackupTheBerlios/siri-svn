@@ -1,5 +1,11 @@
 package codesnipps.designpatterns.factory;
 
 public abstract class Car {
-	abstract Car createCar(String type);
+	String color;
+	abstract Car setUpCar(String type);
+	
+	void String getColor()
+	{
+		return color;
+	}
 }
