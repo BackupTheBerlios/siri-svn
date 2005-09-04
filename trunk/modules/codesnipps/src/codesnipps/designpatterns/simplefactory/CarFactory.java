@@ -1,11 +1,11 @@
 package codesnipps.designpatterns.simplefactory;
 
-
 public class CarFactory {
-	public enum CarType {AUDI, VOLVO};
-	
-	public Car createCar(CarType cartype)
-	{
+	public enum CarType {
+		AUDI, VOLVO
+	};
+
+	public Car createCar(CarType cartype) {
 		switch (cartype) {
 		case AUDI:
 			return new Audi();
@@ -15,5 +15,5 @@ public class CarFactory {
 			return null;
 		}
 	}
-		
+
 }
