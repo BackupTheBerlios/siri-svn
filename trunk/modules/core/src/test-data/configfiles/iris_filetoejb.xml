@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v5 rel. 2 U (http://www.xmlspy.com) by Registred (Registred) -->
+<system-config name="iris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file://C:/gepo/mycvsprojects/iris/modules/xml-binding/src/schema/iris.xsd">
+	<global-settings>
+		<archivehandler>
+			<cronintervall>Every 10 minutes@0 1/5 * * * ?</cronintervall>
+		</archivehandler>
+		<emailserversettings sendintervallInMilliSeconds="10000">
+			<smtp>
+				<smtpserver id="1">tdvmail1</smtpserver>
+				<!--smtpserver id="2">tdvmail2</smtpserver-->
+			</smtp>
+			<pop>
+				<popserver id="1">tdvmail1</popserver>
+				<popserver id="2">tdvmail2</popserver>
+			</pop>
+			<imap>
+				<imapserver id="1">tdvmail1</imapserver>
+				<imapserver id="2">tdvmail2</imapserver>
+			</imap>
+		</emailserversettings>
+		<servicerootpath>c:/tradevision/</servicerootpath>
+	</global-settings>
+	<service type="file-ejb" id="arinc_ba-c2k" createuniquename="true" usesrelativerootpath="false">
+		<infolder>
+			<infolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/in/</infolderpath>
+			<intervallInMilliSeconds>5000</intervallInMilliSeconds>
+			<skipfirstblankline>true</skipfirstblankline>
+			<sortalpha>true</sortalpha>
+			<infoldersendchunks sendinfolderchunkson="false">
+				<infolderchunksize>5</infolderchunksize>
+				<infolderchunkthreshold>10</infolderchunkthreshold>
+			</infoldersendchunks>
+		</infolder>
+		<backup backuphandleron="true" archiveron="true">
+			<backupfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/backup/</backupfolderpath>
+			<archivefolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/archived/</archivefolderpath>
+		</backup>
+		<transform transformon="false"/>
+		<error errorhandleron="true">
+			<errorfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/error/</errorfolderpath>
+			<errorinfofolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/error_info/</errorinfofolderpath>
+			<sortonresend>false</sortonresend>
+			<cronintervall>Every 1 minute@0 5/10 * * * ?</cronintervall>
+			<errornotification errornotificationon="false">
+				<notifyeveryintervallInMilliSeconds>60000</notifyeveryintervallInMilliSeconds>
+				<inactivitytimeInMilliSeconds>15000</inactivitytimeInMilliSeconds>
+				<numberoferrors>10000</numberoferrors>
+				<emailnotification>
+					<emailonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/template/erroronfailure.xml</emailonfailure>
+                    <emailoninactivity>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/template/erroronincativity.xml</emailoninactivity>
+					<emailservice>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/in/</emailservice>
+				</emailnotification>
+				<sms>
+					<smsonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/errornotification.xml</smsonfailure>
+					<smsservice>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/in/</smsservice>
+				</sms>
+			</errornotification>
+		</error>
+		<nameservice>
+			<iorpath>C:/tradevision/iris/conf/cargo2000net.ior</iorpath>
+			<objectname>MessageReceiverBean</objectname>
+			<objectmethod>processMessage</objectmethod>
+			<paramtype>String</paramtype>
+			<reconnectToObjectInMilliSeconds>10000</reconnectToObjectInMilliSeconds>
+			<reconnectToObjectPolicy>reconnectOnNewMessage</reconnectToObjectPolicy>
+            <!-- reconnectOnNewMessage reconnectForever doNotReconnect -->
+		</nameservice>
+		<applicationlogger>
+			<appender type="RollingFileAppender">
+				<maxfilesize>100KB</maxfilesize>
+				<maxbackupindex>10</maxbackupindex>
+			</appender>
+			<logpattern>%d{HH:mm:ss} %t %C{1}::%M  %m%n</logpattern>
+			<!--logpattern>%d{yyyy-MM-dd HH:mm:ss};%C{1}::%M %t %m%n</logpattern-->
+			<logfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/log/</logfolderpath>
+			<loglevel>DEBUG</loglevel>
+		</applicationlogger>
+		<messagelogger>
+			<appender type="DailyRollingFileAppender">
+				<rollingschedule>'.'yyyy-MM-dd-a</rollingschedule>
+			</appender>
+			<logpattern>%d{mm:ss} %t %C{1}::%M  %m%n</logpattern>
+			<logfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/file-ejb/log/</logfolderpath>
+			<loglevel>DEBUG</loglevel>
+		</messagelogger>
+	</service>
+</system-config>

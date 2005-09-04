@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<system-config name="iris" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="iris.xsd"
+xsi:schemaLocation="file://C:/gepo/mycvsprojects/iris/src/schema/  iris.xsd">
+	<global-settings>
+		<archivehandler>
+			<cronintervall>0/5 * * * * ?</cronintervall>
+		</archivehandler>
+		<errorhandler>
+			<cronintervall>0 30 9 * * ?</cronintervall>
+		</errorhandler>
+		<emailserversettings>
+			<smtp>
+				<smtpserver id="1">tdvmail</smtpserver>
+				<smtpserver id="2">tdvmail2</smtpserver>
+			</smtp>
+			<pop>
+				<popserver id="1">tdvmail</popserver>
+				<popserver id="2">tdvmail2</popserver>
+			</pop>
+			<imap>
+				<imapserver id="1">tdvmail</imapserver >
+				<imapserver id="2">tdvmail2</imapserver >
+			</imap>
+		</emailserversettings>
+		<servicerootpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/</servicerootpath>
+	</global-settings>
+
+
+	<service type="file-file" id="filetest-filetest" createuniquename="true" usesrelativerootpath="false">
+		<infolder>
+			<infolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/in/</infolderpath>
+			<intervall>1000</intervall>
+			<skipfirstblankline>false</skipfirstblankline>
+			<infoldersendchunks sendinfolderchunkson="false">
+				<infolderchunksize>5</infolderchunksize>
+				<infolderchunkthreshold>10</infolderchunkthreshold>
+			</infoldersendchunks>
+		</infolder>
+		<outfolder>
+			<outfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/out/</outfolderpath>
+		</outfolder>
+		<backup backuphandleron="true" archiveron="true">
+			<backupfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/backup/</backupfolderpath>
+			<archivefolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/archived/</archivefolderpath>
+		</backup>
+		<transform transformon="false" />
+		<error errorhandleron="true">
+			<errorfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/error/</errorfolderpath>
+			<sortonresend>false</sortonresend>
+			<errornotification errornotificationon="false" >
+				<inactivitytime>0</inactivitytime>
+				<numberoferrors>10000</numberoferrors>
+				<emailnotification>
+					<emailonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/down.xml</emailonfailure>
+					<emailservice>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/in/</emailservice>
+				</emailnotification>
+				<sms>
+					<smsonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/template/down.xml</smsonfailure>
+					<smsservice>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/in/</smsservice>
+				</sms>
+			</errornotification>
+		</error>
+		<logging>
+			<appender type="org.apache.log4j.RollingFileAppender">
+				<maxfilesize>100KB</maxfilesize>
+				<maxbackupindex>10</maxbackupindex>
+			</appender>
+			<logpattern>%d{yyyy-MM-dd HH:mm:ss};%p;%t;%x;%m;%n</logpattern>
+			<logfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/log/</logfolderpath>
+		</logging>
+	</service>
+
+
+
+</system-config>

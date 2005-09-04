@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [
+<!ENTITY % locator SYSTEM "file:locator.ent">
+%locator;
+%versions;
+ ]>
+ 
+ 
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:\java\maven-1.0\maven-project.xsd">
+	
+	
+    <pomVersion>3</pomVersion>
+    <extend>${basedir}/../../etc/project.xml</extend>
+
+	<!-- ===================== -->
+    <!-- Module Identification -->
+    <!-- ===================== -->
+    <name>Iris :: Swing client</name>
+    <id>iris-swing-client</id>
+    <shortDescription>Common contains all core classes</shortDescription>
+    <description>Common tries to aggregate all common classes for different 
+    modules and place them in one central place, making the build process
+    esier as well as minimizing dependy injections.</description>
+    <url>http://www.foobar.com</url>
+    <siteDirectory>/etc/staging</siteDirectory>
+    <distributionDirectory>/iris/builds/naming</distributionDirectory>
+    <package>iris.*</package>
+
+    <developers>
+        <developer>
+            <name>Georges Polyzois</name>
+            <id>gepo</id>
+            <email>gepo@ring.com</email>
+        </developer>
+    </developers>
+
+    <!--+
+    | J A R  R E S O U R C E S
+    | Resources that are packaged up inside the JAR file
+    +-->
+    <dependencies>
+        <dependency>
+            <groupId>iris</groupId>
+            <artifactId>iris-xml-binding</artifactId>
+            <version>&iris-version;</version>
+        </dependency>
+
+        <dependency>
+            <groupId>iris</groupId>
+            <artifactId>iris-core</artifactId>
+            <version>&iris-version;</version>
+        </dependency>
+		
+		
+		<!-- Look and feel -->
+        <dependency>
+            <groupId>lookandfeel</groupId>
+            <artifactId>kunststoff</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>lookandfeel</groupId>
+            <artifactId>aquathemepack</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>lookandfeel</groupId>
+            <artifactId>skinlf</artifactId>
+            <version>1.2.8</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>jxmleditor</groupId>
+            <artifactId>jxmleditor</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- Borland appserver specific -->
+        <dependency>
+            <groupId>bes</groupId>
+            <artifactId>vbjorb</artifactId>
+            <version>5.2</version>
+        </dependency>
+        <dependency>
+            <groupId>j2ee</groupId>
+            <artifactId>j2ee</artifactId>
+            <version>1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>cargo2000net</groupId>
+            <artifactId>cargo2000_beans</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>jgraph</groupId>
+            <artifactId>jgraph</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>jfreechart</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>0.9.20</version>
+            <url>http://www.ibiblio.org/maven/jfreechart/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>jfreechart</groupId>
+            <artifactId>jcommon</artifactId>
+            <version>0.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>jfreechart</groupId>
+            <artifactId>jfreechartdemo</artifactId>
+            <version>0.9.16</version>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-awt-util</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-dom</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-svg-dom</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-svggen</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-util</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-xml</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+        <!--dependency>
+        <groupId>batik</groupId>
+        <version>1.5.1</version>
+        <artifactId>batik-css</artifactId>
+        <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency-->
+        <dependency>
+            <groupId>batik</groupId>
+            <version>1.5.1</version>
+            <artifactId>batik-svggen</artifactId>
+            <url>http://www.ibiblio.org/maven/batik/jars/</url>
+        </dependency>
+
+    </dependencies>
+
+    <!--+
+    | Build the project
+    +-->
+    <build>
+        <nagEmailAddress>gep01</nagEmailAddress>
+        <sourceDirectory>
+            ${basedir}/src/java
+        </sourceDirectory>
+
+        <resources>
+            <resource>
+                <directory>${basedir}/src/java</directory>
+                <directory>${basedir}/target/jaxb-generated</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.ser</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/java/pics</directory>
+                <targetPath>pics</targetPath>
+                <includes>
+                    <include>**/*.gif</include>
+                    <include>**/*.jpg</include>
+                    <include>**/*.jpeg</include>
+                    <include>**/*.png</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+    <!--+
+    | Unit tests
+    +-->
+    <!--unitTestSourceDirectory>${basedir}/test/java</unitTestSourceDirectory>
+    <unitTest>
+    <includes>
+    <include>**/*Test.java</include>
+    </includes>
+    </unitTest -->
+
+    <!--+
+    | Project reports
+    +-->
+    <!--
+    <reports>
+    <report>maven-changes-plugin</report>
+    <report>maven-jdepend-plugin</report>
+    <report>maven-checkstyle-plugin</report>
+    <report>maven-pmd-plugin</report>
+    <report>maven-junit-report-plugin</report>
+    <report>maven-clover-plugin</report>
+    <report>maven-changelog-plugin</report>
+    <report>maven-file-activity-plugin</report>
+    <report>maven-developer-activity-plugin</report>
+    <report>maven-file-activity-plugin</report>
+    <report>maven-license-plugin</report>
+    <report>maven-linkcheck-plugin</report>
+    <report>maven-jxr-plugin</report>
+    </reports>
+ -->
+</project>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="1" name="org.iris.client.settings.TestSettingsFascade" tests="3" time="0.422">
+  <properties>
+    <property name="maven.ui.table.row.even.background" value="#F5F4F1"></property>
+    <property name="file.encoding.pkg" value="sun.io"></property>
+    <property name="maven.compile.debug" value="on"></property>
+    <property name="maven.property.inheritance" value="true"></property>
+    <property name="java.home" value="c:\j2sdk1.4.2_05\jre"></property>
+    <property name="maven.repo.localfile" value="file://c:/apache/Apache2/htdocs"></property>
+    <property name="maven.ui.source.foreground" value="#000000"></property>
+    <property name="maven.distBuildIndicator" value="DIST_BUILD_DIRECTORY"></property>
+    <property name="context" value="org.apache.maven.jelly.MavenJellyContext@be49e0"></property>
+    <property name="maven.plugin.unpacked.dir" value="C:\Documents and Settings\Georges.Polyzois/.maven/cache"></property>
+    <property name="maven.ui.navcol.foreground" value="#000000"></property>
+    <property name="maven.ui.source.border.bottom" value="#A2B7C5"></property>
+    <property name="java.endorsed.dirs" value="c:\j2sdk1.4.2_05\lib\endorsed;c:\java\maven-1.0\lib\endorsed"></property>
+    <property name="maven.conf.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client/conf"></property>
+    <property name="org.apache.commons.jelly.ant.Project" value="org.apache.commons.grant.GrantProject@e41bc3"></property>
+    <property name="maven.xdoc.includeProjectDocumentation" value="yes"></property>
+    <property name="maven.docs.omitXmlDeclaration" value="false"></property>
+    <property name="maven.xdoc.version" value="DEV"></property>
+    <property name="sun.os.patch.level" value="Service Pack 4"></property>
+    <property name="java.vendor.url" value="http://java.sun.com/"></property>
+    <property name="maven.ui.subsection.background" value="#F2F5F7"></property>
+    <property name="maven.repo.central" value="login.ibiblio.org"></property>
+    <property name="maven.build.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client/target"></property>
+    <property name="java.version" value="1.4.2_05"></property>
+    <property name="maven.remote.group" value="maven"></property>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"></property>
+    <property name="maven.ui.table.header.foreground" value="#686868"></property>
+    <property name="maven.simian.linecount" value="3"></property>
+    <property name="maven.junit.jvm" value=""></property>
+    <property name="user.name" value="Georges.Polyzois"></property>
+    <property name="maven.ui.body.background" value="#FFFFFF"></property>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"></property>
+    <property name="maven.junit.printSummary" value="true"></property>
+    <property name="sourcesPresent" value="true"></property>
+    <property name="java.runtime.name" value="Java(TM) 2 Runtime Environment, Standard Edition"></property>
+    <property name="maven.ui.banner.border.bottom" value="#A2B7C5"></property>
+    <property name="maven.xdoc.date.format" value="dd MMMM yyyy"></property>
+    <property name="maven.ui.navcol.foreground.ns4" value="#555"></property>
+    <property name="java.specification.name" value="Java Platform API Specification"></property>
+    <property name="user.timezone" value="Europe/Berlin"></property>
+    <property name="maven.xdoc.poweredby.title" value="Built by Maven"></property>
+    <property name="maven.ssh.executable" value="ssh"></property>
+    <property name="path.separator" value=";"></property>
+    <property name="maven.xdoc.pomDocuments" value="cvs-usage.xml,index.xml,maven-reports.xml,dependencies.xml,issue-tracking.xml,mail-lists.xml,project-info.xml,team-list.xml,downloads.jelly"></property>
+    <property name="maven.ui.section.foreground" value="#FFFFFF"></property>
+    <property name="maven.ui.breadcrumbs.border.bottom" value="#A2B7C5"></property>
+    <property name="file.encoding" value="Cp1252"></property>
+    <property name="maven.antlr.target.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/antlr"></property>
+    <property name="maven.jar.mainclass" value=""></property>
+    <property name="systemScope" value="{java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition, sun.boot.library.path=c:\j2sdk1.4.2_05\jre\bin, java.vm.version=1.4.2_05-b04, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=;, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, user.country=SE, sun.os.patch.level=Service Pack 4, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\gepo\mycvsprojects\test\modules\swing-client, java.runtime.version=1.4.2_05-b04, forehead.conf.file=c:\java\maven-1.0/bin/forehead.conf, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=c:\j2sdk1.4.2_05\lib\endorsed;c:\java\maven-1.0\lib\endorsed, os.arch=x86, java.io.tmpdir=c:\DOCUME~1\GEORGE~1.POL\LOCALS~1\Temp\, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., user.variant=, os.name=Windows 2000, sun.java2d.fontpath=, tools.jar=c:\j2sdk1.4.2_05/lib/tools.jar, javax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl, java.library.path=c:\j2sdk1.4.2_05\bin;.;C:\WINNT\system32;C:\WINNT;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\cygwin\usr\X11R6\bin;c:\oracle\product\10.1.0\Db_1\bin;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin\client;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin;c:\oracle\ora92\bin;c:\Program Files\Oracle\jre\1.3.1\bin;c:\Program Files\Oracle\jre\1.1.8\bin;c:\WINNT\system32;c:\WINNT;c:\WINNT\System32\Wbem;c:\j2sdk1.4.2_05\bin;c:\java\maven-1.0\bin;c:\java\apache-ant-1.6.1\bin;C:\cygwin\bin;c:\Program Files\Common Files\GTK\2.0\bin;c:\Program Files\Subversion\bin;c:\Programs\PuTTY;c:\java\jwsdp-1.4\jwsdp-shared\bin, java.specification.name=Java Platform API Specification, java.class.version=48.0, java.util.prefs.PreferencesFactory=java.util.prefs.WindowsPreferencesFactory, os.version=5.0, maven.mode.online=false, user.home=C:\Documents and Settings\Georges.Polyzois, user.timezone=Europe/Berlin, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.4, java.class.path=c:\java\maven-1.0/lib/forehead-1.0-beta-5.jar, user.name=Georges.Polyzois, java.vm.specification.version=1.0, java.home=c:\j2sdk1.4.2_05\jre, sun.arch.data.model=32, user.language=sv, java.specification.vendor=Sun Microsystems Inc., awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.4.2_05, java.ext.dirs=c:\j2sdk1.4.2_05\jre\lib\ext, sun.boot.class.path=c:\java\maven-1.0\lib\endorsed\xerces-2.4.0.jar;c:\java\maven-1.0\lib\endorsed\xml-apis-1.0.b2.jar;c:\j2sdk1.4.2_05\jre\lib\rt.jar;c:\j2sdk1.4.2_05\jre\lib\i18n.jar;c:\j2sdk1.4.2_05\jre\lib\sunrsasign.jar;c:\j2sdk1.4.2_05\jre\lib\jsse.jar;c:\j2sdk1.4.2_05\jre\lib\jce.jar;c:\j2sdk1.4.2_05\jre\lib\charsets.jar;c:\j2sdk1.4.2_05\jre\classes, javax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl, java.vendor=Sun Microsystems Inc., maven.home=c:\java\maven-1.0, file.separator=\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=pentium i486 i386}"></property>
+    <property name="maven.junit.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client"></property>
+    <property name="maven.ui.href.link" value="#1F354D"></property>
+    <property name="maven.xdoc.poweredby.image" value="maven-button-1.png"></property>
+    <property name="maven.multiproject.excludes" value="project.xml,etc/project.xml,conf/project.xml"></property>
+    <property name="maven.ui.banner.foreground" value="#FFFFFF"></property>
+    <property name="maven.jar.index" value="false"></property>
+    <property name="java.io.tmpdir" value="c:\DOCUME~1\GEORGE~1.POL\LOCALS~1\Temp\"></property>
+    <property name="user.language" value="sv"></property>
+    <property name="maven.xdoc.date" value="left"></property>
+    <property name="maven.repo.central.directory" value="/public/html/maven"></property>
+    <property name="line.separator" value="
+"></property>
+    <property name="maven.repo.local" value="C:\Documents and Settings\Georges.Polyzois/.maven/repository"></property>
+    <property name="maven.plugin.user.dir" value="C:\Documents and Settings\Georges.Polyzois/.maven/plugins"></property>
+    <property name="maven.artifact.manifest.basedir" value="/plugin-resources/templates"></property>
+    <property name="maven.ui.href.link.selfref" value="#1F354D"></property>
+    <property name="maven.junit.fork" value="no "></property>
+    <property name="maven.junit.usefile" value="true"></property>
+    <property name="maven.junit.format" value="brief"></property>
+    <property name="maven.compile.optimize" value="off"></property>
+    <property name="java.vm.info" value="mixed mode"></property>
+    <property name="maven.repo.remote.enabled" value="true"></property>
+    <property name="java.util.prefs.PreferencesFactory" value="java.util.prefs.WindowsPreferencesFactory"></property>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"></property>
+    <property name="maven.repo.list" value="localfile"></property>
+    <property name="maven.ui.breadcrumbs.foreground" value="#000000"></property>
+    <property name="maven.emacsModeOn" value="false"></property>
+    <property name="maven.build.dest" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/classes"></property>
+    <property name="maven.jar.manifest.extensions.add" value="false"></property>
+    <property name="maven.compile.deprecation" value="off"></property>
+    <property name="maven.xdoc.projectInfo" value="cvs-usage.xml,dependencies.xml,issue-tracking.xml,mail-lists.xml,project-info.xml,team-list.xml,downloads.jelly"></property>
+    <property name="parentScope" value="{maven.session=org.apache.maven.MavenSession@1dacccc, java.vendor=org.apache.commons.jelly.expression.ConstantExpression@1bb9a58[value=Sun Microsystems Inc.], maven.uberjar.main=org.apache.commons.jelly.expression.ConstantExpression@1922f46[value=org.iris.client.MainFrame], jaxb.src.outdir=org.apache.commons.jelly.expression.ConstantExpression@5dc994[value=jaxb-generated], os.name=org.apache.commons.jelly.expression.ConstantExpression@15d3388[value=Windows 2000], sun.boot.class.path=org.apache.commons.jelly.expression.ConstantExpression@1e2670b[value=c:\java\maven-1.0\lib\endorsed\xerces-2.4.0.jar;c:\java\maven-1.0\lib\endorsed\xml-apis-1.0.b2.jar;c:\j2sdk1.4.2_05\jre\lib\rt.jar;c:\j2sdk1.4.2_05\jre\lib\i18n.jar;c:\j2sdk1.4.2_05\jre\lib\sunrsasign.jar;c:\j2sdk1.4.2_05\jre\lib\jsse.jar;c:\j2sdk1.4.2_05\jre\lib\jce.jar;c:\j2sdk1.4.2_05\jre\lib\charsets.jar;c:\j2sdk1.4.2_05\jre\classes], maven.distBuildDirectory=org.apache.commons.jelly.expression.CompositeExpression@db23f1[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@114b82b[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@147358f[value=/target]]], tools.jar=org.apache.commons.jelly.expression.ConstantExpression@d5eb7[value=c:\j2sdk1.4.2_05/lib/tools.jar], sun.java2d.fontpath=org.apache.commons.jelly.expression.ConstantExpression@1c54796[value=], java.vm.specification.vendor=org.apache.commons.jelly.expression.ConstantExpression@ded0f0[value=Sun Microsystems Inc.], java.runtime.version=org.apache.commons.jelly.expression.ConstantExpression@676e3f[value=1.4.2_05-b04], maven.repo.remote.enabled=org.apache.commons.jelly.expression.ConstantExpression@770d2e[value=true], systemScope={java.runtime.name=Java(TM) 2 Runtime Environment, Standard Edition, sun.boot.library.path=c:\j2sdk1.4.2_05\jre\bin, java.vm.version=1.4.2_05-b04, java.vm.vendor=Sun Microsystems Inc., java.vendor.url=http://java.sun.com/, path.separator=;, java.vm.name=Java HotSpot(TM) Client VM, file.encoding.pkg=sun.io, user.country=SE, sun.os.patch.level=Service Pack 4, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\gepo\mycvsprojects\test\modules\swing-client, java.runtime.version=1.4.2_05-b04, forehead.conf.file=c:\java\maven-1.0/bin/forehead.conf, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=c:\j2sdk1.4.2_05\lib\endorsed;c:\java\maven-1.0\lib\endorsed, os.arch=x86, java.io.tmpdir=c:\DOCUME~1\GEORGE~1.POL\LOCALS~1\Temp\, line.separator=
+, java.vm.specification.vendor=Sun Microsystems Inc., user.variant=, os.name=Windows 2000, sun.java2d.fontpath=, tools.jar=c:\j2sdk1.4.2_05/lib/tools.jar, javax.xml.parsers.SAXParserFactory=org.apache.xerces.jaxp.SAXParserFactoryImpl, java.library.path=c:\j2sdk1.4.2_05\bin;.;C:\WINNT\system32;C:\WINNT;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\cygwin\usr\X11R6\bin;c:\oracle\product\10.1.0\Db_1\bin;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin\client;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin;c:\oracle\ora92\bin;c:\Program Files\Oracle\jre\1.3.1\bin;c:\Program Files\Oracle\jre\1.1.8\bin;c:\WINNT\system32;c:\WINNT;c:\WINNT\System32\Wbem;c:\j2sdk1.4.2_05\bin;c:\java\maven-1.0\bin;c:\java\apache-ant-1.6.1\bin;C:\cygwin\bin;c:\Program Files\Common Files\GTK\2.0\bin;c:\Program Files\Subversion\bin;c:\Programs\PuTTY;c:\java\jwsdp-1.4\jwsdp-shared\bin, java.specification.name=Java Platform API Specification, java.class.version=48.0, java.util.prefs.PreferencesFactory=java.util.prefs.WindowsPreferencesFactory, os.version=5.0, maven.mode.online=false, user.home=C:\Documents and Settings\Georges.Polyzois, user.timezone=Europe/Berlin, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.4, java.class.path=c:\java\maven-1.0/lib/forehead-1.0-beta-5.jar, user.name=Georges.Polyzois, java.vm.specification.version=1.0, java.home=c:\j2sdk1.4.2_05\jre, sun.arch.data.model=32, user.language=sv, java.specification.vendor=Sun Microsystems Inc., awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.4.2_05, java.ext.dirs=c:\j2sdk1.4.2_05\jre\lib\ext, sun.boot.class.path=c:\java\maven-1.0\lib\endorsed\xerces-2.4.0.jar;c:\java\maven-1.0\lib\endorsed\xml-apis-1.0.b2.jar;c:\j2sdk1.4.2_05\jre\lib\rt.jar;c:\j2sdk1.4.2_05\jre\lib\i18n.jar;c:\j2sdk1.4.2_05\jre\lib\sunrsasign.jar;c:\j2sdk1.4.2_05\jre\lib\jsse.jar;c:\j2sdk1.4.2_05\jre\lib\jce.jar;c:\j2sdk1.4.2_05\jre\lib\charsets.jar;c:\j2sdk1.4.2_05\jre\classes, javax.xml.parsers.DocumentBuilderFactory=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl, java.vendor=Sun Microsystems Inc., maven.home=c:\java\maven-1.0, file.separator=\, java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.cpu.isalist=pentium i486 i386}, user.name=org.apache.commons.jelly.expression.ConstantExpression@27982[value=Georges.Polyzois], maven.debugOn=false, maven.compile.debug=org.apache.commons.jelly.expression.ConstantExpression@778255[value=on], maven.repo.local=org.apache.commons.jelly.expression.CompositeExpression@da90c[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@d58939[expression:maven.home.local], org.apache.commons.jelly.expression.ConstantExpression@124111a[value=/repository]]], maven.defaults.loaded=org.apache.commons.jelly.expression.ConstantExpression@dec8b3[value=true], javax.xml.parsers.SAXParserFactory=org.apache.commons.jelly.expression.ConstantExpression@4a7df6[value=org.apache.xerces.jaxp.SAXParserFactoryImpl], maven.docs.omitXmlDeclaration=org.apache.commons.jelly.expression.ConstantExpression@93df2c[value=false], user.language=org.apache.commons.jelly.expression.ConstantExpression@20f443[value=sv], sun.boot.library.path=org.apache.commons.jelly.expression.ConstantExpression@18488ef[value=c:\j2sdk1.4.2_05\jre\bin], maven.build.dest=org.apache.commons.jelly.expression.CompositeExpression@3a1834[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@b1cd0[expression:maven.build.dir], org.apache.commons.jelly.expression.ConstantExpression@190a0d6[value=/classes]]], maven.xmlOutput=org.apache.commons.jelly.XMLOutput$1@2f729e[contentHandler=org.dom4j.io.XMLWriter@10deb5f;lexicalHandler=org.dom4j.io.XMLWriter@10deb5f], maven.plugin.user.dir=org.apache.commons.jelly.expression.CompositeExpression@d7b7d9[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@671f95[expression:maven.home.local], org.apache.commons.jelly.expression.ConstantExpression@4a9a7d[value=/plugins]]], java.version=org.apache.commons.jelly.expression.ConstantExpression@1e4a47e[value=1.4.2_05], user.timezone=org.apache.commons.jelly.expression.ConstantExpression@1eb5666[value=], sun.arch.data.model=org.apache.commons.jelly.expression.ConstantExpression@1754699[value=32], java.endorsed.dirs=org.apache.commons.jelly.expression.ConstantExpression@6e1dec[value=c:\j2sdk1.4.2_05\lib\endorsed;c:\java\maven-1.0\lib\endorsed], sun.cpu.isalist=org.apache.commons.jelly.expression.ConstantExpression@16ea269[value=pentium i486 i386], maven.property.inheritance=org.apache.commons.jelly.expression.ConstantExpression@68cb6b[value=true], file.encoding.pkg=org.apache.commons.jelly.expression.ConstantExpression@2e323[value=sun.io], file.separator=org.apache.commons.jelly.expression.ConstantExpression@18e4327[value=\], java.specification.name=org.apache.commons.jelly.expression.ConstantExpression@dada24[value=Java Platform API Specification], maven.src.dir=org.apache.commons.jelly.expression.CompositeExpression@2798e7[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1a78071[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@1e184cb[value=/src]]], java.class.version=org.apache.commons.jelly.expression.ConstantExpression@d55986[value=48.0], user.country=org.apache.commons.jelly.expression.ConstantExpression@e8a021[value=SE], maven.repo.central=org.apache.commons.jelly.expression.ConstantExpression@691177[value=login.ibiblio.org], java.home=org.apache.commons.jelly.expression.ConstantExpression@1f99eea[value=c:\j2sdk1.4.2_05\jre], javax.xml.parsers.DocumentBuilderFactory=org.apache.commons.jelly.expression.ConstantExpression@13043d2[value=org.apache.xerces.jaxp.DocumentBuilderFactoryImpl], forehead.conf.file=org.apache.commons.jelly.expression.ConstantExpression@1b4c1d7[value=c:\java\maven-1.0/bin/forehead.conf], java.vm.info=org.apache.commons.jelly.expression.ConstantExpression@221e9e[value=mixed mode], os.version=org.apache.commons.jelly.expression.ConstantExpression@83e1e[value=5.0], maven.conf.dir=org.apache.commons.jelly.expression.CompositeExpression@1264eab[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1f6f27b[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@1a99347[value=/conf]]], path.separator=org.apache.commons.jelly.expression.ConstantExpression@430b6[value=;], java.vm.version=org.apache.commons.jelly.expression.ConstantExpression@11a01dd[value=1.4.2_05-b04], maven.build.dir=org.apache.commons.jelly.expression.CompositeExpression@70610a[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1f31652[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@3e96cf[value=/target]]], java.util.prefs.PreferencesFactory=org.apache.commons.jelly.expression.ConstantExpression@11ef443[value=java.util.prefs.WindowsPreferencesFactory], user.variant=org.apache.commons.jelly.expression.ConstantExpression@1367e28[value=], maven.ssh.executable=org.apache.commons.jelly.expression.ConstantExpression@94af2f[value=ssh], maven.emacsModeOn=false, java.awt.printerjob=org.apache.commons.jelly.expression.ConstantExpression@1797795[value=sun.awt.windows.WPrinterJob], sun.io.unicode.encoding=org.apache.commons.jelly.expression.ConstantExpression@19a0203[value=UnicodeLittle], awt.toolkit=org.apache.commons.jelly.expression.ConstantExpression@1fa39bb[value=sun.awt.windows.WToolkit], maven.compile.optimize=org.apache.commons.jelly.expression.ConstantExpression@e45b5e[value=off], user.home=org.apache.commons.jelly.expression.ConstantExpression@2ab653[value=C:\Documents and Settings\Georges.Polyzois], java.specification.vendor=org.apache.commons.jelly.expression.ConstantExpression@28305d[value=Sun Microsystems Inc.], maven.final.dir=org.apache.commons.jelly.expression.CompositeExpression@7f58ef[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@a7dd39[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@acdd02[value=/], org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@e1dac2[expression:maven.final.name]]], maven.build.src=org.apache.commons.jelly.expression.CompositeExpression@1e12f6d[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@f0b4a3[expression:maven.build.dir], org.apache.commons.jelly.expression.ConstantExpression@e34726[value=/src]]], maven.build=org.apache.commons.jelly.expression.ConstantExpression@15428dd[value=MAVEN_BUILD_NOT_SET], java.library.path=org.apache.commons.jelly.expression.ConstantExpression@46d228[value=c:\j2sdk1.4.2_05\bin;.;C:\WINNT\system32;C:\WINNT;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\cygwin\usr\X11R6\bin;c:\oracle\product\10.1.0\Db_1\bin;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin\client;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin;c:\oracle\ora92\bin;c:\Program Files\Oracle\jre\1.3.1\bin;c:\Program Files\Oracle\jre\1.1.8\bin;c:\WINNT\system32;c:\WINNT;c:\WINNT\System32\Wbem;c:\j2sdk1.4.2_05\bin;c:\java\maven-1.0\bin;c:\java\apache-ant-1.6.1\bin;C:\cygwin\bin;c:\Program Files\Common Files\GTK\2.0\bin;c:\Program Files\Subversion\bin;c:\Programs\PuTTY;c:\java\jwsdp-1.4\jwsdp-shared\bin], java.vendor.url=org.apache.commons.jelly.expression.ConstantExpression@18f7386[value=http://java.sun.com/], java.vm.vendor=org.apache.commons.jelly.expression.ConstantExpression@e99681[value=Sun Microsystems Inc.], maven.username=org.apache.commons.jelly.expression.ConstantExpression@1980630[value=USERNAME_NOT_SET], maven.home=org.apache.commons.jelly.expression.ConstantExpression@1be4777[value=c:\java\maven-1.0], java.runtime.name=org.apache.commons.jelly.expression.ConstantExpression@145e2d5[value=Java(TM) 2 Runtime Environment, Standard Edition], java.class.path=org.apache.commons.jelly.expression.ConstantExpression@12f1bf0[value=c:\java\maven-1.0/lib/forehead-1.0-beta-5.jar], maven.remote.group=org.apache.commons.jelly.expression.ConstantExpression@1d32e45[value=maven], maven.gen.docs=org.apache.commons.jelly.expression.CompositeExpression@182ef6b[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1347124[expression:maven.build.dir], org.apache.commons.jelly.expression.ConstantExpression@1f02b85[value=/generated-xdocs]]], context=org.apache.maven.jelly.MavenJellyContext@b957ea, maven.distDirectory=org.apache.commons.jelly.expression.CompositeExpression@3aff84[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@15d4de6[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@a53de4[value=/dist]]], maven.docs.dest=org.apache.commons.jelly.expression.CompositeExpression@827968[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1f0b7d3[expression:maven.build.dir], org.apache.commons.jelly.expression.ConstantExpression@b4be3d[value=/docs]]], java.vm.specification.name=org.apache.commons.jelly.expression.ConstantExpression@35bb0f[value=Java Virtual Machine Specification], maven.compile.deprecation=org.apache.commons.jelly.expression.ConstantExpression@18bd7f1[value=off], maven.docs.outputencoding=org.apache.commons.jelly.expression.ConstantExpression@e4245[value=ISO-8859-1], java.vm.specification.version=org.apache.commons.jelly.expression.ConstantExpression@20fa83[value=1.0], sun.cpu.endian=org.apache.commons.jelly.expression.ConstantExpression@11eb199[value=little], sun.os.patch.level=org.apache.commons.jelly.expression.ConstantExpression@1de498[value=Service Pack 4], maven.plugin.unpacked.dir=org.apache.commons.jelly.expression.CompositeExpression@8ae45a[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@95da38[expression:maven.home.local], org.apache.commons.jelly.expression.ConstantExpression@29c204[value=/cache]]], java.io.tmpdir=org.apache.commons.jelly.expression.ConstantExpression@180cf2a[value=c:\DOCUME~1\GEORGE~1.POL\LOCALS~1\Temp\], maven.scp.executable=org.apache.commons.jelly.expression.ConstantExpression@1a0d866[value=scp], java.vendor.url.bug=org.apache.commons.jelly.expression.ConstantExpression@df48c4[value=http://java.sun.com/cgi-bin/bugreport.cgi], ant.os.exec=org.apache.commons.jelly.expression.ConstantExpression@1226a77[value=Windows 2000], maven.final.name=org.apache.commons.jelly.expression.CompositeExpression@7be8c2[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@ee3aa7[expression:pom.artifactId], org.apache.commons.jelly.expression.ConstantExpression@4cd580[value=-], org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@54f9f1[expression:pom.currentVersion]]], maven.distBuildIndicator=org.apache.commons.jelly.expression.ConstantExpression@e576d4[value=DIST_BUILD_DIRECTORY], os.arch=org.apache.commons.jelly.expression.ConstantExpression@dc86eb[value=x86], java.awt.graphicsenv=org.apache.commons.jelly.expression.ConstantExpression@1db5ec[value=sun.awt.Win32GraphicsEnvironment], java.jaxb.generator=org.apache.commons.jelly.expression.ConstantExpression@92b1a1[value=C:/java/jwsdp-1.4/jaxb/bin/xjc.bat], java.ext.dirs=org.apache.commons.jelly.expression.ConstantExpression@cbf9bd[value=c:\j2sdk1.4.2_05\jre\lib\ext], user.dir=org.apache.commons.jelly.expression.ConstantExpression@17918f0[value=c:\gepo\mycvsprojects\test\modules\swing-client], maven.docs.src=org.apache.commons.jelly.expression.CompositeExpression@1546dbc[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1f08ed8[expression:basedir], org.apache.commons.jelly.expression.ConstantExpression@322bce[value=/xdocs]]], line.separator=org.apache.commons.jelly.expression.ConstantExpression@1d9e282[value=
+], java.vm.name=org.apache.commons.jelly.expression.ConstantExpression@1a5db4b[value=Java HotSpot(TM) Client VM], basedir=c:\gepo\mycvsprojects\test\modules\swing-client, maven.plugin.dir=org.apache.commons.jelly.expression.CompositeExpression@1e0512a[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1f0aecc[expression:maven.home], org.apache.commons.jelly.expression.ConstantExpression@64023c[value=/plugins]]], file.encoding=org.apache.commons.jelly.expression.ConstantExpression@1cebc9f[value=Cp1252], maven.repo.remote=org.apache.commons.jelly.expression.ConstantExpression@1c1ac46[value=http://www.ibiblio.org/maven], java.specification.version=org.apache.commons.jelly.expression.ConstantExpression@1557c0[value=1.4], maven.home.local=org.apache.commons.jelly.expression.CompositeExpression@1342a67[expressions=[org.apache.commons.jelly.expression.jexl.JexlExpressionFactory$ExpressionSupportLocal@1cbda0a[expression:user.home], org.apache.commons.jelly.expression.ConstantExpression@57ea52[value=/.maven]]], maven.repo.central.directory=org.apache.commons.jelly.expression.ConstantExpression@1d8d39f[value=/public/html/maven]}"></property>
+    <property name="maven.artifact.manifest.template" value="manifest.vm"></property>
+    <property name="maven.plugin.dir" value="c:\java\maven-1.0/plugins"></property>
+    <property name="org.apache.commons.jelly.werkz.Project" value="[Werkz: goals={license:transfer=[Goal: name=&quot;license:transfer&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]], test:test=[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]], xdoc:jelly-init=[Goal: name=&quot;xdoc:jelly-init&quot;]; precursor=[]], pom:deploy=[Goal: name=&quot;pom:deploy&quot;]; precursor=[]], test:single=[Goal: name=&quot;test:single&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]], build:end=[Goal: name=&quot;build:end&quot;]; precursor=[]], test:single-test=[Goal: name=&quot;test:single-test&quot;]; precursor=[]], jar:snapshot=[Goal: name=&quot;jar:snapshot&quot;]; precursor=[]], jar:install=[Goal: name=&quot;jar:install&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]], jar:install-snapshot=[Goal: name=&quot;jar:install-snapshot&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]], pom:deploy-snapshot=[Goal: name=&quot;pom:deploy-snapshot&quot;]; precursor=[]], xdoc:generate-from-pom=[Goal: name=&quot;xdoc:generate-from-pom&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]], [Goal: name=&quot;xdoc:register-reports&quot;]; precursor=[]]]], xdoc:init=[Goal: name=&quot;xdoc:init&quot;]; precursor=[]], maven-license-plugin:register=[Goal: name=&quot;maven-license-plugin:register&quot;]; precursor=[]], xdoc:transform=[Goal: name=&quot;xdoc:transform&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]], pom:contentvalidate=[Goal: name=&quot;pom:contentvalidate&quot;]; precursor=[]], test=[Goal: name=&quot;test&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]], xdoc:jelly-transform=[Goal: name=&quot;xdoc:jelly-transform&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]], [Goal: name=&quot;xdoc:jelly-init&quot;]; precursor=[]], [Goal: name=&quot;xdoc:register-reports&quot;]; precursor=[]]]], buildall=[Goal: name=&quot;buildall&quot;]; precursor=[]], artifact:load=[Goal: name=&quot;artifact:load&quot;]; precursor=[]], java:compile=[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], license=[Goal: name=&quot;license&quot;]; precursor=[[Goal: name=&quot;license:transfer&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]]]], jar:deploy-snapshot=[Goal: name=&quot;jar:deploy-snapshot&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]], build:start=[Goal: name=&quot;build:start&quot;]; precursor=[]], test:prepare-filesystem=[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], maven-license-plugin:report=[Goal: name=&quot;maven-license-plugin:report&quot;]; precursor=[]], jar:jar=[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]], pom:install=[Goal: name=&quot;pom:install&quot;]; precursor=[]], xdoc:validate=[Goal: name=&quot;xdoc:validate&quot;]; precursor=[[Goal: name=&quot;pom:taglib&quot;]; precursor=[]]]], xdoc=[Goal: name=&quot;xdoc&quot;]; precursor=[[Goal: name=&quot;xdoc:generate-from-pom&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]], [Goal: name=&quot;xdoc:register-reports&quot;]; precursor=[]]]], [Goal: name=&quot;xdoc:transform&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]]]], test:test-resources=[Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]], xdoc:performJSL=[Goal: name=&quot;xdoc:performJSL&quot;]; precursor=[]], jar:deploy=[Goal: name=&quot;jar:deploy&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]], cleanall=[Goal: name=&quot;cleanall&quot;]; precursor=[]], test:compile=[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]], xdoc:copy-resources=[Goal: name=&quot;xdoc:copy-resources&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]], buildsite=[Goal: name=&quot;buildsite&quot;]; precursor=[]], test:ui=[Goal: name=&quot;test:ui&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]], xdoc:copy-user-resources=[Goal: name=&quot;xdoc:copy-user-resources&quot;]; precursor=[[Goal: name=&quot;xdoc:init&quot;]; precursor=[]]]], pom:install-snapshot=[Goal: name=&quot;pom:install-snapshot&quot;]; precursor=[]], jaxb:prepare-filesystem=[Goal: name=&quot;jaxb:prepare-filesystem&quot;]; precursor=[]], maven-license-plugin:deregister=[Goal: name=&quot;maven-license-plugin:deregister&quot;]; precursor=[]], jar=[Goal: name=&quot;jar&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]], pom:validate=[Goal: name=&quot;pom:validate&quot;]; precursor=[[Goal: name=&quot;pom:verify-version&quot;]; precursor=[]]]], test:match-test=[Goal: name=&quot;test:match-test&quot;]; precursor=[]], release=[Goal: name=&quot;release&quot;]; precursor=[]], java:prepare-filesystem=[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]], xdoc:register-reports=[Goal: name=&quot;xdoc:register-reports&quot;]; precursor=[]], pom:taglib=[Goal: name=&quot;pom:taglib&quot;]; precursor=[]], antlr:prepare-filesystem=[Goal: name=&quot;antlr:prepare-filesystem&quot;]; precursor=[]], xdoc:dump-report-settings=[Goal: name=&quot;xdoc:dump-report-settings&quot;]; precursor=[]], java:jar-resources=[Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], test:eclipse=[Goal: name=&quot;test:eclipse&quot;]; precursor=[]], pom:verify-version=[Goal: name=&quot;pom:verify-version&quot;]; precursor=[]], test:match=[Goal: name=&quot;test:match&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]], antlr:generate=[Goal: name=&quot;antlr:generate&quot;]; precursor=[[Goal: name=&quot;antlr:prepare-filesystem&quot;]; precursor=[]]]], buildsitedeploy=[Goal: name=&quot;buildsitedeploy&quot;]; precursor=[]], pom=[Goal: name=&quot;pom&quot;]; precursor=[[Goal: name=&quot;pom:validate&quot;]; precursor=[[Goal: name=&quot;pom:verify-version&quot;]; precursor=[]]]]]], java:jar=[Goal: name=&quot;java:jar&quot;]; precursor=[[Goal: name=&quot;jar:jar&quot;]; precursor=[[Goal: name=&quot;test:test&quot;]; precursor=[[Goal: name=&quot;test:compile&quot;]; precursor=[[Goal: name=&quot;java:compile&quot;]; precursor=[[Goal: name=&quot;java:prepare-filesystem&quot;]; precursor=[]]]], [Goal: name=&quot;java:jar-resources&quot;]; precursor=[]], [Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]], [Goal: name=&quot;test:test-resources&quot;]; precursor=[[Goal: name=&quot;test:prepare-filesystem&quot;]; precursor=[]]]]]]]]]]]]};]"></property>
+    <property name="maven.ui.table.row.odd.foreground" value="#686868"></property>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"></property>
+    <property name="maven.ui.source.border.top" value="#A2B7C5"></property>
+    <property name="forehead.conf.file" value="c:\java\maven-1.0/bin/forehead.conf"></property>
+    <property name="maven.final.name" value="iris-swing-client-1.0-SNAPSHOT"></property>
+    <property name="maven.jar.manifest" value="c:\gepo\mycvsprojects\test\modules\swing-client/conf/Manifest.mf"></property>
+    <property name="maven.ui.source.background" value="#FFFFFF"></property>
+    <property name="maven.ui.navcol.border.top" value="#F2F5F7"></property>
+    <property name="maven.xdoc.distributionType" value="jar"></property>
+    <property name="maven.ui.navcol.background" value="#F2F5F7"></property>
+    <property name="maven.scp.executable" value="scp"></property>
+    <property name="maven.docs.dest" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/docs"></property>
+    <property name="os.name" value="Windows 2000"></property>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="maven.docs.src" value="c:\gepo\mycvsprojects\test\modules\swing-client/xdocs"></property>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"></property>
+    <property name="java.library.path" value="c:\j2sdk1.4.2_05\bin;.;C:\WINNT\system32;C:\WINNT;C:\cygwin\usr\local\bin;C:\cygwin\bin;C:\cygwin\bin;C:\cygwin\usr\X11R6\bin;c:\oracle\product\10.1.0\Db_1\bin;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin\client;c:\oracle\product\10.1.0\Db_1\jre\1.4.2\bin;c:\oracle\ora92\bin;c:\Program Files\Oracle\jre\1.3.1\bin;c:\Program Files\Oracle\jre\1.1.8\bin;c:\WINNT\system32;c:\WINNT;c:\WINNT\System32\Wbem;c:\j2sdk1.4.2_05\bin;c:\java\maven-1.0\bin;c:\java\apache-ant-1.6.1\bin;C:\cygwin\bin;c:\Program Files\Common Files\GTK\2.0\bin;c:\Program Files\Subversion\bin;c:\Programs\PuTTY;c:\java\jwsdp-1.4\jwsdp-shared\bin"></property>
+    <property name="maven.build" value="MAVEN_BUILD_NOT_SET"></property>
+    <property name="maven.linkcheck.exclude" value="http://maven.apache.org/,http://www.clarkware.com/software/JDepend.html,http://checkstyle.sourceforge.net/"></property>
+    <property name="ant.java.version" value="1.4"></property>
+    <property name="maven.jar.compress" value="true"></property>
+    <property name="basedir" value="c:\gepo\mycvsprojects\test\modules\swing-client"></property>
+    <property name="maven.ui.table.row.even.foreground" value="#686868"></property>
+    <property name="java.class.version" value="48.0"></property>
+    <property name="dir__" value="C:\gepo\mycvsprojects\test\modules\swing-client\src\testX"></property>
+    <property name="maven.ui.table.header.background" value="#E5E3DB"></property>
+    <property name="maven.xdoc.poweredby.url" value="http://maven.apache.org/"></property>
+    <property name="maven.ui.section.background" value="#A2B7C5"></property>
+    <property name="java.jaxb.generator" value="C:/java/jwsdp-1.4/jaxb/bin/xjc.bat"></property>
+    <property name="maven.final.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client/iris-swing-client-1.0-SNAPSHOT"></property>
+    <property name="ant.os.exec" value="Windows 2000"></property>
+    <property name="maven.xdoc.developmentProcessUrl" value="https://iris.sourceforge.net/"></property>
+    <property name="maven.mode.online" value="false"></property>
+    <property name="maven.ui.source.border.left" value="#A2B7C5"></property>
+    <property name="maven.test.dest" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/test-classes"></property>
+    <property name="maven.session.global" value="com.werken.werkz.jelly.JellySession@2d95b3"></property>
+    <property name="maven.xmlOutput" value="org.apache.commons.jelly.XMLOutput$1@2f729e[contentHandler=org.dom4j.io.XMLWriter@10deb5f;lexicalHandler=org.dom4j.io.XMLWriter@10deb5f]"></property>
+    <property name="maven.test.skip" value="false"></property>
+    <property name="maven.src.dir" value="c:\gepo\mycvsprojects\test\modules\swing-client/src"></property>
+    <property name="sun.boot.library.path" value="c:\j2sdk1.4.2_05\jre\bin"></property>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"></property>
+    <property name="user.variant" value=""></property>
+    <property name="maven.multiproject.includes" value="**/project.xml"></property>
+    <property name="maven.ui.source.border.right" value="#A2B7C5"></property>
+    <property name="maven.junit.envvars" value=""></property>
+    <property name="maven.compile.target" value="1.4"></property>
+    <property name="maven.session" value="org.apache.maven.MavenSession@1dacccc"></property>
+    <property name="maven.xdoc.crumb.separator" value="|"></property>
+    <property name="maven.ui.href.link.active" value="#FF5A00"></property>
+    <property name="java.vm.specification.version" value="1.0"></property>
+    <property name="pom" value="Iris :: Swing client"></property>
+    <property name="maven.test.reportsDirectory" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/test-reports"></property>
+    <property name="maven.ui.banner.border.top" value="#A2B7C5"></property>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"></property>
+    <property name="sun.cpu.isalist" value="pentium i486 i386"></property>
+    <property name="jaxb.src.outdir" value="jaxb-generated"></property>
+    <property name="maven.ant.project" value="org.apache.commons.grant.GrantProject@e41bc3"></property>
+    <property name="unitTestSourcesPresent" value="true"></property>
+    <property name="maven.compile.source" value="1.4"></property>
+    <property name="java.ext.dirs" value="c:\j2sdk1.4.2_05\jre\lib\ext"></property>
+    <property name="maven.ui.banner.background" value="#FFFFFF"></property>
+    <property name="os.version" value="5.0"></property>
+    <property name="maven.ui.breadcrumbs.background" value="#D5E1E9"></property>
+    <property name="maven.jar.excludes" value="**/package.html"></property>
+    <property name="user.home" value="C:\Documents and Settings\Georges.Polyzois"></property>
+    <property name="maven.ui.body.foreground" value="#1F354D"></property>
+    <property name="javax.xml.parsers.DocumentBuilderFactory" value="org.apache.xerces.jaxp.DocumentBuilderFactoryImpl"></property>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."></property>
+    <property name="maven.xdoc.date.locale" value="en"></property>
+    <property name="maven.ui.subsection.foreground" value="#1F354D"></property>
+    <property name="maven.xdoc.theme.url" value=""></property>
+    <property name="user.dir" value="C:\gepo\mycvsprojects\test\modules\swing-client"></property>
+    <property name="maven.artifact.manifest.extensions.add" value="false"></property>
+    <property name="maven.xdoc.theme" value="theme"></property>
+    <property name="maven.build.src" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/src"></property>
+    <property name="maven.ui.navcol.border.bottom" value="#A2B7C5"></property>
+    <property name="maven.distDirectory" value="c:\gepo\mycvsprojects\test\modules\swing-client/dist"></property>
+    <property name="sun.cpu.endian" value="little"></property>
+    <property name="maven.default.goal" value="buildall"></property>
+    <property name="maven.ui.breadcrumbs.border.top" value="#D5E1E9"></property>
+    <property name="project" value="org.apache.commons.grant.GrantProject@e41bc3"></property>
+    <property name="maven.ui.navcol.background.ns4" value="#F2F5F7"></property>
+    <property name="maven.defaults.loaded" value="true"></property>
+    <property name="maven.username" value="USERNAME_NOT_SET"></property>
+    <property name="java.vm.version" value="1.4.2_05-b04"></property>
+    <property name="java.class.path" value="c:\java\maven-1.0/lib/forehead-1.0-beta-5.jar"></property>
+    <property name="javax.xml.parsers.SAXParserFactory" value="org.apache.xerces.jaxp.SAXParserFactoryImpl"></property>
+    <property name="maven.ui.navcol.border.right" value="#A2B7C5"></property>
+    <property name="maven.debugOn" value="false"></property>
+    <property name="os.arch" value="x86"></property>
+    <property name="maven.linkcheck.enable" value="false"></property>
+    <property name="maven.junit.jvmargs" value="-ea"></property>
+    <property name="maven.ui.table.row.odd.background" value="#F5F4F1"></property>
+    <property name="maven.repo.remote" value="http://www.ibiblio.org/maven"></property>
+    <property name="maven.license.licenseFile" value="c:\gepo\mycvsprojects\test\modules\swing-client/LICENSE.txt"></property>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."></property>
+    <property name="file.separator" value="\"></property>
+    <property name="maven.gen.docs" value="c:\gepo\mycvsprojects\test\modules\swing-client/target/generated-xdocs"></property>
+    <property name="java.runtime.version" value="1.4.2_05-b04"></property>
+    <property name="sun.boot.class.path" value="c:\java\maven-1.0\lib\endorsed\xerces-2.4.0.jar;c:\java\maven-1.0\lib\endorsed\xml-apis-1.0.b2.jar;c:\j2sdk1.4.2_05\jre\lib\rt.jar;c:\j2sdk1.4.2_05\jre\lib\i18n.jar;c:\j2sdk1.4.2_05\jre\lib\sunrsasign.jar;c:\j2sdk1.4.2_05\jre\lib\jsse.jar;c:\j2sdk1.4.2_05\jre\lib\jce.jar;c:\j2sdk1.4.2_05\jre\lib\charsets.jar;c:\j2sdk1.4.2_05\jre\classes"></property>
+    <property name="maven.home.local" value="C:\Documents and Settings\Georges.Polyzois/.maven"></property>
+    <property name="maven.checkstyle.properties" value="etc/iris_checks.xml"></property>
+    <property name="sun.java2d.fontpath" value=""></property>
+    <property name="user.country" value="SE"></property>
+    <property name="maven.uberjar.main" value="org.iris.client.MainFrame"></property>
+    <property name="maven.home" value="c:\java\maven-1.0"></property>
+    <property name="maven.antlr.src.dir" value="MAVEN_ANTLR_SRC_DIR_NOT_SET"></property>
+    <property name="tools.jar" value="c:\j2sdk1.4.2_05/lib/tools.jar"></property>
+    <property name="maven.distBuildDirectory" value="c:\gepo\mycvsprojects\test\modules\swing-client/target"></property>
+    <property name="maven.repo.localfile.directory" value="rigel"></property>
+    <property name="java.vendor" value="Sun Microsystems Inc."></property>
+    <property name="maven.docs.outputencoding" value="ISO-8859-1"></property>
+    <property name="java.specification.version" value="1.4"></property>
+    <property name="maven.ui.navcol.width" value="20%"></property>
+    <property name="sun.arch.data.model" value="32"></property>
+  </properties>
+  <testcase name="testgetIrisclientSettings" time="0.375">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at org.iris.client.settings.TestSettingsFascade.testgetIrisclientSettings(TestSettingsFascade.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at org.apache.commons.jelly.tags.ant.AntTag.doTag(AntTag.java:232)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:233)
+	at org.apache.commons.jelly.tags.core.IfTag.doTag(IfTag.java:88)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.Goal.attainPrecursors(Goal.java:488)
+	at com.werken.werkz.Goal.attain(Goal.java:573)
+	at com.werken.werkz.Goal.attainPrecursors(Goal.java:488)
+	at com.werken.werkz.Goal.attain(Goal.java:573)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.jelly.tags.werkz.MavenAttainGoalTag.doTag(MavenAttainGoalTag.java:127)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.plugin.PluginManager.attainGoals(PluginManager.java:634)
+	at org.apache.maven.MavenSession.attainGoals(MavenSession.java:266)
+	at org.apache.maven.jelly.tags.maven.ReactorTag.doTag(ReactorTag.java:342)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.plugin.PluginManager.attainGoals(PluginManager.java:634)
+	at org.apache.maven.MavenSession.attainGoals(MavenSession.java:266)
+	at org.apache.maven.cli.App.doMain(App.java:486)
+	at org.apache.maven.cli.App.main(App.java:1215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at com.werken.forehead.Forehead.run(Forehead.java:551)
+	at com.werken.forehead.Forehead.main(Forehead.java:581)
+</error>
+  </testcase>
+  <testcase name="testgetIrisclientSettingsAsString" time="0.032"></testcase>
+  <testcase name="teststoreIrisclientSettings" time="0.0">
+    <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError
+	at org.iris.client.settings.TestSettingsFascade.teststoreIrisclientSettings(TestSettingsFascade.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at org.apache.commons.jelly.tags.ant.AntTag.doTag(AntTag.java:232)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.commons.jelly.TagSupport.invokeBody(TagSupport.java:233)
+	at org.apache.commons.jelly.tags.core.IfTag.doTag(IfTag.java:88)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.Goal.attainPrecursors(Goal.java:488)
+	at com.werken.werkz.Goal.attain(Goal.java:573)
+	at com.werken.werkz.Goal.attainPrecursors(Goal.java:488)
+	at com.werken.werkz.Goal.attain(Goal.java:573)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.jelly.tags.werkz.MavenAttainGoalTag.doTag(MavenAttainGoalTag.java:127)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.plugin.PluginManager.attainGoals(PluginManager.java:634)
+	at org.apache.maven.MavenSession.attainGoals(MavenSession.java:266)
+	at org.apache.maven.jelly.tags.maven.ReactorTag.doTag(ReactorTag.java:342)
+	at org.apache.commons.jelly.impl.TagScript.run(TagScript.java:279)
+	at org.apache.commons.jelly.impl.ScriptBlock.run(ScriptBlock.java:135)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag.runBodyTag(MavenGoalTag.java:79)
+	at org.apache.maven.jelly.tags.werkz.MavenGoalTag$MavenGoalAction.performAction(MavenGoalTag.java:110)
+	at com.werken.werkz.Goal.fire(Goal.java:639)
+	at com.werken.werkz.Goal.attain(Goal.java:575)
+	at com.werken.werkz.WerkzProject.attainGoal(WerkzProject.java:193)
+	at org.apache.maven.plugin.PluginManager.attainGoals(PluginManager.java:634)
+	at org.apache.maven.MavenSession.attainGoals(MavenSession.java:266)
+	at org.apache.maven.cli.App.doMain(App.java:486)
+	at org.apache.maven.cli.App.main(App.java:1215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at com.werken.forehead.Forehead.run(Forehead.java:551)
+	at com.werken.forehead.Forehead.main(Forehead.java:581)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

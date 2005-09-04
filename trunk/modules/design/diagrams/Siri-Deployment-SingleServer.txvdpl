@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="iddkps6e7re8sage7resa11">
+        <property name="$metaclass" value="Deployment Diagram"/>
+        <property name="@__options" value="option.printheader = false &#xA;option.orientation = Landscape &#xA;option.papersize = Letter &#xA;option.boundingbox = false"/>
+        <reference df-class-name="reference" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="240,10,500,410"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08">
+                <property name="bounds" value="190,70,250,290"/>
+                <property name="bounds_setted_by_user" value="true"/>
+                <reference referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd4:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08">
+                    <property name="bounds" value="159,80,86,60"/>
+                </reference>
+                <reference referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd2:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08">
+                    <property name="bounds" value="50,80,94,60"/>
+                </reference>
+            </reference>
+        </reference>
+        <reference df-class-name="reference6" referencedUin="design:view:::idh1tage7re8sage7rf1gm3">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="260,120,90,90"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid9wgwbe7smw8eme7sn4s25">
+                <property name="sourceAnchor" value="300,210"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="300,260"/>
+            </reference>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid2crvde7smw8eme7snewr1">
+                <property name="sourceAnchor" value="350,150"/>
+                <property name="bendpoints" value="570,150"/>
+                <property name="targetAnchor" value="589,172"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid32edse7smw8eme7sn6t0v">
+                <property name="sourceAnchor" value="325,210"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="520,260"/>
+            </reference>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid69r0ae7smw8eme7snet70">
+                <property name="sourceAnchor" value="350,185"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="480,185"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference2" referencedUin="design:view:::id8j4w9e7re8sage7rnpkoc">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="490,500,56,72"/>
+            <reference referencedUin="design:link:::id8j4w9e7re8sage7rnpkoc.linkidkfx1e7smw8eme7snfdvt">
+                <property name="sourceAnchor" value="532,500"/>
+                <property name="bendpoints" value="640,390"/>
+                <property name="targetAnchor" value="640,220"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+            <reference referencedUin="design:link:::id8j4w9e7re8sage7rnpkoc.linkidezcyie7smw8eme7sn6xou">
+                <property name="sourceAnchor" value="504,500"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="504,340"/>
+            </reference>
+            <reference referencedUin="design:link:::id8j4w9e7re8sage7rnpkoc.linkidfoe4se7smw8eme7snfib3">
+                <property name="sourceAnchor" value="518,500"/>
+                <property name="bendpoints" value="580,390,580,250"/>
+                <property name="targetAnchor" value="527,220"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference9" referencedUin="design:view:::id4uhd6e7smw8eme7sn5af6">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="490,260,90,80"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:link:::id4uhd6e7smw8eme7sn5af6.linkid5f5m1e7smw8eme7spr1mj">
+                <property name="sourceAnchor" value="550,260"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="503,220"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference10" referencedUin="design:view:::idhuk18e7smw8eme7sn1073">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="280,260,60,88"/>
+        </reference>
+        <reference df-class-name="reference20" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeidj12b6e7smw8eme7ssmi2e">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="420,450,179,162"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeidj12b6e7smw8eme7ssmi2e.nodeidf4lkke7re8sage7rnpq74:iddkps6e7re8sage7resa11.nodeidj12b6e7smw8eme7ssmi2e">
+                <property name="bounds" value="62,33,100,100"/>
+            </reference>
+        </reference>
+        <property name="@url" value="element://model:project::siri-design/design:view:::idh1tage7re8sage7rf1gm3"/>
+    </view>
+    <node uin="iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08">
+        <property name="$metaclass" value="Node"/>
+        <property name="$name" value="server"/>
+        <node uin="iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="JBoss"/>
+            <property name="@instanceForm" value=""/>
+            <property name="@stereotype" value="j2ee appserver"/>
+            <node uin="iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd2">
+                <property name="$metaclass" value="Object"/>
+                <property name="$name" value="MessageTopic"/>
+                <property name="@stereotype" value="jmstopic"/>
+            </node>
+            <node uin="iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd4">
+                <property name="$metaclass" value="Object"/>
+                <property name="$name" value="SystemTopic"/>
+                <property name="@stereotype" value="jmstopic"/>
+            </node>
+        </node>
+    </node>
+    <node uin="iddkps6e7re8sage7resa11.nodeidj12b6e7smw8eme7ssmi2e">
+        <property name="$metaclass" value="Node"/>
+        <property name="$name" value="workstation"/>
+    </node>
+</nodeSet>

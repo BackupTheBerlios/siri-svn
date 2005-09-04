@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emailmessage i="email" contenttype="text/html" createdate="1999-05-31T13:20:00.000-05:00" creator="pnlbooking" smtpserver="tdvmail1" xmlns="http://www.iris.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://127.0.0.1:9999/ http://127.0.0.1:9999/email_new.xsd">
+	<toaddress>test_to_address</toaddress>
+	<ccaddress>test_cc_address</ccaddress>
+	<bccaddress>test_bcc_address</bccaddress>
+	<subject>TESTSUBJECT </subject>
+	<bodymessage><![CDATA[HELLOTEST]]></bodymessage>
+</emailmessage>

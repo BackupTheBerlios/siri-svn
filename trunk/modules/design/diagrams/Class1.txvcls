@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="idb4d80e95sfgywe95zten8">
+        <property name="$metaclass" value="Class Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference" referencedUin="jdt:e_class:src:Message">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="171,113,112,91"/>
+            <reference referencedUin="jdt:l_ast:src:Message:receiver">
+                <property name="sourceAnchor" value="283,152"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="400,152"/>
+            </reference>
+            <reference referencedUin="jdt:l_ast:src:Message:lnkReceiver">
+                <property name="sourceAnchor" value="254,157"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="380,157"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference3" referencedUin="jdt:e_class:src:Receiver">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="400,110,134,91"/>
+            <reference referencedUin="jdt:l_ast:src:Receiver:messages">
+                <property name="sourceAnchor" value="400,176"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="283,176"/>
+                <reference referencedUin="linklabel:supplierCardinality:jdt:l_ast:src:Receiver:messages">
+                    <property name="bounds" value="287,156,26,16"/>
+                    <property name="bounds_setted_by_user" value="true"/>
+                </reference>
+            </reference>
+        </reference>
+    </view>
+</nodeSet>

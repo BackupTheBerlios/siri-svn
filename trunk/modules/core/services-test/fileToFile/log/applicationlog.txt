@@ -1,0 +1,611 @@
+2004-07-08 17:24:39;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:24:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:25:19;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:25:39;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:25:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:26:19;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:26:39;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:26:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:27:19;DEBUG;QuartzWorkerThread-6;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:27:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:27:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:28:29;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:28:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:28:44;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089300524795_488238415.txt;
+2004-07-08 17:28:59;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:29:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:29:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:29:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:30:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:30:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:30:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:31:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:31:37;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:31:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:31:49;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:32:00;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:32:20;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:32:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:32:40;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089300760530_222008419.txt;
+2004-07-08 17:32:59;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:44:33;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:44:40;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:44:53;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089301493592_1344441630.txt;
+2004-07-08 17:44:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:45:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:45:23;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089301523530_456950396.txt;
+2004-07-08 17:45:39;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:45:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:46:20;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:46:21;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:46:30;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089301590905_1986583267.txt;
+2004-07-08 17:46:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:46:59;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:47:00;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089301620873_845753418.txt;
+2004-07-08 17:47:20;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:49:28;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-08 17:49:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11089301784123_887541040.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (2) of c2kmup_RCF.xml.11089301784248_1525379372.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (3) of c2kmup_RCF.xml.11089301784280_678962851.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (4) of c2kmup_RCF.xml.11089301784342_1826976820.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (5) of c2kmup_RCF.xml.11089301784405_2094198074.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (6) of c2kmup_RCF.xml.11089301784451_1638151548.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy (7) of c2kmup_RCF.xml.11089301784498_687394985.txt;
+2004-07-08 17:49:44;INFO;Thread-5;filetest-filetest;Message copied Copy of c2kmup_RCF.xml.11089301784530_1804002163.txt;
+2004-07-08 17:49:49;INFO;Thread-5;filetest-filetest;Message copied Copy (2) of c2kmup_RCF.xml.11089301789045_2116367532.txt;
+2004-07-08 17:49:49;INFO;Thread-5;filetest-filetest;Message copied Copy (8) of c2kmup_RCF.xml.11089301789076_1658847690.txt;
+2004-07-08 17:49:54;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 10;
+2004-07-08 17:49:54;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 1
+;
+2004-07-08 17:49:59;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:50:19;DEBUG;QuartzWorkerThread-3;filetest-filetest;We got errors;
+2004-07-08 17:50:19;DEBUG;QuartzWorkerThread-3;filetest-filetest;First time we handle an error we send a error notification;
+2004-07-08 17:50:19;INFO;QuartzWorkerThread-3;filetest-filetest;filetest-filetest - trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/template/emailerrornotification.xml;
+2004-07-08 17:50:22;INFO;QuartzWorkerThread-3;filetest-filetest;Trying to copy files from error folder. Size : 18;
+2004-07-08 17:50:22;INFO;QuartzWorkerThread-3;filetest-filetest;Copied number of error files to infolder. Size : 18;
+2004-07-08 17:50:24;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 36;
+2004-07-08 17:50:24;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 2
+;
+2004-07-08 17:50:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;We got errors;
+2004-07-08 17:50:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;Do not send any error notification - to early or not ON. lastDateOfNotification = 2004-07-08 timeBetweenErrorNotificationsMilliseconds : 180000;
+2004-07-08 17:50:40;INFO;QuartzWorkerThread-9;filetest-filetest;Trying to copy files from error folder. Size : 18;
+2004-07-08 17:50:40;INFO;QuartzWorkerThread-9;filetest-filetest;Copied number of error files to infolder. Size : 18;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.04478749132763604.txt1088598722215_1221459779.txt1089301844061_1111174840.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.04790891948431086.txt1088599802387_1375534024.txt1089301844108_1883097086.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.3892500415879492.txt1088598602168_72458591.txt1089301844139_1911015745.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.4557643238043274.txt1088599982481_644782748.txt1089301844186_1949777930.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5111369999723656.txt1088599682387_833785102.txt1089301844233_1756470079.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5216941848348342.txt1088599202340_816483740.txt1089301844264_182790653.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5579643960346831.txt1088598662215_1961800430.txt1089301844311_800008515.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5761153231885809.txt1088599922434_595468688.txt1089301844358_775225646.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5764998852189586.txt1088599802418_1127460628.txt1089301844389_1288246765.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.5879679298706475.txt1088599022387_179286937.txt1089301844436_1822757092.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6097454151818803.txt1088599682418_1719987393.txt1089301844483_2014272370.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6157254058379845.txt1088598662246_1701511806.txt1089301844514_1715687793.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6261953075740838.txt1088598962340_1114639911.txt1089301844561_221238645.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6433005285889549.txt1088598482184_42170444.txt1089301844592_1800090856.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6503087604586928.txt1088599202387_1246185105.txt1089301844639_293958298.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6567935007073443.txt1088599322371_340626936.txt1089301844686_556544049.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6624952653317421.txt1088598422121_606865077.txt1089301844748_1580482238.txt;
+2004-07-08 17:50:44;INFO;Thread-5;filetest-filetest;Message copied 0.6703353562394956.txt1088598602200_30770530.txt1089301844811_127159545.txt;
+2004-07-08 17:50:54;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 18;
+2004-07-08 17:50:54;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 3
+;
+2004-07-08 17:51:00;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.0011385437069598714.txt1088599142340_794139082.txt1089301869108_1216126719.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.008975607813439757.txt1088598782293_1794200562.txt1089301869155_164902797.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.013134679948047734.txt1088598482153_1764605398.txt1089301869186_1539165539.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.021062193414873365.txt1088598542153_50319890.txt1089301869233_833571810.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.036595811397718836.txt1088599262340_1617354694.txt1089301869280_518242755.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.03784002581908397.txt1088599622387_958137007.txt1089301869326_1610452971.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.04478749132763604.txt1088598722215_1221459779.txt1089301869373_638237461.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.04790891948431086.txt1088599802387_1375534024.txt1089301869420_1619454065.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.060294798326564925.txt1088598362121_867821611.txt1089301869467_849940208.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.08224233227276767.txt1088599322340_2041733180.txt1089301869514_1631948511.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.08425513727541689.txt1088598962293_2050641770.txt1089301869561_1730579624.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.0862067302096664.txt1088598542200_2129764884.txt1089301869608_684200405.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.10101912733540164.txt1088598722246_1208620882.txt1089301869655_454291076.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.11397201521082367.txt1088599382340_1269332443.txt1089301869701_1167280834.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.1178557993917212.txt1088598722278_631789615.txt1089301869748_2002612501.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.12852467504428733.txt1088599082325_639486074.txt1089301869795_208042831.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.13472427443538837.txt1088598842293_725217438.txt1089301869826_837325793.txt;
+2004-07-08 17:51:09;INFO;Thread-5;filetest-filetest;Message copied 0.16180415928663483.txt1088599022309_1675711179.txt1089301869889_438736879.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.16242397412874665.txt1088598902293_1859816774.txt1089301869936_1366059135.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.17116647849322952.txt1088515193528_1020785345.txt1089301870030_161126623.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.1809540104919255.txt1088600042387_238782884.txt1089301870092_41244881.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.21116118173743648.txt1088599742387_578869852.txt1089301870155_1097695558.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.21535484078040212.txt1088599262387_498140425.txt1089301870201_520107914.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.22131417687223176.txt1088599622434_1865362272.txt1089301870248_502502175.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.2650414404897624.txt1088598302106_1851281607.txt1089301870326_1931193331.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.2673490824218959.txt1088598302137_2145119465.txt1089301870420_1505761747.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.26806635191386874.txt1088598362153_486723623.txt1089301870483_1066967263.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.2713901190401138.txt1088599982403_459137254.txt1089301870530_2056605510.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.2831011646917504.txt1088598902325_860796892.txt1089301870623_138840732.txt;
+2004-07-08 17:51:10;INFO;Thread-5;filetest-filetest;Message copied 0.29252597102725075.txt1088598782340_2098428211.txt1089301870858_872580189.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.29374782417106926.txt1088599862387_2069273377.txt1089301870905_1430369330.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.30797129663281375.txt1088598842340_1875057340.txt1089301871030_272381039.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.30809495858907887.txt1088599382387_1379191704.txt1089301871092_602577712.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.31904716980158376.txt1088599982450_1305685427.txt1089301871139_254031784.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.3212112455466568.txt1088599922403_1507604469.txt1089301871186_1954985880.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.3276344487108307.txt1088599442340_2059840696.txt1089301871233_179421470.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.3402118263287952.txt1088599142387_416320615.txt1089301871280_1295466858.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.36989054327766.txt1088600042418_1902912067.txt1089301871326_1618213902.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.3723579182067457.txt1088598842387_490993089.txt1089301871373_1965183890.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.37821797920776246.txt1088599862434_1837970075.txt1089301871436_247074634.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.37869206971555947.txt1088598362184_1301543238.txt1089301871467_30322639.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.3892500415879492.txt1088598602168_72458591.txt1089301871530_1686886309.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.39061936506042505.txt1088599022340_1497300807.txt1089301871576_147719293.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.39209449815552666.txt1088515193621_2075434962.txt1089301871623_2123498199.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.40623216365881587.txt1088599262418_711310111.txt1089301871655_948618287.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.42641274561917963.txt1088599442371_743152845.txt1089301871701_716821024.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.43003673394394004.txt1088599742434_94645211.txt1089301871733_2001569604.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.43507950084283054.txt1088515193653_1764502594.txt1089301871780_1664564757.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.4557643238043274.txt1088599982481_644782748.txt1089301871826_887991341.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.47941802452616844.txt1089213429076_1681908775.txt1089301871858_1660034143.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.5111369999723656.txt1088599682387_833785102.txt1089301871905_2026433046.txt;
+2004-07-08 17:51:11;INFO;Thread-5;filetest-filetest;Message copied 0.5216941848348342.txt1088599202340_816483740.txt1089301871951_485599298.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.5579643960346831.txt1088598662215_1961800430.txt1089301871983_89070318.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.5761153231885809.txt1088599922434_595468688.txt1089301872030_1102286925.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.5764998852189586.txt1088599802418_1127460628.txt1089301872076_305059111.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.5879679298706475.txt1088599022387_179286937.txt1089301872123_1680523909.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6097454151818803.txt1088599682418_1719987393.txt1089301872155_893083073.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6157254058379845.txt1088598662246_1701511806.txt1089301872217_1662573902.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6261953075740838.txt1088598962340_1114639911.txt1089301872248_168469681.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6433005285889549.txt1088598482184_42170444.txt1089301872483_505198783.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6503087604586928.txt1088599202387_1246185105.txt1089301872514_1014764920.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6567935007073443.txt1088599322371_340626936.txt1089301872623_649498526.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6624952653317421.txt1088598422121_606865077.txt1089301872670_1937938621.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6703353562394956.txt1088598602200_30770530.txt1089301872717_1647259096.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6728019340593326.txt1088515193731_559315898.txt1089301872748_400634487.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6755415736533641.txt1089213429326_676694225.txt1089301872811_604304342.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.67981407267828.txt1088599622465_81902858.txt1089301872842_1699493933.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.6940931434702825.txt1088599862481_1475025231.txt1089301872889_1248074729.txt;
+2004-07-08 17:51:12;INFO;Thread-5;filetest-filetest;Message copied 0.695153791286691.txt1088598302168_1974136337.txt1089301872936_1244862580.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.6996780773344429.txt1088599202418_154117019.txt1089301872967_381816041.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7018950833059608.txt1088598782371_1133494772.txt1089301873014_2058394295.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7158835798373975.txt1088599562387_81894797.txt1089301873061_1119571358.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7176507087250614.txt1088598902356_1174323464.txt1089301873108_524724928.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7540252196518534.txt1088599322418_905492652.txt1089301873170_711727403.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7542339979053735.txt1088599082371_806272419.txt1089301873201_222498199.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7639409106662373.txt1088598422153_90994278.txt1089301873248_571252658.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7685736282625381.txt1088515193762_1546973339.txt1089301873280_1137706827.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7750718447348077.txt1088599502387_2075318290.txt1089301873326_2038769064.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7794209483515068.txt1088598542231_120672851.txt1089301873358_106890230.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.780845877861373.txt1088599082403_550055921.txt1089301873405_1078491599.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7895356744474041.txt1088598602231_897119604.txt1089301873436_943137541.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.795368289117855.txt1088599562434_883717947.txt1089301873483_527642316.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.7968356595311149.txt1088599502434_1459977281.txt1089301873514_1811976571.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8073151281273515.txt1088599802465_1087419063.txt1089301873561_1684474579.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8165859169118687.txt1088598242090_845670689.txt1089301873592_519974144.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8180331034255398.txt1088599442403_684989003.txt1089301873639_732096496.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8193740398195999.txt1088599562465_845216444.txt1089301873670_755875789.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8253700364958271.txt1088599142434_1956605417.txt1089301873717_1423412050.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.837790853205934.txt1088599682450_1499371940.txt1089301873748_107831972.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8539932602176673.txt1088515193793_1801734711.txt1089301873811_218085305.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.8785172185056993.txt1088599502481_573625608.txt1089301873842_1039685869.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.882529424083405.txt1088598962371_1537045851.txt1089301873889_998106975.txt;
+2004-07-08 17:51:13;INFO;Thread-5;filetest-filetest;Message copied 0.9006572159589733.txt1088599382418_594082442.txt1089301873920_731648947.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9091697241628269.txt1088599922465_113938741.txt1089301873983_123863670.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9392388314189564.txt1089213429373_1666086315.txt1089301874030_176410800.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9633981526617037.txt1088598662278_1166633220.txt1089301874076_871512396.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9736018868066326.txt1088598482231_141121165.txt1089301874108_2060436893.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9789641283869689.txt1088598422200_659909339.txt1089301874155_613385197.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9843895797608767.txt1088515193825_1826840053.txt1089301874186_200593003.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.9948129837854651.txt1088600042465_24266852.txt1089301874248_1342508247.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied 0.997099272899676.txt1088599742465_702410071.txt1089301874295_135923834.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803446856_594022160.txt1089301874373_1590604703.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803486746_1687501801.txt1089301874420_1785893132.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803496731_296613581.txt1089301874451_684613935.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803506731_945510722.txt1089301874498_1889587804.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803511746_1283549194.txt1089301874530_1071975703.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803516746_471001458.txt1089301874576_1928008268.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803526762_784170462.txt1089301874608_1084597596.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803531746_2146204818.txt1089301874655_2028620945.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803541746_774037038.txt1089301874701_1940628091.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803546762_1324118556.txt1089301874733_343521354.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803551746_56940015.txt1089301874764_1698523927.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803556746_576201665.txt1089301874811_1543812950.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803561746_740138690.txt1089301874858_570703936.txt;
+2004-07-08 17:51:14;INFO;Thread-5;filetest-filetest;Message copied c2kmup_RCF.xml.11084803566746_369197659.txt1089301874889_163977202.txt;
+2004-07-08 17:51:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:51:24;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 115;
+2004-07-08 17:51:24;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 4
+;
+2004-07-08 17:51:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:51:55;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:51:55;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 5
+;
+2004-07-08 17:51:59;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:52:19;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:52:25;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:52:25;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 6
+;
+2004-07-08 17:52:39;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:52:55;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:52:55;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 7
+;
+2004-07-08 17:52:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:53:19;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:53:25;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:53:25;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 8
+;
+2004-07-08 17:53:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:53:55;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:53:55;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 9
+;
+2004-07-08 17:53:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:54:19;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:54:25;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:54:25;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 10
+;
+2004-07-08 17:54:39;DEBUG;QuartzWorkerThread-3;filetest-filetest;No files in error folder for resending;
+2004-07-08 17:54:55;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-08 17:54:55;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 11
+;
+2004-07-08 17:54:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:29:51;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-09 13:30:00;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:30:16;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:30:16;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 1
+;
+2004-07-09 13:30:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:30:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:30:46;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:30:46;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 2
+;
+2004-07-09 13:30:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:31:16;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:31:16;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 3
+;
+2004-07-09 13:31:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:31:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:31:46;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:31:46;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 4
+;
+2004-07-09 13:31:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:32:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:32:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 5
+;
+2004-07-09 13:32:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:32:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:32:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:32:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 6
+;
+2004-07-09 13:32:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:33:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:33:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 7
+;
+2004-07-09 13:33:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:33:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:33:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:33:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 8
+;
+2004-07-09 13:33:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:34:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:34:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 9
+;
+2004-07-09 13:34:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:34:41;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:34:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:34:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 10
+;
+2004-07-09 13:34:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:35:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:35:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 11
+;
+2004-07-09 13:35:19;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:35:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:35:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:35:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 12
+;
+2004-07-09 13:35:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:36:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:36:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 13
+;
+2004-07-09 13:36:19;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:36:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:36:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:36:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 14
+;
+2004-07-09 13:36:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:37:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:37:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 15
+;
+2004-07-09 13:37:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:37:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:37:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:37:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 16
+;
+2004-07-09 13:37:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:38:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:38:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 17
+;
+2004-07-09 13:38:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:38:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:38:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:38:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 18
+;
+2004-07-09 13:38:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:39:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:39:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 19
+;
+2004-07-09 13:39:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:39:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:39:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:39:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 20
+;
+2004-07-09 13:39:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:40:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:40:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 21
+;
+2004-07-09 13:40:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:40:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:40:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:40:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 22
+;
+2004-07-09 13:40:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:41:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:41:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 23
+;
+2004-07-09 13:41:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:41:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:41:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:41:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 24
+;
+2004-07-09 13:41:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:42:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:42:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 25
+;
+2004-07-09 13:42:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:42:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:42:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:42:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 26
+;
+2004-07-09 13:42:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:43:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:43:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 27
+;
+2004-07-09 13:43:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:43:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:43:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:43:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 28
+;
+2004-07-09 13:43:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:44:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:44:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 29
+;
+2004-07-09 13:44:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:44:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:44:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:44:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 30
+;
+2004-07-09 13:44:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:45:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:45:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 31
+;
+2004-07-09 13:45:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:45:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:45:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:45:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 32
+;
+2004-07-09 13:45:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:46:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:46:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 33
+;
+2004-07-09 13:46:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:46:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:46:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:46:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 34
+;
+2004-07-09 13:46:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:47:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:47:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 35
+;
+2004-07-09 13:47:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:47:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:47:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:47:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 36
+;
+2004-07-09 13:47:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:48:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:48:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 37
+;
+2004-07-09 13:48:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:48:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:48:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:48:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 38
+;
+2004-07-09 13:48:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:49:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:49:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 39
+;
+2004-07-09 13:49:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:49:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:49:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:49:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 40
+;
+2004-07-09 13:49:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:50:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:50:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 41
+;
+2004-07-09 13:50:19;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:50:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:50:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:50:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 42
+;
+2004-07-09 13:50:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:51:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:51:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 43
+;
+2004-07-09 13:51:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:51:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:51:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:51:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 44
+;
+2004-07-09 13:51:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:52:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:52:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 45
+;
+2004-07-09 13:52:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:52:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:52:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:52:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 46
+;
+2004-07-09 13:52:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:53:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:53:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 47
+;
+2004-07-09 13:53:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:53:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:53:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:53:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 48
+;
+2004-07-09 13:53:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:54:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:54:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 49
+;
+2004-07-09 13:54:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:54:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:54:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:54:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 50
+;
+2004-07-09 13:54:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:55:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:55:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 51
+;
+2004-07-09 13:55:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:55:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:55:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:55:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 52
+;
+2004-07-09 13:55:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:56:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:56:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 53
+;
+2004-07-09 13:56:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:56:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:56:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:56:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 54
+;
+2004-07-09 13:56:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:57:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:57:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 55
+;
+2004-07-09 13:57:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:57:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:57:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:57:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 56
+;
+2004-07-09 13:58:00;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:58:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:58:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 57
+;
+2004-07-09 13:58:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:58:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:58:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:58:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 58
+;
+2004-07-09 13:58:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:59:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:59:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 59
+;
+2004-07-09 13:59:19;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:59:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-09 13:59:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 13:59:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 60
+;
+2004-07-09 14:00:00;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:00:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:00:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 61
+;
+2004-07-09 14:00:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:00:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:00:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:00:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 62
+;
+2004-07-09 14:00:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:01:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:01:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 63
+;
+2004-07-09 14:01:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:01:39;DEBUG;QuartzWorkerThread-2;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:01:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:01:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 64
+;
+2004-07-09 14:01:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:02:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:02:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 65
+;
+2004-07-09 14:02:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:02:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:02:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:02:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 66
+;
+2004-07-09 14:02:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:03:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:03:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 67
+;
+2004-07-09 14:03:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:03:39;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:03:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:03:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 68
+;
+2004-07-09 14:03:59;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:04:17;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:04:17;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 69
+;
+2004-07-09 14:04:19;DEBUG;QuartzWorkerThread-1;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:04:39;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:04:47;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:04:47;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 70
+;
+2004-07-09 14:04:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:05:18;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-09 14:05:18;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 71
+;
+2004-07-09 14:05:19;DEBUG;QuartzWorkerThread-2;filetest-filetest;No files in error folder for resending;
+2004-07-09 14:05:40;DEBUG;QuartzWorkerThread-2;filetest-filetest;No files in error folder for resending;
+2004-07-12 16:21:25;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-12 16:21:40;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-12 16:21:50;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-12 16:21:50;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 1
+;
+2004-07-12 16:21:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:14:57;INFO;main;;Starting error handler thread for service : 0/20 * * * * ?;
+2004-07-13 12:15:00;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:15:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:15:22;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:15:22;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 1
+;
+2004-07-13 12:15:40;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:15:52;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:15:52;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 2
+;
+2004-07-13 12:15:59;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:16:19;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:16:22;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:16:22;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 3
+;
+2004-07-13 12:16:39;DEBUG;QuartzWorkerThread-9;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:16:52;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:16:52;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 4
+;
+2004-07-13 12:16:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:17:20;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:17:22;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:17:22;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 5
+;
+2004-07-13 12:17:39;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:17:52;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:17:52;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 6
+;
+2004-07-13 12:17:59;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:18:19;DEBUG;QuartzWorkerThread-8;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:18:22;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:18:22;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 7
+;
+2004-07-13 12:18:39;DEBUG;QuartzWorkerThread-0;filetest-filetest;No files in error folder for resending;
+2004-07-13 12:18:52;DEBUG;Thread-5;filetest-filetest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-07-13 12:18:52;DEBUG;Thread-5;filetest-filetest;filetest-filetest has size : 8
+;

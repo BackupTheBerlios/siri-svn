@@ -1,0 +1,107 @@
+<gxl><graph>
+	<node id="node3">
+		<attr name="Label">
+			<string>3</string>
+		</attr>
+	</node>
+	<node id="node2">
+		<attr name="Label">
+			<string>14</string>
+		</attr>
+	</node>
+	<node id="node5">
+		<attr name="Label">
+			<string>3</string>
+		</attr>
+	</node>
+	<node id="node0">
+		<attr name="Label">
+			<string>1</string>
+		</attr>
+	</node>
+	<node id="node4">
+		<attr name="Label">
+			<string>1</string>
+		</attr>
+	</node>
+	<node id="node1">
+		<attr name="Label">
+			<string>1</string>
+		</attr>
+	</node>
+	<edge id="edge0" from="node2" to="node3">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge1" from="node4" to="node3">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge2" from="node2" to="node1">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge3" from="node2" to="node0">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge4" from="node4" to="node5">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge5" from="node3" to="node5">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge6" from="node0" to="node5">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge7" from="node3" to="node1">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge8" from="node4" to="node1">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge9" from="node4" to="node0">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge10" from="node4" to="node2">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge11" from="node0" to="node1">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge12" from="node0" to="node3">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge13" from="node1" to="node5">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+	<edge id="edge14" from="node2" to="node5">
+		<attr name="Label">
+			<string></string>
+		</attr>
+	</edge>
+</graph></gxl>

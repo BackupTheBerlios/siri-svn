@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emailmessage  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:/gepo/mycvsprojects/iris/modules/xml-binding/src/schema/email.xsd" messagetype="email"
+    contenttype="text/html" messagecreatedate="1999-05-31T13:20:00.000-05:00" sender="IRISSERVICEERRORHANDLER" receiver="test_to_address_1"
+    smtpserver="tdvmail1" messagename="emailtest">
+	<toaddress>georges.polyzois@tradevision.net</toaddress>
+	<subject>Errors in service filetest </subject>
+	<bodymessage><![CDATA[Error files can not be sent]]></bodymessage>
+</emailmessage>

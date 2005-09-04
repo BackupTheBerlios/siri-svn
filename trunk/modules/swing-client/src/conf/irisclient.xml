@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<irisclient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:/gepo/mycvsprojects/iris/modules/swing-client/src/schema/irisclient.xsd">
+
+    <versioninfo>
+        <version>1.0.0</version>
+        <releasedate>2004-02-01</releasedate>
+        <developer>Georges Polyzois Wilhelm</developer>
+    </versioninfo>
+
+    <title>Iris client</title>
+    <pingservices>30000</pingservices>
+    <!-- path for development - look in maven repos-->
+    <lookandfeel>
+        <lookandfeelthemepath>C:/Documents and Settings/gepo/.maven/repository/lookandfeel/jars/</lookandfeelthemepath>
+        <!-- type>aqua</type-->
+        <!--type>kuhnstoff</type -->
+        <type>themepack</type>
+    </lookandfeel>
+    <irisserver>
+        <name>localdevelopment</name>
+        <description>Development local server</description>
+        <address>127.0.0.1</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//127.0.0.1/iris</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>test_preas01</name>
+        <description>Development local server</description>
+        <address>preas01</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//preas01/iris</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>prodserver_tdvas01</name>
+        <description>Live server</description>
+        <address>tdvas02</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//tdvas02/iris</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>TEST</name>
+        <description>TESTDESC</description>
+        <address>sdafklhasdjfh</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>rmi</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>TEST</name>
+        <description>station</description>
+        <address/>
+        <loggingport>4560</loggingport>
+        <rmiservice>//zeus2:1971/iris</rmiservice>
+    </irisserver>
+</irisclient>
+

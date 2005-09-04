@@ -1,0 +1,1387 @@
+2004-11-19 11:15:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:04;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:09;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:14;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:19;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:19;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:15:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:24;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:29;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:34;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:39;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:44;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:49;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:49;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:15:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:15:54;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:59;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:15:59;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:15:59;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:15:59;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:16:02;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:16:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:04;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:16:06;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:16:06;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:16:06;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:16:06;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:11;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:16;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:21;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:21;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:16:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:26;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:31;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:36;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:41;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:46;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:51;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:16:51;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:16:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:16:56;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:01;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:06;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:11;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:16;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:21;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:21;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:17:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:26;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:31;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:36;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:41;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:46;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:51;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:17:51;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:17:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:17:56;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:01;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:01;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:18:01;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:18:01;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:18:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:03;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:18:06;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:18:08;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:18:08;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:18:08;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:18:08;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:13;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:18;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:23;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:23;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:18:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:28;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:33;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:38;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:43;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:48;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:53;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:18:53;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:18:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:18:58;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:03;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:08;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:13;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:18;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:23;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:23;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:19:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:28;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:33;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:38;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:43;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:48;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:53;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:19:53;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:19:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:19:58;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:03;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:03;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:20:03;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:20:03;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:20:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:05;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:20:08;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:20:10;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:20:10;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:20:10;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:20:10;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:15;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:20;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:25;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:25;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:20:30;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:35;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:40;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:45;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:50;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:20:55;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:20:55;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:21:00;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:05;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:10;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:15;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:20;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:25;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:25;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:21:30;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:35;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:40;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:45;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:50;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:21:55;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:21:55;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:22:00;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:05;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:05;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:22:05;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:22:05;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:22:07;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:22:09;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:22:12;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:22:12;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:22:12;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:22:12;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:17;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:22;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:27;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:27;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:22:32;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:37;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:42;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:47;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:52;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:22:57;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:22:57;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:23:02;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:07;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:12;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:17;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:22;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:27;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:27;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:23:32;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:37;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:42;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:47;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:52;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:23:57;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:23:57;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:24:02;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:07;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:07;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:24:07;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:24:07;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:24:09;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:24:11;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:24:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:14;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:24:14;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:24:14;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:24:14;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:19;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:24;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:29;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:29;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:24:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:34;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:39;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:44;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:49;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:24:54;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:59;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:24:59;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:25:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:04;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:09;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:14;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:19;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:24;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:29;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:29;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:25:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:34;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:39;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:44;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:49;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:25:54;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:59;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:25:59;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:26:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:04;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:09;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:09;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:26:09;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:26:09;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:26:11;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:26:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:13;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:26:15;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:26:15;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:26:15;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:26:15;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:20;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:25;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:30;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:30;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:26:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:35;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:40;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:45;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:50;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:26:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:26:55;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:00;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:00;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:27:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:05;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:10;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:15;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:20;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:25;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:30;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:30;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:27:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:35;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:40;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:45;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:50;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:27:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:27:55;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:00;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:01;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:28:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:05;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:10;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:10;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:28:10;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:28:10;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:28:13;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:28:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:15;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:28:17;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:28:17;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:28:17;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:28:17;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:22;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:27;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:32;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:32;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:28:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:37;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:42;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:47;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:52;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:28:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:28:57;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:02;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:02;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:29:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:07;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:12;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:17;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:22;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:27;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:32;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:32;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:29:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:37;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:42;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:47;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:52;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:29:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:29:57;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:02;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:02;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:30:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:07;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:12;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:12;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:30:12;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:30:12;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:30:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:15;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:30:17;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:30:19;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:30:19;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:30:19;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:30:19;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:24;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:29;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:34;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:34;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:30:39;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:44;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:49;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:30:54;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:30:59;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:04;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:04;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:31:09;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:14;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:19;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:24;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:29;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:34;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:34;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:31:39;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:44;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:49;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:31:54;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:31:59;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:04;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:04;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:32:09;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:14;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:14;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:32:14;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:32:14;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:32:17;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:32:19;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:32:21;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:32:21;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:32:21;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:32:21;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:26;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:31;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:36;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:36;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:32:41;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:46;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:51;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:32:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:32:56;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:01;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:06;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:06;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:33:11;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:16;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:21;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:26;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:31;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:36;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:36;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:33:41;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:46;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:51;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:33:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:33:56;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:01;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:06;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:06;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:34:11;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:16;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:16;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:34:16;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:34:16;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:34:18;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:34:21;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:34:23;ERROR;Thread-5;fileemailtest;Failed sending email - retry over no more smtp servers configured;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:34:23;FATAL;Thread-5;fileemailtest;Trying to send email failed;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:34:23;ERROR;Thread-5;fileemailtest;Could not send an email alert Sending of email failed ;
+org.iris.server.messagehandlers.MessageHandlerException: Sending of email failed 
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:162)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+Original Exception:
+
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvms0111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvms0111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:34:23;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:28;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:33;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:38;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:38;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:34:43;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:48;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:53;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:34:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:34:58;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:03;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:08;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:08;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:35:13;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:18;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:23;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:23;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:28;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:33;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:33;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:38;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:38;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:35:43;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:43;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:48;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:53;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:35:53;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:35:58;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:36:03;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:36:03;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:36:08;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:36:08;DEBUG;Thread-5;fileemailtest;Creating log statt item and pushin on queue setting stattCounter to 0. Size : 0;
+2004-11-19 11:36:13;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:36:13;DEBUG;Thread-3;fileemailtest;No messages for email sending;
+2004-11-19 11:36:18;DEBUG;Thread-5;fileemailtest;LOG EVENT;
+2004-11-19 11:36:18;INFO;Thread-5;fileemailtest;Service idle for to long according to conf parameters. Preparing to send email.;
+2004-11-19 11:36:18;DEBUG;Thread-5;fileemailtest;Trying to send an email alert using file : C:/gepo/mycvsprojects/iris/modules/core-server/services-test/fileToEmail/template/erroronincativity.xml;
+2004-11-19 11:36:18;DEBUG;Thread-5;fileemailtest;Calling emailhandler to process and send email;
+2004-11-19 11:36:20;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail1;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail1
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)
+2004-11-19 11:36:23;ERROR;Thread-5;fileemailtest;Failed sending email - retrying with other smtp server;
+javax.mail.SendFailedException: Sending failed;
+  nested exception is: 
+	javax.mail.MessagingException: Unknown SMTP host: tdvmail111;
+  nested exception is: 
+	java.net.UnknownHostException: tdvmail111
+	at javax.mail.Transport.send0(Transport.java:219)
+	at javax.mail.Transport.send(Transport.java:81)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.sendEmail(InstantEmailMessageHandler.java:237)
+	at org.iris.server.messagehandlers.InstantEmailMessageHandler.handleMessage(InstantEmailMessageHandler.java:131)
+	at org.iris.server.filehandlers.FileMessageHandler.sendInactivityNotification(FileMessageHandler.java:546)
+	at org.iris.server.filehandlers.FileMessageHandler.isMessagesReceived(FileMessageHandler.java:517)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.readSendFiles(FileToEmailMessegeHandler.java:95)
+	at org.iris.server.filehandlers.FileToEmailMessegeHandler.run(FileToEmailMessegeHandler.java:85)
+	at java.util.TimerThread.mainLoop(Timer.java:432)
+	at java.util.TimerThread.run(Timer.java:382)

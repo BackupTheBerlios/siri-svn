@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="idhuk18e7smw8eme7sn1073">
+        <property name="$metaclass" value="Component Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference" referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="59,79,311,151"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw.nodeid9rw40e7smw8eme7sn185z:idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw">
+                <property name="bounds" value="21,51,120,60"/>
+            </reference>
+            <reference referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw.nodeid1i6g5e7smw8eme7sn1n09:idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw">
+                <property name="bounds" value="151,51,140,60"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference3" referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="429,85,177,40"/>
+            <reference referencedUin="design:link:::idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z.linkidjb1k7e7smw8eme7sn2h04:idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z">
+                <property name="sourceAnchor" value="429,105"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="370,105"/>
+            </reference>
+        </reference>
+    </view>
+    <node uin="idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw">
+        <property name="$metaclass" value="Subsystem"/>
+        <property name="$name" value="SiriXml"/>
+        <node uin="idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw.nodeid9rw40e7smw8eme7sn185z">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="XMLConfig"/>
+        </node>
+        <node uin="idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw.nodeid1i6g5e7smw8eme7sn1n09">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="XSLTransform"/>
+        </node>
+    </node>
+    <node uin="idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z">
+        <property name="$metaclass" value="Note"/>
+        <property name="$name" value="Note1"/>
+        <property name="$note_text" value="Jaxb used for configuration"/>
+        <link uin="idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z.linkidjb1k7e7smw8eme7sn2h04">
+            <participant role="Supplier" referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeid72gpte7smw8eme7sn12bw"/>
+            <participant role="Client" referencedUin="design:node:::idhuk18e7smw8eme7sn1073.nodeiddjrf0e7smw8eme7sn217z"/>
+            <property name="$metaclass" value="Note Link"/>
+        </link>
+    </node>
+</nodeSet>

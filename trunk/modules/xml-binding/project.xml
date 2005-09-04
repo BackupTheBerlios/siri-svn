@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project [
+<!ENTITY % locator SYSTEM "file:locator.ent">
+%locator;
+%versions;
+ ]>
+ 
+ 
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:\java\maven-1.0\maven-project.xsd">
+
+    <pomVersion>3</pomVersion>
+    <extend>${basedir}/../../etc/project.xml</extend>
+
+    <!-- ===================== -->
+    <!-- Module Identification -->
+    <!-- ===================== -->
+    <name>Iris :: Xml binding</name>
+    <id>siri-xml-binding</id>
+    <shortDescription>Binds java tro xml and vice versa</shortDescription>
+    <description>We are using jaxb as the xml binding framework. Source of binding 
+	is the schema file which is parsed and thereafter the java files are compiled
+	to an arifact used by the client and server of the system.</description>
+    <url>http://www.foobar.com</url>
+    <siteDirectory>/etc/staging</siteDirectory>
+    <distributionDirectory>/siri/builds/naming</distributionDirectory>
+    <package>siri.*</package>
+
+    <developers>
+        <developer>
+            <name>Georges Polyzois</name>
+            <id>gepo</id>
+            <email>gepo@ring.com</email>
+        </developer>
+    </developers>
+
+	
+    <!-- ===================== -->
+    <!-- Dependency section    -->
+    <!-- ===================== -->
+    <dependencies/>
+
+    <!-- ===================== -->
+    <!-- Build section    -->
+    <!-- ===================== -->
+    <build>
+        <nagEmailAddress>gep01@yahoo.com</nagEmailAddress>
+        <sourceDirectory>
+            ${basedir}/src/java
+        </sourceDirectory>
+        <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+        <unitTest>
+            <includes>
+                <include>**/*Test.java</include>
+            </includes>
+            <!--excludes>
+                <exclude>**/NaughtyTest.java</exclude>
+            </excludes-->
+        </unitTest>
+        <resources>
+            <resource>
+                <directory>${maven.build.dir}/${jaxb.src.outdir}</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.ser</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+  
+</project>

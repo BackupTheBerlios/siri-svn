@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="Vuobnmje99s5f1c-p18y4v">
+        <property name="$defaultDiagram" value="true"/>
+        <property name="$metaclass" value="Class Diagram"/>
+        <property name="$defaultDiagram" value=""/>
+        <property name="@__options" value="toolbar.group.#DEFAULT.expanded = true&#xA;toolbar.buttonRunCount = 2&#xA;option.layout.recursive = false&#xA;toolbar.group.pattern.expanded = true&#xA;toolbar.group.ocl.expanded = true&#xA;toolbar.group.note.expanded = true&#xA;scrollX = 0&#xA;scrollY = 0&#xA;zoomFactor = 1.0&#xA;"/>
+        <reference referencedUin="design:view:::Vuobnmje99t3g0bj8vtkl">
+            <property name="@location_set_by_user" value="true"/>
+            <property name="bounds" value="20,20,80,66"/>
+        </reference>
+    </view>
+</nodeSet>

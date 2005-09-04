@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<emailmessage  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="C:/gepo/mycvsprojects/iris/modules/xml-binding/src/schema/email.xsd" messagetype="email"
+    contenttype="text/html" messagecreatedate="1999-05-31T13:20:00.000-05:00" sender="gpolyzois@descartes.com" receiver="test_to_address_1"
+    smtpserver="tdvmail1" messagename="irisemailtest">
+	<toaddress>gpolyzois@descartes.com</toaddress>
+	<subject>Incativity warning on service : filetest</subject>
+	<bodymessage><![CDATA[Inactivity warning generated because to messages received in configured time frame. Check settings,]]></bodymessage>
+</emailmessage>

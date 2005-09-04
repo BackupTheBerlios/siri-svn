@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="Vuobnmje99t3g0bj8vtkl">
+        <property name="$defaultDiagram" value="true"/>
+        <property name="$metaclass" value="Class Diagram"/>
+        <property name="$defaultDiagram" value=""/>
+        <property name="@__options" value="toolbar.group.#DEFAULT.expanded = true&#xA;toolbar.buttonRunCount = 2&#xA;option.layout.recursive = false&#xA;toolbar.group.pattern.expanded = true&#xA;toolbar.group.ocl.expanded = true&#xA;toolbar.group.note.expanded = true&#xA;scrollX = 0&#xA;scrollY = 0&#xA;zoomFactor = 1.0&#xA;"/>
+        <reference referencedUin="jdt:e_class:src:org.siri.swing.FatView">
+            <property name="@location_set_by_user" value="true"/>
+            <property name="bounds" value="10,10,200,381"/>
+            <reference referencedUin="jdt:l_ast:src:org.siri.swing.FatView:_frame">
+                <property name="@location_set_by_user" value="false"/>
+                <property name="sourceAnchor" value="210,386"/>
+                <property name="bendpoints" value="240,386,240,421,206,421"/>
+                <property name="targetAnchor" value="206,391"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+        </reference>
+    </view>
+</nodeSet>

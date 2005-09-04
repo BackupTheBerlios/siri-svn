@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <link uin="id4uhd6e7smw8eme7sn5af6.linkid5f5m1e7smw8eme7spr1mj">
+        <participant role="Supplier" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd2:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08"/>
+        <participant role="Client" referencedUin="design:view:::id4uhd6e7smw8eme7sn5af6"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <view uin="id4uhd6e7smw8eme7sn5af6">
+        <property name="$metaclass" value="Component Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference7" referencedUin="design:node:::id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="185,278,415,262"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f.nodeid4c3ehe7smw8eme7sn5hhi:id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f">
+                <property name="bounds" value="45,72,220,100"/>
+                <property name="bounds_setted_by_user" value="true"/>
+                <reference referencedUin="design:node:::id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f.nodeid4c3ehe7smw8eme7sn5hhi.nodeid6sks9e7smw8eme7ssknjv:id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f.nodeid4c3ehe7smw8eme7sn5hhi:id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f">
+                    <property name="bounds" value="44,30,92,46"/>
+                </reference>
+            </reference>
+        </reference>
+    </view>
+    <node uin="id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f">
+        <property name="$metaclass" value="Subsystem"/>
+        <property name="$name" value="SiriJ2EE"/>
+        <node uin="id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f.nodeid4c3ehe7smw8eme7sn5hhi">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="SiriEar"/>
+            <node uin="id4uhd6e7smw8eme7sn5af6.nodeid9uknde7smw8eme7sn5m2f.nodeid4c3ehe7smw8eme7sn5hhi.nodeid6sks9e7smw8eme7ssknjv">
+                <property name="$metaclass" value="Component"/>
+                <property name="@stereotype" value="interface"/>
+                <property name="$name" value="SiriGuiInterface"/>
+            </node>
+        </node>
+    </node>
+</nodeSet>

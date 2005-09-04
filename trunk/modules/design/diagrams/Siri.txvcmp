@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="idd1uj9e7smw8eme7sn35r6">
+        <property name="$metaclass" value="Component Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference" referencedUin="design:node:::idd1uj9e7smw8eme7sn35r6.nodeid19n0he7smw8eme7sn3ejl">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="90,30,482,355"/>
+            <property name="bounds_setted_by_user" value="true"/>
+        </reference>
+        <reference df-class-name="reference4" referencedUin="design:view:::idh1tage7re8sage7rf1gm3">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="160,110,65,72"/>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid9wgwbe7smw8eme7sn4s25">
+                <property name="sourceAnchor" value="197,182"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="197,230"/>
+            </reference>
+            <reference referencedUin="design:link:::idh1tage7re8sage7rf1gm3.linkid32edse7smw8eme7sn6t0v">
+                <property name="sourceAnchor" value="225,146"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="320,146"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference5" referencedUin="design:view:::id8j4w9e7re8sage7rnpkoc">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="330,240,56,72"/>
+            <reference referencedUin="design:link:::id8j4w9e7re8sage7rnpkoc.linkidezcyie7smw8eme7sn6xou">
+                <property name="sourceAnchor" value="358,240"/>
+                <property name="bendpoints" value=""/>
+                <property name="targetAnchor" value="358,182"/>
+            </reference>
+        </reference>
+        <reference df-class-name="reference6" referencedUin="design:view:::idhuk18e7smw8eme7sn1073">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="170,230,60,88"/>
+        </reference>
+        <reference df-class-name="reference8" referencedUin="design:view:::id4uhd6e7smw8eme7sn5af6">
+            <property name="$shortcutReference" value="true"/>
+            <property name="$imported" value=""/>
+            <property name="bounds" value="320,110,66,72"/>
+        </reference>
+    </view>
+    <node uin="idd1uj9e7smw8eme7sn35r6.nodeid19n0he7smw8eme7sn3ejl">
+        <property name="$metaclass" value="Subsystem"/>
+        <property name="$name" value="Siri"/>
+    </node>
+</nodeSet>

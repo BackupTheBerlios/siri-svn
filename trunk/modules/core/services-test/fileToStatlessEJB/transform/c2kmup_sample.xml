@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<C2kMilestoneUpdate version="4" href="c2kmup_to_csv.xsl">
+	<Ref>
+		<CDMP>TDV</CDMP>
+		<Reference>125-96309824_REF</Reference>
+		<Timestamp>2003-10-09T12:49:51:10_TIMESTAMP</Timestamp>
+	</Ref>
+	<AirlinePrefix>125_AIRLINEPREFIX</AirlinePrefix>
+	<AWBSerialNumber>96309824_AWBSERIAL</AWBSerialNumber>
+	<Milestone>RCF</Milestone>
+	<MilestoneStation>MSSTATION</MilestoneStation>
+	<Carrier>CARRIER</Carrier>
+	<FlightNumber>BA006_FLIGHTNUMBER</FlightNumber>
+	<PiecesReported>54_PIECESREPROTED</PiecesReported>
+	<WeightReported>
+		<Amount>15156_AMOUNT</Amount>
+		<Code>K_CODE</Code>
+	</WeightReported>
+	<VolumeReported>
+			<Amount></Amount>
+			<Code></Code>
+	</VolumeReported>
+	<MessageReceiptTime>2003-09-14T16:30:00_MSGREC</MessageReceiptTime>
+	<MilestoneReportedTime>2003-02-17T20:30:00_MSGREPORTED</MilestoneReportedTime>
+	<CompletionIndicator>123_COMPINDIC</CompletionIndicator>
+	<StatusMessage>123_STATUSMSG</StatusMessage>
+</C2kMilestoneUpdate>

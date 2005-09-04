@@ -1,0 +1,75 @@
+<!-- maven.xml -->
+<project xmlns:ant="jelly:ant" xmlns:j="jelly:core" xmlns:maven="jelly:maven">
+    
+    <!-- release goal is set as default for this project -->
+    <goal name="release">
+        <attainGoal name="jar:install"/>
+    </goal>
+
+    <goal name="jaxb:prepare-filesystem" description="Make any necessary directories for jaxb processing">
+        <ant:mkdir dir="${maven.build.dir}/jaxb-generated/org/iris/xml/server"/>
+        <ant:mkdir dir="${maven.build.dir}/jaxb-generated/org/iris/xml/messages"/>
+	<ant:mkdir dir="${maven.build.dir}/jaxb-generated/org/iris/client/settings/xml"/>
+    </goal>
+
+    <preGoal name="java:compile">
+        <attainGoal name="jaxb:prepare-filesystem"/>
+        <!--
+        Is iris config and email xsd files newer than src files -> regenerated all source
+        files to reflect schema changes
+	-->
+        <echo>[iris.xsd] Checking if we should invoke jaxb to generate new src files</echo>
+        <ant:uptodate property="generateJaxbSourceForIrisXsd" targetfile="${basedir}/src/schema/iris.xsd">
+            <srcfiles dir="${maven.build.dir}/${jaxb.src.outdir}/org/iris/xml/server" includes="**/*.java"/>
+        </ant:uptodate>
+        <j:choose>
+            <j:when test="${generateJaxbSourceForIrisXsd}">
+                <echo>[iris.xsd] Invoking JAXB to regenerate source:</echo>
+                <exec dir="${basedir}/src/schema" executable="${java.jaxb.generator}" os="${ant.os.exec}" >
+                    <arg line="iris.xsd -d ${maven.build.dir}/${jaxb.src.outdir} -p org.iris.xml.server.settings"/>
+                </exec>
+            </j:when>
+            <j:otherwise>
+                <echo message="[iris.xsd] JAXB generation not necessairy source files newer than xsd file"/>
+            </j:otherwise>
+        </j:choose>
+
+        <echo>[email.xsd] Checking if we should invoke jaxb to generate new src files</echo>
+        <ant:uptodate property="generateJaxbSourceForEmailXsd" targetfile="${basedir}/src/schema/email.xsd">
+            <srcfiles dir="${maven.build.dir}/jaxb-generated/org/iris/xml/messages" includes="**/*.java"/>
+        </ant:uptodate>
+        <j:choose>
+            <j:when test="${generateJaxbSourceForEmailXsd}">
+                <echo>[email.xsd] Invoking JAXB to regenerate source:</echo>
+                <exec dir="${basedir}/src/schema" executable="${java.jaxb.generator}" os="${ant.os.exec}" >
+                    <arg line="email.xsd -d ../../target/jaxb-generated -p org.iris.xml.messages.email.generated"/>
+                </exec>
+            </j:when>
+            <j:otherwise>
+                <echo message="[email.xsd] JAXB generation not necessairy source files newer than xsd file"/>
+            </j:otherwise>
+        </j:choose>
+
+        <echo>[irisclient.xsd] Checking if we should invoke jaxb to generate new src files</echo>
+		<ant:uptodate property="generateJaxbSourceForIrisClientXsd" targetfile="${basedir}/src/schema/irisclient.xsd">
+            <srcfiles dir="${maven.build.dir}/jaxb-generated/org/iris/client/settings/xml" includes="**/*.java"/>
+        </ant:uptodate>
+        <j:choose>
+            <j:when test="${generateJaxbSourceForIrisClientXsd}">
+                <echo>[irisclient.xsd] Invoking JAXB to regenerate source:</echo>
+                <exec dir="${basedir}/src/schema" executable="${java.jaxb.generator}" os="${ant.os.exec}" >
+					<arg line="irisclient.xsd -d ../../target/jaxb-generated -p org.iris.client.settings.xml"/>
+                </exec>
+            </j:when>
+            <j:otherwise>
+                <echo message="[irisclient.xsd] JAXB generation not necessairy source files newer than xsd file"/>
+            </j:otherwise>
+        </j:choose>
+	
+        <!--
+        Append to maven src set
+        -->
+        <ant:path id="maven.jaxb.compile.src.set" location="${maven.build.dir}/jaxb-generated" />
+        <maven:addPath id="maven.compile.src.set" refid="maven.jaxb.compile.src.set" />
+    </preGoal>
+</project>

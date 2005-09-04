@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+
+    <pomVersion>3</pomVersion>
+    <extend>${basedir}/etc/project.xml</extend>
+
+    <!-- ===================== -->
+    <!-- Module Identification -->
+    <!-- ===================== -->
+
+    <build>
+        <sourceDirectory></sourceDirectory>
+        <unitTestSourceDirectory></unitTestSourceDirectory>
+    </build>
+</project>  

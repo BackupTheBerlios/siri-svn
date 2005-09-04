@@ -1,0 +1,52 @@
+<system-config name="iris">
+	    <global-settings>
+        	<service-archive name="archivehandler" >
+            		<archiverintervall>0 30 9 * * ?</archiverintervall>
+        	</service-archive>
+        	<service-resend name="errormessageresender" >
+            		<errorresendintervall>30000</errorresendintervall>
+        	</service-resend>
+			<primaryemailserver>tdvmail</primaryemailserver>
+	    </global-settings>
+
+
+	    <service-file-file name="filetest" createuniquename="false">
+	        <infolder>
+	        	<path>C:/tradevision/iris/services/test/filetest-filetes/in/</path>
+				<intervall>10000</intervall>
+				<skipfirstblankline>false</skipfirstblankline>
+				<infoldersendchunks sendinfolderchunkson="true">
+					<infolderchunksize>5</infolderchunksize>
+					<infolderchunkthreshold>10</infolderchunkthreshold>
+				</infoldersendchunks>
+			</infolder>
+			<outfolder>
+	        		<path>C:/tradevision/iris/services/test/filetest-filetes/out/</path>
+            </outfolder>
+			<backup backuphandleron="true" archiveron="true">
+				<backupfoldername>C:/tradevision/iris/services/test/filetest-filetes/backup/</backupfoldername>
+				<archivefoldername>C:/tradevision/iris/services/test/filetest-filetes/archived/</archivefoldername>
+			</backup>
+			<transform transformon="false">
+				<transformfile transformmessage="c2kmup">C:/tradevision/iris/services/test/filetest-filetes/transform/c2kmup_to_email.xsl</transformfile>
+				<transformfile transformmessage="c2krmp">C:/tradevision/iris/services/test/filetest-filetes/transform/c2krmp_to_email.xsl</transformfile>
+			</transform>
+			<error errorhandleron="true">
+				<!--sendonstart>true</sendonstart-->
+				<errorfoldername>C:/tradevision/iris/services/test/filetest-filetes/error/</errorfoldername>
+				<resendintervall>10000</resendintervall>
+				<sortonresend>false</sortonresend>
+			</error>
+			<logging>
+				<appendertype type="RollingFileAppender">
+					<maxfilesize>100KB</maxfilesize>
+					<maxbackupindex>10</maxbackupindex>
+				</appendertype>
+				<logpattern>%d{yyyy-MM-dd HH:mm:ss};%p;%t;%x;%m;%n</logpattern>
+				<logfolder>C:/tradevision/iris/services/test/filetest-filetes/log/</logfolder>
+			</logging>
+    </service-file-file>
+
+
+
+</system-config>

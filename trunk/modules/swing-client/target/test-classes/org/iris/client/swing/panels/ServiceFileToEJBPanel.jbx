@@ -1,0 +1,15 @@
+[PropertyInfo]
+borderLayout1,BorderLayout,false,false, , ,false,<default>
+folderScanIntervall,String,false,false, , ,true,<default>
+inPathStr,String,false,false, , ,true,<default>
+myInOutEJBPanel,InOutEJBPanel,false,false, , ,false,<default>
+myInstance,ServiceFileToEJBPanel,false,false, , ,false,<default>
+outPathStr,String,false,false, , ,true,<default>
+serviceTabbedPane1,JTabbedPane,false,false, , ,false,<default>
+sessionEJB,String,false,false, , ,true,<default>
+sessionEJBMethod,String,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

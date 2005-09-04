@@ -1,0 +1,916 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class com.jgoodies.forms.layout.FormLayout</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">com.jgoodies.forms.layout</FONT>
+<BR>Class FormLayout</H2>
+<DL>
+<DT>public final class <B>FormLayout</B><DT>implements java.awt.LayoutManager2, java.io.Serializable
+</DL>
+<DL><DD>FormLayout is a powerful, flexible and precise general purpose layout manager. It aligns components vertically and horizontally in a dynamic rectangular grid of cells, with each component occupying one or more cells. A <a href="../../../../../whitepaper.pdf" target="secondary">whitepaper</a> about the FormLayout ships with the product documentation and is available <a href="http://www.jgoodies.com/articles/forms.pdf">online</a>.<p> To use <code>FormLayout</code> you first define the grid by specifying the columns and rows. In a second step you add components to the grid. You can specify columns and rows via human-readable String descriptions or via arrays of <A HREF="ColumnSpec">ColumnSpec</A> and <A HREF="RowSpec">RowSpec</A> instances.<p> Each component managed by a FormLayout is associated with an instance of <A HREF="CellConstraints">CellConstraints</A>. The constraints object specifies where a component should be located on the form's grid and how the component should be positioned. In addition to its constraints object the <code>FormLayout</code> also considers each component's minimum and preferred sizes in order to determine a component's size.<p> FormLayout has been designed to work with non-visual builders that help you specify the layout and fill the grid. For example, the <A HREF="com.jgoodies.forms.builder.ButtonBarBuilder">com.jgoodies.forms.builder.ButtonBarBuilder</A> assists you in building button bars; it creates a standardized FormLayout and provides a minimal API that specializes in adding buttons. Other builders can create frequently used panel design, for example a form that consists of rows of label-component pairs.<p> FormLayout has been prepared to work with different types of sizes as defined by the <A HREF="Size">Size</A> interface.<p> <strong>Example 1</strong> (Plain FormLayout):<br> The following example creates a panel with 3 data columns and 3 data rows; the columns and rows are specified before components are added to the form. <pre>
+FormLayout layout = new FormLayout(
+"right:pref, 6dlu, 50dlu, 4dlu, default",  // columns 
+"pref, 3dlu, pref, 3dlu, pref");           // rows
+CellConstraints cc = new CellConstraints();
+JPanel panel = new JPanel(layout);
+panel.add(new JLabel("Label1"),   cc.xy  (1, 1));
+panel.add(new JTextField(),       cc.xywh(3, 1, 3, 1));
+panel.add(new JLabel("Label2"),   cc.xy  (1, 3));
+panel.add(new JTextField(),       cc.xy  (3, 3));
+panel.add(new JLabel("Label3"),   cc.xy  (1, 5));
+panel.add(new JTextField(),       cc.xy  (3, 5));
+panel.add(new JButton("..."),     cc.xy  (5, 5));
+return panel;
+</pre><p> <strong>Example 2</strong> (Using PanelBuilder):<br> This example creates the same panel as above using the <A HREF="com.jgoodies.forms.builder.PanelBuilder">com.jgoodies.forms.builder.PanelBuilder</A> to add components to the form. <pre>
+FormLayout layout = new FormLayout(
+"right:pref, 6dlu, 50dlu, 4dlu, default",  // columns 
+"pref, 3dlu, pref, 3dlu, pref");           // rows
+PanelBuilder builder = new PanelBuilder(layout);
+CellConstraints cc = new CellConstraints();
+builder.addLabel("Label1",        cc.xy  (1, 1));
+builder.add(new JTextField(),     cc.xywh(3, 1, 3, 1));
+builder.addLabel("Label2",        cc.xy  (1, 3));
+builder.add(new JTextField(),     cc.xy  (3, 3));
+builder.addLabel("Label3",        cc.xy  (1, 5));
+builder.add(new JTextField(),     cc.xy  (3, 5));
+builder.add(new JButton("..."),   cc.xy  (5, 5));
+return builder.getPanel();
+</pre><p> <strong>Example 3</strong> (Using DefaultFormBuilder):<br> This example utilizes the <A HREF="com.jgoodies.forms.builder.DefaultFormBuilder">com.jgoodies.forms.builder.DefaultFormBuilder</A> that ships with the source distribution. <pre>
+FormLayout layout = new FormLayout(
+"right:pref, 6dlu, 50dlu, 4dlu, default",  // columns 
+"");                                       // add rows dynamically
+DefaultFormBuilder builder = new DefaultFormBuilder(layout);
+builder.append("Label1", new JTextField(), 3);
+builder.append("Label2", new JTextField());
+builder.append("Label3", new JTextField());
+builder.append(new JButton("..."));
+return builder.getPanel();
+</pre><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>$Revision: 1.17 $</DD>
+<DT><B>Author:</B><DD>Karsten Lentzsch</DD>
+<DT><B>See Also:</B><DD>ColumnSpec</DD>
+<DD>RowSpec</DD>
+<DD>CellConstraints</DD>
+<DD>com.jgoodies.forms.builder.AbstractFormBuilder</DD>
+<DD>com.jgoodies.forms.builder.ButtonBarBuilder</DD>
+<DD>com.jgoodies.forms.builder.DefaultFormBuilder</DD>
+<DD>com.jgoodies.forms.factories.FormFactory</DD>
+<DD>Size</DD>
+<DD>Sizes</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="colSpecs"></A>
+
+<H3>colSpecs</H3>
+<PRE>
+private final java.util.List <B>colSpecs</B></PRE>
+<DL><DD>Holds the column specifications.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>ColumnSpec</DD>
+<DD>#getColumnCount()</DD>
+<DD>#getColumnSpec(int)</DD>
+<DD>#appendColumn(ColumnSpec)</DD>
+<DD>#insertColumn(int, ColumnSpec)</DD>
+<DD>#removeColumn(int)</DD>
+</DL>
+<HR>
+
+<A NAME="rowSpecs"></A>
+
+<H3>rowSpecs</H3>
+<PRE>
+private final java.util.List <B>rowSpecs</B></PRE>
+<DL><DD>Holds the row specifications.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>RowSpec</DD>
+<DD>#getRowCount()</DD>
+<DD>#getRowSpec(int)</DD>
+<DD>#appendRow(RowSpec)</DD>
+<DD>#insertRow(int, RowSpec)</DD>
+<DD>#removeRow(int)</DD>
+</DL>
+<HR>
+
+<A NAME="colGroupIndices"></A>
+
+<H3>colGroupIndices</H3>
+<PRE>
+private int[][] <B>colGroupIndices</B></PRE>
+<DL><DD>Holds the column groups as an array of arrays of column indices.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#getColumnGroups()</DD>
+<DD>#setColumnGroups(int[][])</DD>
+<DD>#addGroupedColumn(int)</DD>
+</DL>
+<HR>
+
+<A NAME="rowGroupIndices"></A>
+
+<H3>rowGroupIndices</H3>
+<PRE>
+private int[][] <B>rowGroupIndices</B></PRE>
+<DL><DD>Holds the row groups as an array of arrays of row indices.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#getRowGroups()</DD>
+<DD>#setRowGroups(int[][])</DD>
+<DD>#addGroupedRow(int)</DD>
+</DL>
+<HR>
+
+<A NAME="constraintMap"></A>
+
+<H3>constraintMap</H3>
+<PRE>
+private final java.util.Map <B>constraintMap</B></PRE>
+<DL><DD>Maps components to their associated <code>CellConstraints</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>CellConstraints</DD>
+<DD>#getConstraints(Component)</DD>
+<DD>#setConstraints(Component, CellConstraints)</DD>
+</DL>
+<HR>
+
+<A NAME="colComponents"></A>
+
+<H3>colComponents</H3>
+<PRE>
+private transient java.util.List[] <B>colComponents</B></PRE>
+<DL><DD>Holds the components that occupy exactly one column. For each column we keep a list of these components.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="rowComponents"></A>
+
+<H3>rowComponents</H3>
+<PRE>
+private transient java.util.List[] <B>rowComponents</B></PRE>
+<DL><DD>Holds the components that occupy exactly one row. For each row we keep a list of these components.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="componentSizeCache"></A>
+
+<H3>componentSizeCache</H3>
+<PRE>
+private final com.jgoodies.forms.layout.FormLayout$ComponentSizeCache <B>componentSizeCache</B></PRE>
+<DL><DD>Caches component minimum and preferred sizes. All requests for component sizes shall be directed to the cache.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="minimumWidthMeasure"></A>
+
+<H3>minimumWidthMeasure</H3>
+<PRE>
+private final com.jgoodies.forms.layout.FormLayout$Measure <B>minimumWidthMeasure</B></PRE>
+<DL><DD>These functional objects are used to measure component sizes. They abstract from horizontal and vertical orientation and so, allow to implement the layout algorithm for both orientations with a single set of methods.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="FormLayout(com.jgoodies.forms.layout.ColumnSpec[], com.jgoodies.forms.layout.RowSpec[])"></A>
+
+<H3>FormLayout</H3>
+<PRE>
+public <B>FormLayout</B>(com.jgoodies.forms.layout.ColumnSpec[]&nbsp;colSpecs,
+                  com.jgoodies.forms.layout.RowSpec[]&nbsp;rowSpecs)</PRE>
+<DL><DD>Constructs an instance of <code>FormLayout</code> using the given column and row specifications.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>colSpecs</CODE> - an array of column specifications.</DD>
+<DD><CODE>rowSpecs</CODE> - an array of row specifications.</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if colSpecs or rowSpecs is null</DD>
+</DL>
+<HR>
+
+<A NAME="FormLayout(java.lang.String, java.lang.String)"></A>
+
+<H3>FormLayout</H3>
+<PRE>
+public <B>FormLayout</B>(java.lang.String&nbsp;encodedColumnSpecs,
+                  java.lang.String&nbsp;encodedRowSpecs)</PRE>
+<DL><DD>Constructs an instance of <code>FormLayout</code> using the given encoded string representations for column and row specifications.<p> See the class comment for examples.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>encodedColumnSpecs</CODE> - comma separated encoded column specifications</DD>
+<DD><CODE>encodedRowSpecs</CODE> - comma separated encoded row specifications</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if encodedColumnSpecs or encodedRowSpecs is null</DD>
+</DL>
+<HR>
+
+<A NAME="FormLayout(java.lang.String)"></A>
+
+<H3>FormLayout</H3>
+<PRE>
+public <B>FormLayout</B>(java.lang.String&nbsp;encodedColumnSpecs)</PRE>
+<DL><DD>Constructs an instance of <code>FormLayout</code> using the given encoded string representation for column specifications. The constructed layout has no rows; these must be added before any component can be added to the layout container.<p> This constructor is primarily intended to be used with builder classes that add rows dynamically, such as the <code>DefaultFormBuilder</code>.<p> See the class comment for examples.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>encodedColumnSpecs</CODE> - comma separated encoded column specifications</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if encodedColumnSpecs is null</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="getColumnCount()"></A>
+
+<H3>getColumnCount</H3>
+<PRE>
+public int <B>getColumnCount</B>()</PRE>
+<DL><DD>Returns the number of columns in this layout.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the number of columns</DD>
+</DL>
+<HR>
+
+<A NAME="getRowCount()"></A>
+
+<H3>getRowCount</H3>
+<PRE>
+public int <B>getRowCount</B>()</PRE>
+<DL><DD>Returns the number of rows in this layout.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the number of rows</DD>
+</DL>
+<HR>
+
+<A NAME="getColumnSpec(int)"></A>
+
+<H3>getColumnSpec</H3>
+<PRE>
+public com.jgoodies.forms.layout.ColumnSpec <B>getColumnSpec</B>(int&nbsp;columnIndex)</PRE>
+<DL><DD>Returns the <code>ColumnSpec</code> at the specified column index.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - the column index of the requested <code>ColumnSpec</code></DD>
+<DT><B>Returns:</B><DD>the <code>ColumnSpec</code> at the specified column</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the column index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="setColumnSpec(int, com.jgoodies.forms.layout.ColumnSpec)"></A>
+
+<H3>setColumnSpec</H3>
+<PRE>
+public void <B>setColumnSpec</B>(int&nbsp;columnIndex,
+                          com.jgoodies.forms.layout.ColumnSpec&nbsp;columnSpec)</PRE>
+<DL><DD>Sets the <code>ColumnSpec</code> at the specified column index.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - the index of the column to be changed</DD>
+<DD><CODE>columnSpec</CODE> - the <code>ColumnSpec</code> to be set</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if the column specification is null</DD>
+<DD><CODE>IndexOutOfBoundsException</CODE> - if the column index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="getRowSpec(int)"></A>
+
+<H3>getRowSpec</H3>
+<PRE>
+public com.jgoodies.forms.layout.RowSpec <B>getRowSpec</B>(int&nbsp;rowIndex)</PRE>
+<DL><DD>Returns the <code>RowSpec</code> at the specified row index.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - the row index of the requested <code>RowSpec</code></DD>
+<DT><B>Returns:</B><DD>the <code>RowSpec</code> at the specified row</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the row index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="setRowSpec(int, com.jgoodies.forms.layout.RowSpec)"></A>
+
+<H3>setRowSpec</H3>
+<PRE>
+public void <B>setRowSpec</B>(int&nbsp;rowIndex,
+                       com.jgoodies.forms.layout.RowSpec&nbsp;rowSpec)</PRE>
+<DL><DD>Sets the <code>RowSpec</code> at the specified row index.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - the index of the row to be changed</DD>
+<DD><CODE>rowSpec</CODE> - the <code>RowSpec</code> to be set</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if the row specification is null</DD>
+<DD><CODE>IndexOutOfBoundsException</CODE> - if the row index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="appendColumn(com.jgoodies.forms.layout.ColumnSpec)"></A>
+
+<H3>appendColumn</H3>
+<PRE>
+public void <B>appendColumn</B>(com.jgoodies.forms.layout.ColumnSpec&nbsp;columnSpec)</PRE>
+<DL><DD>Appends the given column specification to the right hand side of all columns.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnSpec</CODE> - the column specification to be added</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if the column specification is null</DD>
+</DL>
+<HR>
+
+<A NAME="insertColumn(int, com.jgoodies.forms.layout.ColumnSpec)"></A>
+
+<H3>insertColumn</H3>
+<PRE>
+public void <B>insertColumn</B>(int&nbsp;columnIndex,
+                         com.jgoodies.forms.layout.ColumnSpec&nbsp;columnSpec)</PRE>
+<DL><DD>Inserts the specified column at the specified position. Shifts components that intersect the new column to the right hand side and readjusts column groups.<p> The component shift works as follows: components that were located on the right hand side of the inserted column are shifted one column to the right; component column span is increased by one if it intersects the new column.<p> Column group indices that are greater or equal than the given column index will be increased by one.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - index of the column to be inserted</DD>
+<DD><CODE>columnSpec</CODE> - specification of the column to be inserted</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the column index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="removeColumn(int)"></A>
+
+<H3>removeColumn</H3>
+<PRE>
+public void <B>removeColumn</B>(int&nbsp;columnIndex)</PRE>
+<DL><DD>Removes the column with the given column index from the layout. Components will be rearranged and column groups will be readjusted. Therefore, the column must not contain components and must not be part of a column group.<p> The component shift works as follows: components that were located on the right hand side of the removed column are moved one column to the left; component column span is decreased by one if it intersects the removed column.<p> Column group indices that are greater than the column index will be decreased by one.<p> <strong>Note:</strong> If one of the constraints mentioned above is violated, this layout's state becomes illegal and it is unsafe to work with this layout. A typical layout implementation can ensure that these constraints are not violated. However, in some cases you may need to check these conditions before you invoke this method. The Forms extras contain source code for class <code>FormLayoutUtils</code> that provides the required test methods:<br> <code>#columnContainsComponents(Container, int)</code> and<br> <code>#isGroupedColumn(FormLayout, int)</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - index of the column to remove</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the column index is out of range</DD>
+<DD><CODE>IllegalStateException</CODE> - if the column contains components or if the column is already grouped</DD>
+<DT><B>See Also:</B><DD>com.jgoodies.forms.extras.FormLayoutUtils#columnContainsComponent(Container, int)</DD>
+<DD>com.jgoodies.forms.extras.FormLayoutUtils#isGroupedColumn(FormLayout, int)</DD>
+</DL>
+<HR>
+
+<A NAME="appendRow(com.jgoodies.forms.layout.RowSpec)"></A>
+
+<H3>appendRow</H3>
+<PRE>
+public void <B>appendRow</B>(com.jgoodies.forms.layout.RowSpec&nbsp;rowSpec)</PRE>
+<DL><DD>Appends the given row specification to the bottom of all rows.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowSpec</CODE> - the row specification to be added to the form layout</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if the rowSpec is null</DD>
+</DL>
+<HR>
+
+<A NAME="insertRow(int, com.jgoodies.forms.layout.RowSpec)"></A>
+
+<H3>insertRow</H3>
+<PRE>
+public void <B>insertRow</B>(int&nbsp;rowIndex,
+                      com.jgoodies.forms.layout.RowSpec&nbsp;rowSpec)</PRE>
+<DL><DD>Inserts the specified column at the specified position. Shifts components that intersect the new column to the right and readjusts column groups.<p> The component shift works as follows: components that were located on the right hand side of the inserted column are shifted one column to the right; component column span is increased by one if it intersects the new column.<p> Column group indices that are greater or equal than the given column index will be increased by one.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - index of the row to be inserted</DD>
+<DD><CODE>rowSpec</CODE> - specification of the row to be inserted</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the row index is out of range</DD>
+</DL>
+<HR>
+
+<A NAME="removeRow(int)"></A>
+
+<H3>removeRow</H3>
+<PRE>
+public void <B>removeRow</B>(int&nbsp;rowIndex)</PRE>
+<DL><DD>Removes the row with the given row index from the layout. Components will be rearranged and row groups will be readjusted. Therefore, the row must not contain components and must not be part of a row group.<p> The component shift works as follows: components that were located below the removed row are moved up one row; component row span is decreased by one if it intersects the removed row.<p> Row group indices that are greater than the row index will be decreased by one.<p> <strong>Note:</strong> If one of the constraints mentioned above is violated, this layout's state becomes illegal and it is unsafe to work with this layout. A typical layout implementation can ensure that these constraints are not violated. However, in some cases you may need to check these conditions before you invoke this method. The Forms extras contain source code for class <code>FormLayoutUtils</code> that provides the required test methods:<br> <code>#rowContainsComponents(Container, int)</code> and<br> <code>#isGroupedRow(FormLayout, int)</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - index of the row to remove</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if the row index is out of range</DD>
+<DD><CODE>IllegalStateException</CODE> - if the row contains components or if the row is already grouped</DD>
+<DT><B>See Also:</B><DD>com.jgoodies.forms.extras.FormLayoutUtils#rowContainsComponent(Container, int)</DD>
+<DD>com.jgoodies.forms.extras.FormLayoutUtils#isGroupedRow(FormLayout, int)</DD>
+</DL>
+<HR>
+
+<A NAME="shiftComponentsHorizontally(int, boolean)"></A>
+
+<H3>shiftComponentsHorizontally</H3>
+<PRE>
+private void <B>shiftComponentsHorizontally</B>(int&nbsp;columnIndex,
+                                         boolean&nbsp;remove)</PRE>
+<DL><DD>Shifts components horizontally, either to the right if a column has been inserted or to the left if a column has been removed.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - index of the column to remove</DD>
+<DD><CODE>remove</CODE> - true for remove, false for insert</DD>
+<DT><B>Throws:</B><DD><CODE>IllegalStateException</CODE> - if a removed column contains components</DD>
+</DL>
+<HR>
+
+<A NAME="shiftComponentsVertically(int, boolean)"></A>
+
+<H3>shiftComponentsVertically</H3>
+<PRE>
+private void <B>shiftComponentsVertically</B>(int&nbsp;rowIndex,
+                                       boolean&nbsp;remove)</PRE>
+<DL><DD>Shifts components vertically, either to the bottom if a row has been inserted or to the top if a row has been removed.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - index of the row to remove</DD>
+<DD><CODE>remove</CODE> - true for remove, false for insert</DD>
+<DT><B>Throws:</B><DD><CODE>IllegalStateException</CODE> - if a removed column contains components</DD>
+</DL>
+<HR>
+
+<A NAME="adjustGroupIndices(int[][], int, boolean)"></A>
+
+<H3>adjustGroupIndices</H3>
+<PRE>
+private void <B>adjustGroupIndices</B>(int[][]&nbsp;allGroupIndices,
+                                int&nbsp;modifiedIndex,
+                                boolean&nbsp;remove)</PRE>
+<DL><DD>Adjusts group indices. Shifts the given groups to left, right, up, down according to the specified remove or add flag.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>allGroupIndices</CODE> - the groups to be adjusted</DD>
+<DD><CODE>modifiedIndex</CODE> - the modified column or row index</DD>
+<DD><CODE>remove</CODE> - true for remove, false for add</DD>
+<DT><B>Throws:</B><DD><CODE>IllegalStateException</CODE> - if we remove and the index is grouped</DD>
+</DL>
+<HR>
+
+<A NAME="getConstraints(java.awt.Component)"></A>
+
+<H3>getConstraints</H3>
+<PRE>
+public com.jgoodies.forms.layout.CellConstraints <B>getConstraints</B>(java.awt.Component&nbsp;component)</PRE>
+<DL><DD>Looks up and returns the constraints for the specified component. A copy of the actual <code>CellConstraints</code> object is returned.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>component</CODE> - the component to be queried</DD>
+<DT><B>Returns:</B><DD>the <code>CellConstraints</code> for the specified component</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if component is <code>null</code> or has not been added to the container</DD>
+</DL>
+<HR>
+
+<A NAME="setConstraints(java.awt.Component, com.jgoodies.forms.layout.CellConstraints)"></A>
+
+<H3>setConstraints</H3>
+<PRE>
+public void <B>setConstraints</B>(java.awt.Component&nbsp;component,
+                           com.jgoodies.forms.layout.CellConstraints&nbsp;constraints)</PRE>
+<DL><DD>Sets the constraints for the specified component in this layout.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>component</CODE> - the component to be modified</DD>
+<DD><CODE>constraints</CODE> - the constraints to be applied</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if the component or constraints object is <code>null</code></DD>
+</DL>
+<HR>
+
+<A NAME="removeConstraints(java.awt.Component)"></A>
+
+<H3>removeConstraints</H3>
+<PRE>
+private void <B>removeConstraints</B>(java.awt.Component&nbsp;component)</PRE>
+<DL><DD>Removes the constraints for the specified component in this layout.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>component</CODE> - the component to be modified</DD>
+</DL>
+<HR>
+
+<A NAME="getColumnGroups()"></A>
+
+<H3>getColumnGroups</H3>
+<PRE>
+public int[][] <B>getColumnGroups</B>()</PRE>
+<DL><DD>Returns a deep copy of the column groups.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the column groups as two-dimensional int array</DD>
+</DL>
+<HR>
+
+<A NAME="setColumnGroups(int[][])"></A>
+
+<H3>setColumnGroups</H3>
+<PRE>
+public void <B>setColumnGroups</B>(int[][]&nbsp;colGroupIndices)</PRE>
+<DL><DD>Sets the column groups, where each column in a group gets the same group wide width. Each group is described by an array of integers that are interpreted as column indices. The parameter is an array of such group descriptions.<p> <strong>Examples:</strong><pre>
+// Group columns 1, 3 and 4. 
+setColumnGroups(new int[][]{ {1, 3, 4}});
+// Group columns 1, 3, 4, and group columns 7 and 9
+setColumnGroups(new int[][]{ {1, 3, 4}, {7, 9}});
+</pre><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>colGroupIndices</CODE> - a two-dimensional array of column groups indices</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if an index is outside the grid</DD>
+<DD><CODE>IllegalArgumentException</CODE> - if a column index is used twice</DD>
+</DL>
+<HR>
+
+<A NAME="addGroupedColumn(int)"></A>
+
+<H3>addGroupedColumn</H3>
+<PRE>
+public void <B>addGroupedColumn</B>(int&nbsp;columnIndex)</PRE>
+<DL><DD>Adds the specified column index to the last column group. In case there are no groups, a new group will be created.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>columnIndex</CODE> - the column index to be set grouped</DD>
+</DL>
+<HR>
+
+<A NAME="getRowGroups()"></A>
+
+<H3>getRowGroups</H3>
+<PRE>
+public int[][] <B>getRowGroups</B>()</PRE>
+<DL><DD>Returns a deep copy of the row groups.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the row groups as two-dimensional int array</DD>
+</DL>
+<HR>
+
+<A NAME="setRowGroups(int[][])"></A>
+
+<H3>setRowGroups</H3>
+<PRE>
+public void <B>setRowGroups</B>(int[][]&nbsp;rowGroupIndices)</PRE>
+<DL><DD>Sets the row groups, where each row in such a group gets the same group wide height. Each group is described by an array of integers that are interpreted as row indices. The parameter is an array of such group descriptions.<p> <strong>Examples:</strong><pre>
+// Group rows 1 and 2.
+setRowGroups(new int[][]{ {1, 2}});
+// Group rows 1 and 2, and group rows 5, 7, and 9.
+setRowGroups(new int[][]{ {1, 2}, {5, 7, 9}});
+</pre><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowGroupIndices</CODE> - a two-dimensional array of row group indices.</DD>
+<DT><B>Throws:</B><DD><CODE>IndexOutOfBoundsException</CODE> - if an index is outside the grid</DD>
+</DL>
+<HR>
+
+<A NAME="addGroupedRow(int)"></A>
+
+<H3>addGroupedRow</H3>
+<PRE>
+public void <B>addGroupedRow</B>(int&nbsp;rowIndex)</PRE>
+<DL><DD>Adds the specified row index to the last row group. In case there are no groups, a new group will be created.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>rowIndex</CODE> - the index of the row that should be grouped</DD>
+</DL>
+<HR>
+
+<A NAME="addLayoutComponent(java.lang.String, java.awt.Component)"></A>
+
+<H3>addLayoutComponent</H3>
+<PRE>
+public void <B>addLayoutComponent</B>(java.lang.String&nbsp;name,
+                               java.awt.Component&nbsp;component)</PRE>
+<DL><DD>Throws an <code>UnsupportedOperationException</code>. Does not add the specified component with the specified name to the layout.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>name</CODE> - indicates entry's position and anchor</DD>
+<DD><CODE>component</CODE> - component to add</DD>
+<DT><B>Throws:</B><DD><CODE>UnsupportedOperationException</CODE> - always</DD>
+</DL>
+<HR>
+
+<A NAME="addLayoutComponent(java.awt.Component, java.lang.Object)"></A>
+
+<H3>addLayoutComponent</H3>
+<PRE>
+public void <B>addLayoutComponent</B>(java.awt.Component&nbsp;comp,
+                               java.lang.Object&nbsp;constraints)</PRE>
+<DL><DD>Adds the specified component to the layout, using the specified <code>constraints</code> object. Note that constraints are mutable and are, therefore, cloned when cached.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>comp</CODE> - the component to be added</DD>
+<DD><CODE>constraints</CODE> - the component's cell constraints</DD>
+<DT><B>Throws:</B><DD><CODE>NullPointerException</CODE> - if <code>constraints</code> is <code>null</code></DD>
+<DD><CODE>IllegalArgumentException</CODE> - if <code>constraints</code> is not a <code>CellConstraints</code> or a String that cannot be used to construct a <code>CellConstraints</code></DD>
+</DL>
+<HR>
+
+<A NAME="removeLayoutComponent(java.awt.Component)"></A>
+
+<H3>removeLayoutComponent</H3>
+<PRE>
+public void <B>removeLayoutComponent</B>(java.awt.Component&nbsp;comp)</PRE>
+<DL><DD>Removes the specified component from this layout.<p> Most applications do not call this method directly.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>comp</CODE> - the component to be removed.</DD>
+<DT><B>See Also:</B><DD>Container#remove(java.awt.Component)</DD>
+<DD>Container#removeAll()</DD>
+</DL>
+<HR>
+
+<A NAME="minimumLayoutSize(java.awt.Container)"></A>
+
+<H3>minimumLayoutSize</H3>
+<PRE>
+public java.awt.Dimension <B>minimumLayoutSize</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Determines the minimum size of the <code>parent</code> container using this form layout.<p> Most applications do not call this method directly.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the container in which to do the layout</DD>
+<DT><B>Returns:</B><DD>the minimum size of the <code>parent</code> container</DD>
+<DT><B>See Also:</B><DD>Container#doLayout()</DD>
+</DL>
+<HR>
+
+<A NAME="preferredLayoutSize(java.awt.Container)"></A>
+
+<H3>preferredLayoutSize</H3>
+<PRE>
+public java.awt.Dimension <B>preferredLayoutSize</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Determines the preferred size of the <code>parent</code> container using this form layout.<p> Most applications do not call this method directly.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the container in which to do the layout</DD>
+<DT><B>Returns:</B><DD>the preferred size of the <code>parent</code> container</DD>
+<DT><B>See Also:</B><DD>Container#getPreferredSize()</DD>
+</DL>
+<HR>
+
+<A NAME="maximumLayoutSize(java.awt.Container)"></A>
+
+<H3>maximumLayoutSize</H3>
+<PRE>
+public java.awt.Dimension <B>maximumLayoutSize</B>(java.awt.Container&nbsp;target)</PRE>
+<DL><DD>Returns the maximum dimensions for this layout given the components in the specified target container.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>target</CODE> - the container which needs to be laid out</DD>
+<DT><B>Returns:</B><DD>the maximum dimensions for this layout</DD>
+<DT><B>See Also:</B><DD>Container</DD>
+<DD>#minimumLayoutSize(Container)</DD>
+<DD>#preferredLayoutSize(Container)</DD>
+</DL>
+<HR>
+
+<A NAME="getLayoutAlignmentX(java.awt.Container)"></A>
+
+<H3>getLayoutAlignmentX</H3>
+<PRE>
+public float <B>getLayoutAlignmentX</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Returns the alignment along the x axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the parent container</DD>
+<DT><B>Returns:</B><DD>the value <code>0.5f</code> to indicate center alignment</DD>
+</DL>
+<HR>
+
+<A NAME="getLayoutAlignmentY(java.awt.Container)"></A>
+
+<H3>getLayoutAlignmentY</H3>
+<PRE>
+public float <B>getLayoutAlignmentY</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Returns the alignment along the y axis. This specifies how the component would like to be aligned relative to other components. The value should be a number between 0 and 1 where 0 represents alignment along the origin, 1 is aligned the furthest away from the origin, 0.5 is centered, etc.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the parent container</DD>
+<DT><B>Returns:</B><DD>the value <code>0.5f</code> to indicate center alignment</DD>
+</DL>
+<HR>
+
+<A NAME="invalidateLayout(java.awt.Container)"></A>
+
+<H3>invalidateLayout</H3>
+<PRE>
+public void <B>invalidateLayout</B>(java.awt.Container&nbsp;target)</PRE>
+<DL><DD>Invalidates the layout, indicating that if the layout manager has cached information it should be discarded.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>target</CODE> - the container that holds the layout to be invalidated</DD>
+</DL>
+<HR>
+
+<A NAME="layoutContainer(java.awt.Container)"></A>
+
+<H3>layoutContainer</H3>
+<PRE>
+public void <B>layoutContainer</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Lays out the specified container using this form layout. This method reshapes components in the specified container in order to satisfy the contraints of this <code>FormLayout</code> object.<p> Most applications do not call this method directly.<p> The form layout performs the following steps: <ol> <li>find components that occupy exactly one column or row <li>compute minimum widths and heights <li>compute preferred widths and heights <li>give cols and row equal size if they share a group <li>compress default columns and rows if total is less than pref size <li>give cols and row equal size if they share a group <li>distribute free space <li>set components bounds </ol><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the container in which to do the layout</DD>
+<DT><B>See Also:</B><DD>Container</DD>
+<DD>Container#doLayout()</DD>
+</DL>
+<HR>
+
+<A NAME="initializeColAndRowComponentLists()"></A>
+
+<H3>initializeColAndRowComponentLists</H3>
+<PRE>
+private void <B>initializeColAndRowComponentLists</B>()</PRE>
+<DL><DD>Initializes two lists for columns and rows that hold a column's or row's components that span only this column or row.<p> Iterates over all components and their associated constraints; every component that has a column span or row span of 1 is put into the column's or row's component list.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="computeLayoutSize(java.awt.Container, com.jgoodies.forms.layout.FormLayout$Measure, com.jgoodies.forms.layout.FormLayout$Measure)"></A>
+
+<H3>computeLayoutSize</H3>
+<PRE>
+private java.awt.Dimension <B>computeLayoutSize</B>(java.awt.Container&nbsp;parent,
+                                             com.jgoodies.forms.layout.FormLayout$Measure&nbsp;defaultWidthMeasure,
+                                             com.jgoodies.forms.layout.FormLayout$Measure&nbsp;defaultHeightMeasure)</PRE>
+<DL><DD>Computes and returns the layout size of the given <code>parent</code> container using the specified measures.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the container in which to do the layout</DD>
+<DD><CODE>defaultWidthMeasure</CODE> - the measure used to compute the default width</DD>
+<DD><CODE>defaultHeightMeasure</CODE> - the measure used to compute the default height</DD>
+<DT><B>Returns:</B><DD>the layout size of the <code>parent</code> container</DD>
+</DL>
+<HR>
+
+<A NAME="computeGridOrigins(java.awt.Container, int, int, java.util.List, java.util.List[], int[][], com.jgoodies.forms.layout.FormLayout$Measure, com.jgoodies.forms.layout.FormLayout$Measure)"></A>
+
+<H3>computeGridOrigins</H3>
+<PRE>
+private int[] <B>computeGridOrigins</B>(java.awt.Container&nbsp;container,
+                                 int&nbsp;totalSize,
+                                 int&nbsp;offset,
+                                 java.util.List&nbsp;formSpecs,
+                                 java.util.List[]&nbsp;componentLists,
+                                 int[][]&nbsp;groupIndices,
+                                 com.jgoodies.forms.layout.FormLayout$Measure&nbsp;minMeasure,
+                                 com.jgoodies.forms.layout.FormLayout$Measure&nbsp;prefMeasure)</PRE>
+<DL><DD>Computes and returns the grid's origins.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>container</CODE> - the layout container</DD>
+<DD><CODE>totalSize</CODE> - the total size to assign</DD>
+<DD><CODE>offset</CODE> - the offset from left or top margin</DD>
+<DD><CODE>formSpecs</CODE> - the column or row specs, resp.</DD>
+<DD><CODE>componentLists</CODE> - the components list for each col/row</DD>
+<DD><CODE>minMeasure</CODE> - the measure used to determin min sizes</DD>
+<DD><CODE>prefMeasure</CODE> - the measure used to determin pre sizes</DD>
+<DD><CODE>groupIndices</CODE> - the group specification</DD>
+<DT><B>Returns:</B><DD>an int array with the origins</DD>
+</DL>
+<HR>
+
+<A NAME="computeOrigins(int[], int)"></A>
+
+<H3>computeOrigins</H3>
+<PRE>
+private int[] <B>computeOrigins</B>(int[]&nbsp;sizes,
+                             int&nbsp;offset)</PRE>
+<DL><DD>Computes origins from sizes taking the specified offset into account.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>sizes</CODE> - the array of sizes</DD>
+<DD><CODE>offset</CODE> - an offset for the first origin</DD>
+<DT><B>Returns:</B><DD>an array of origins</DD>
+</DL>
+<HR>
+
+<A NAME="layoutComponents(int[], int[])"></A>
+
+<H3>layoutComponents</H3>
+<PRE>
+private void <B>layoutComponents</B>(int[]&nbsp;x,
+                              int[]&nbsp;y)</PRE>
+<DL><DD>Lays out the components using the given x and y origins, the column and row specifications, and the component constraints.<p> The actual computation is done by each component's form constraint object. We just compute the cell, the cell bounds and then hand over the component, cell bounds, and measure to the form constraints. This will allow potential subclasses of <code>CellConstraints</code> to do special micro-layout corrections. For example, such a subclass could map JComponent classes to visual layout bounds that may lead to a slightly different bounds.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>x</CODE> - an int array of the horizontal origins</DD>
+<DD><CODE>y</CODE> - an int array of the vertical origins</DD>
+</DL>
+<HR>
+
+<A NAME="invalidateCaches()"></A>
+
+<H3>invalidateCaches</H3>
+<PRE>
+private void <B>invalidateCaches</B>()</PRE>
+<DL><DD>Invalidates the component size caches.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="maximumSizes(java.awt.Container, java.util.List, java.util.List[], com.jgoodies.forms.layout.FormLayout$Measure, com.jgoodies.forms.layout.FormLayout$Measure, com.jgoodies.forms.layout.FormLayout$Measure)"></A>
+
+<H3>maximumSizes</H3>
+<PRE>
+private int[] <B>maximumSizes</B>(java.awt.Container&nbsp;container,
+                           java.util.List&nbsp;formSpecs,
+                           java.util.List[]&nbsp;componentLists,
+                           com.jgoodies.forms.layout.FormLayout$Measure&nbsp;minMeasure,
+                           com.jgoodies.forms.layout.FormLayout$Measure&nbsp;prefMeasure,
+                           com.jgoodies.forms.layout.FormLayout$Measure&nbsp;defaultMeasure)</PRE>
+<DL><DD>Computes and returns the sizes for the given form specs, component lists and measures fot minimum, preferred, and default size.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>container</CODE> - the layout container</DD>
+<DD><CODE>formSpecs</CODE> - the column or row specs, resp.</DD>
+<DD><CODE>componentLists</CODE> - the components list for each col/row</DD>
+<DD><CODE>minMeasure</CODE> - the measure used to determin min sizes</DD>
+<DD><CODE>prefMeasure</CODE> - the measure used to determin pre sizes</DD>
+<DD><CODE>defaultMeasure</CODE> - the measure used to determin default sizes</DD>
+<DT><B>Returns:</B><DD>the column or row sizes</DD>
+</DL>
+<HR>
+
+<A NAME="compressedSizes(java.util.List, int, int, int, int[], int[])"></A>
+
+<H3>compressedSizes</H3>
+<PRE>
+private int[] <B>compressedSizes</B>(java.util.List&nbsp;formSpecs,
+                              int&nbsp;totalSize,
+                              int&nbsp;totalMinSize,
+                              int&nbsp;totalPrefSize,
+                              int[]&nbsp;minSizes,
+                              int[]&nbsp;prefSizes)</PRE>
+<DL><DD>Computes and returns the compressed sizes. Compresses space for columns and rows iff the available space is less than the total preferred size but more than the total minimum size.<p> Only columns and row that are specified to be compressable will be affected. You can specify a column and row as compressable by giving it the component size <tt>default</tt>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>formSpecs</CODE> - the column or row specs to use</DD>
+<DD><CODE>totalSize</CODE> - the total available size</DD>
+<DD><CODE>totalMinSize</CODE> - the sum of all minimum sizes</DD>
+<DD><CODE>totalPrefSize</CODE> - the sum of all preferred sizes</DD>
+<DD><CODE>minSizes</CODE> - an int array of column/row minimum sizes</DD>
+<DD><CODE>prefSizes</CODE> - an int array of column/row preferred sizes</DD>
+<DT><B>Returns:</B><DD>an int array of compressed column/row sizes</DD>
+</DL>
+<HR>
+
+<A NAME="groupedSizes(int[][], int[])"></A>
+
+<H3>groupedSizes</H3>
+<PRE>
+private int[] <B>groupedSizes</B>(int[][]&nbsp;groups,
+                           int[]&nbsp;rawSizes)</PRE>
+<DL><DD>Computes and returns the grouped sizes. Gives grouped columns and rows the same size.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>groups</CODE> - the group specification</DD>
+<DD><CODE>rawSizes</CODE> - the raw sizes before the grouping</DD>
+<DT><B>Returns:</B><DD>the grouped sizes</DD>
+</DL>
+<HR>
+
+<A NAME="distributedSizes(java.util.List, int, int, int[])"></A>
+
+<H3>distributedSizes</H3>
+<PRE>
+private int[] <B>distributedSizes</B>(java.util.List&nbsp;formSpecs,
+                               int&nbsp;totalSize,
+                               int&nbsp;totalPrefSize,
+                               int[]&nbsp;inputSizes)</PRE>
+<DL><DD>Distributes free space over columns and rows and returns the sizes after this distribution process.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>formSpecs</CODE> - the column/row specifications to work with</DD>
+<DD><CODE>totalSize</CODE> - the total available size</DD>
+<DD><CODE>totalPrefSize</CODE> - the sum of all preferred sizes</DD>
+<DD><CODE>inputSizes</CODE> - the input sizes</DD>
+<DT><B>Returns:</B><DD>the distributed sizes</DD>
+</DL>
+<HR>
+
+<A NAME="sum(int[])"></A>
+
+<H3>sum</H3>
+<PRE>
+private int <B>sum</B>(int[]&nbsp;sizes)</PRE>
+<DL><DD>Computes and returns the sum of integers in the given array of ints.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>sizes</CODE> - an array of ints to sum up</DD>
+<DT><B>Returns:</B><DD>the sum of ints in the array</DD>
+</DL>
+<HR>
+
+<A NAME="computeMaximumFixedSpanTable(java.util.List)"></A>
+
+<H3>computeMaximumFixedSpanTable</H3>
+<PRE>
+private int[] <B>computeMaximumFixedSpanTable</B>(java.util.List&nbsp;formSpecs)</PRE>
+<DL><DD>Computes and returns a table that maps a column/row index to the maximum number of columns/rows that a component can span without spanning a growing column.<p> Iterates over the specs from right to left/bottom to top, sets the table value to zero if a spec can grow, otherwise increases the span by one.<p> <strong>Examples:</strong><pre>
+"pref, 4dlu, pref, 2dlu, p:grow, 2dlu,      pref" ->
+[4,    3,    2,    1,    0,      MAX_VALUE, MAX_VALUE]
+"p:grow, 4dlu, p:grow, 9dlu,      pref" ->
+[0,      1,    0,      MAX_VALUE, MAX_VALUE]
+"p, 4dlu, p, 2dlu, 0:grow" ->
+[4, 3,    2, 1,    0]
+@param formSpecs  the column specs or row specs
+@return a table that maps a spec index to the maximum span for 
+fixed size specs<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="getLayoutInfo(java.awt.Container)"></A>
+
+<H3>getLayoutInfo</H3>
+<PRE>
+public com.jgoodies.forms.layout.FormLayout$LayoutInfo <B>getLayoutInfo</B>(java.awt.Container&nbsp;parent)</PRE>
+<DL><DD>Computes and returns the horizontal and vertical grid origins. Performs the same layout process as <code>#layoutContainer</code> but does not layout the components.<p> This method has been added only to make it easier to debug the form layout. <strong>You must not call this method directly; It may be removed in a future release or the visibility may be reduced.</strong><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - the <code>Container</code> to inspect</DD>
+<DT><B>Returns:</B><DD>an object that comprises the grid x and y origins</DD>
+</DL>
+<HR>
+
+<A NAME="deepClone(int[][])"></A>
+
+<H3>deepClone</H3>
+<PRE>
+private int[][] <B>deepClone</B>(int[][]&nbsp;array)</PRE>
+<DL><DD>Creates and returns a deep copy of the given array. Unlike <code>#clone</code> that performs a shallow copy, this method copies both array levels.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>array</CODE> - the array to clone</DD>
+<DT><B>Returns:</B><DD>a deep copy of the given array</DD>
+<DT><B>See Also:</B><DD>Object#clone()</DD>
+</DL>
+<HR>
+
+<A NAME="writeObject(java.io.ObjectOutputStream)"></A>
+
+<H3>writeObject</H3>
+<PRE>
+private void <B>writeObject</B>(java.io.ObjectOutputStream&nbsp;out)</PRE>
+<DL><DD>In addition to the default serialization mechanism this class invalidates the component size cache. The cache will be populated again after the deserialization. Also, the fields <code>colComponents</code> and <code>rowComponents</code> have been marked as transient to exclude them from the serialization.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+</BODY>
+</HTML>

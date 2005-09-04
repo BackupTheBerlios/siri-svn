@@ -1,0 +1,12 @@
+[PropertyInfo]
+myArchivingPanel,ArchivePanel,false,false, , ,false,<default>
+myBackupPanel,BackupPanel,false,false, , ,false,<default>
+myErrorPanel,ErrorPanel,false,false, , ,false,<default>
+myInactivityPanel,InactivityPanel,false,false, , ,true,<default>
+myLoggingPanel,ServiceLoggingPanel,false,false, , ,true,<default>
+myTransformPanel,TransformPanel,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

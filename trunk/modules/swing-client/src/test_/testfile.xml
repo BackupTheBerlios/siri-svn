@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<irisclient>
+    <versioninfo>
+        <version>1.0.0</version>
+        <releasedate>2004-02-01</releasedate>
+        <developer>gollum</developer>
+    </versioninfo>
+    <title>Iris client</title>
+    <pingservices>30000</pingservices>
+    <irisserver>
+        <name>localdevelopment</name>
+        <description>Development local server</description>
+        <address>127.0.0.1</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//127.0.0.1/iris</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>test_preas01</name>
+        <description>Development local server</description>
+        <address>preas01</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//preas01/iris</rmiservice>
+    </irisserver>
+    <irisserver>
+        <name>prodserver_tdvas01</name>
+        <description>Live server</description>
+        <address>tdvas02</address>
+        <loggingport>4560</loggingport>
+        <rmiservice>//tdvas02/iris</rmiservice>
+    </irisserver>
+</irisclient>
+

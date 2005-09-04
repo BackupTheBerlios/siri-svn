@@ -1,0 +1,63 @@
+<system-config name="iris" rootpath="C:/tradevision/iris/">
+
+	    <global-settings>
+        	<service-archive name="archivehandler" >
+				<archiverintervall>600000</archiverintervall>
+        	</service-archive>
+        	<service-resend name="errormessageresender" >
+            		<errorresendintervall>6000</errorresendintervall>
+        	</service-resend>
+			<primaryemailserver>tdvmail</primaryemailserver>
+	    </global-settings>
+
+
+	<service type="file-ejb" id="xmlemail_in-email" >
+    		<infolder>
+            		<path>C:/tradevision/iris/services/xmlemail_in-email/in/</path>
+            		<intervall>10000</intervall>
+            		<skipfirstblankline>false</skipfirstblankline>
+					<infoldersendchunks sendinfolderchunkson="true">
+						<infolderchunksize>5</infolderchunksize>
+						<infolderchunkthreshold>10</infolderchunkthreshold>
+					</infoldersendchunks>
+    		</infolder>
+ 	       <backup backuphandleron="true" archiveron="true">
+        		<backupfoldername>C:/tradevision/iris/services/xmlemail_in-email/backup/</backupfoldername>
+                <archivefoldername>C:/tradevision/iris/services/xmlemail_in-email/archived/</archivefoldername>
+	        	<sortalpha>true</sortalpha>
+        	</backup>
+	        <error errorhandleron="true">
+				<!--sendonstart>true</sendonstart-->
+				<sendchunks sendchunkson="true">
+					<chunksize>20</chunksize>
+					<chunkthreshold>100</chunkthreshold>
+				</sendchunks>
+        		<errorfoldername>C:/tradevision/iris/services/xmlemail_in-email/error/</errorfoldername>
+                <resendintervall>600000</resendintervall>
+                <sortonresend>false</sortonresend>
+       		</error>
+        	<transform transformon="true">
+        		<transformfile transformmessage="c2kmup">C:/tradevision/iris/services/c2k-syntegra/transform/c2kmup_to_email.xsl</transformfile>
+                <transformfile transformmessage="c2krmp">C:/tradevision/iris/services/c2k-syntegra/transform/c2krmp_to_email.xsl</transformfile>
+        	</transform>
+        	<errornotification errornotificationon="true">
+        		<sendonthreshold>10</sendonthreshold>
+        	</errornotification>
+        	<service>
+        		<nameservice>C:/tradevision/iris/conf/tdv_gen.ior</nameservice>
+                <name>irisReceiver</name>
+                <method>handleMessage</method>
+                <paramtype>String</paramtype>
+        	</service>
+        	<logging>
+        		<appendertype type="org.apache.log4j.RollingFileAppender">
+            			<maxfilesize>100KB</maxfilesize>
+	                	<maxbackupindex>10</maxbackupindex>
+                </appendertype>
+                <logpattern>%d{yyyy-MM-dd HH:mm:ss};%p;%m%n </logpattern>
+                <logfolder>C:/tradevision/iris/services/xmlemail_in-email/log/</logfolder>
+                <layout>org.apache.log4j.xml.XMLLayout</layout>
+        	</logging>
+	</service>
+
+</system-config>

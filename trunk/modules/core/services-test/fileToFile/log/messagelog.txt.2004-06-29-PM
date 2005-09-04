@@ -1,0 +1,64 @@
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 15:19:53;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?><C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">    <Ref>        <CDMP>TDV</CDMP>        <Reference>125-96309824</Reference>        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>    </Ref>    <AirlinePrefix>125</AirlinePrefix>    <AWBSerialNumber>125-96309824</AWBSerialNumber>    <Milestone>RCF</Milestone>    <MilestoneStation>123</MilestoneStation>    <Carrier>BA</Carrier>    <FlightNumber>BA006</FlightNumber>    <PiecesReported>54</PiecesReported>    <WeightReported>        <Amount>15156</Amount>        <Code>K</Code>    </WeightReported>    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>    <CompletionIndicator>123</CompletionIndicator>    <StatusMessage>123</StatusMessage></C2kMilestoneUpdate>
+;
+2004-06-29 16:39:12;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">
+    <Ref>
+        <CDMP>TDV</CDMP>
+        <Reference>125-96309824</Reference>
+        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>
+    </Ref>
+    <AirlinePrefix>125</AirlinePrefix>
+    <AWBSerialNumber>125-96309824</AWBSerialNumber>
+    <Milestone>RCF</Milestone>
+    <MilestoneStation>123</MilestoneStation>
+    <Carrier>BA</Carrier>
+    <FlightNumber>BA006</FlightNumber>
+    <PiecesReported>54</PiecesReported>
+    <WeightReported>
+        <Amount>15156</Amount>
+        <Code>K</Code>
+    </WeightReported>
+    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>
+    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>
+    <CompletionIndicator>123</CompletionIndicator>
+    <StatusMessage>123</StatusMessage>
+</C2kMilestoneUpdate>
+
+;
+2004-06-29 16:40:12;INFO;Thread-5;;Sucessfully sent message : <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<C2kMilestoneUpdate version="4" xmlns="http://crms.ccx.com/schema/c2k/">
+    <Ref>
+        <CDMP>TDV</CDMP>
+        <Reference>125-96309824</Reference>
+        <Timestamp>2003-10-09T12:49:51.562+01:00</Timestamp>
+    </Ref>
+    <AirlinePrefix>125</AirlinePrefix>
+    <AWBSerialNumber>125-96309824</AWBSerialNumber>
+    <Milestone>RCF</Milestone>
+    <MilestoneStation>123</MilestoneStation>
+    <Carrier>BA</Carrier>
+    <FlightNumber>BA006</FlightNumber>
+    <PiecesReported>54</PiecesReported>
+    <WeightReported>
+        <Amount>15156</Amount>
+        <Code>K</Code>
+    </WeightReported>
+    <MessageReceiptTime>2003-09-14T16:30:00</MessageReceiptTime>
+    <MilestoneReportedTime>2003-02-17T20:30:00</MilestoneReportedTime>
+    <CompletionIndicator>123</CompletionIndicator>
+    <StatusMessage>123</StatusMessage>
+</C2kMilestoneUpdate>
+
+;

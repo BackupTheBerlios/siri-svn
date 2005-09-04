@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <link uin="idh1tage7re8sage7rf1gm3.linkid9wgwbe7smw8eme7sn4s25">
+        <participant role="Supplier" referencedUin="design:view:::idhuk18e7smw8eme7sn1073"/>
+        <participant role="Client" referencedUin="design:view:::idh1tage7re8sage7rf1gm3"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <link uin="idh1tage7re8sage7rf1gm3.linkid32edse7smw8eme7sn6t0v">
+        <participant role="Supplier" referencedUin="design:view:::id4uhd6e7smw8eme7sn5af6"/>
+        <participant role="Client" referencedUin="design:view:::idh1tage7re8sage7rf1gm3"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <link uin="idh1tage7re8sage7rf1gm3.linkid69r0ae7smw8eme7snet70">
+        <participant role="Supplier" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd2:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08"/>
+        <participant role="Client" referencedUin="design:view:::idh1tage7re8sage7rf1gm3"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <link uin="idh1tage7re8sage7rf1gm3.linkid2crvde7smw8eme7snewr1">
+        <participant role="Supplier" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd4:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08"/>
+        <participant role="Client" referencedUin="design:view:::idh1tage7re8sage7rf1gm3"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <view uin="idh1tage7re8sage7rf1gm3">
+        <property name="$metaclass" value="Component Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference" referencedUin="design:node:::idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="190,100,470,420"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeid47u48e7re8sage7rf3ove:idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr">
+                <property name="bounds" value="19,63,109,60"/>
+            </reference>
+            <reference referencedUin="design:node:::idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeidjy629e7re8sage7rnmay2:idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr">
+                <property name="bounds" value="20,170,190,70"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+            <reference referencedUin="design:node:::idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeid4hpb7e7smw8eme7snhsbc:idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr">
+                <property name="bounds" value="150,60,146,60"/>
+            </reference>
+        </reference>
+    </view>
+    <node uin="idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr">
+        <property name="$metaclass" value="Subsystem"/>
+        <property name="$name" value="SiriCore"/>
+        <node uin="idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeid47u48e7re8sage7rf3ove">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="Readers"/>
+        </node>
+        <node uin="idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeidjy629e7re8sage7rnmay2">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="Writers"/>
+        </node>
+        <node uin="idh1tage7re8sage7rf1gm3.nodeidcjz7se7re8sage7rf2ghr.nodeid4hpb7e7smw8eme7snhsbc">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="TopicFascades"/>
+        </node>
+    </node>
+</nodeSet>

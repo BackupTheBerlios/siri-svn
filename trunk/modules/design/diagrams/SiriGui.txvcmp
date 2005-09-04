@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <link uin="id8j4w9e7re8sage7rnpkoc.linkidezcyie7smw8eme7sn6xou">
+        <participant role="Supplier" referencedUin="design:view:::id4uhd6e7smw8eme7sn5af6"/>
+        <participant role="Client" referencedUin="design:view:::id8j4w9e7re8sage7rnpkoc"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <link uin="id8j4w9e7re8sage7rnpkoc.linkidkfx1e7smw8eme7snfdvt">
+        <participant role="Supplier" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd4:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08"/>
+        <participant role="Client" referencedUin="design:view:::id8j4w9e7re8sage7rnpkoc"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <link uin="id8j4w9e7re8sage7rnpkoc.linkidfoe4se7smw8eme7snfib3">
+        <participant role="Supplier" referencedUin="design:node:::iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b.nodeidijbise7re8sage7reumd2:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08.nodeid5k5rje7re8sage7rex21b:iddkps6e7re8sage7resa11.nodeid9qkure7re8sage7resd08"/>
+        <participant role="Client" referencedUin="design:view:::id8j4w9e7re8sage7rnpkoc"/>
+        <property name="$metaclass" value="Dependency Link"/>
+    </link>
+    <view uin="id8j4w9e7re8sage7rnpkoc">
+        <property name="$metaclass" value="Component Diagram"/>
+        <property name="@__options" value=""/>
+        <reference df-class-name="reference7" referencedUin="design:node:::id8j4w9e7re8sage7rnpkoc.nodeidf4lkke7re8sage7rnpq74">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="150,90,390,270"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::id8j4w9e7re8sage7rnpkoc.nodeidf4lkke7re8sage7rnpq74.nodeidhqxhye7re8sage7rnpmuw:id8j4w9e7re8sage7rnpkoc.nodeidf4lkke7re8sage7rnpq74">
+                <property name="bounds" value="24,81,169,60"/>
+            </reference>
+        </reference>
+    </view>
+    <node uin="id8j4w9e7re8sage7rnpkoc.nodeidf4lkke7re8sage7rnpq74">
+        <property name="$metaclass" value="Subsystem"/>
+        <property name="$name" value="SiriGui"/>
+        <node uin="id8j4w9e7re8sage7rnpkoc.nodeidf4lkke7re8sage7rnpq74.nodeidhqxhye7re8sage7rnpmuw">
+            <property name="$metaclass" value="Component"/>
+            <property name="$name" value="JidesoftComponent"/>
+        </node>
+    </node>
+</nodeSet>
