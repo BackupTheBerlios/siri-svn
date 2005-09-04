@@ -3,7 +3,7 @@ package codesnipps.designpatterns.simplefactory;
 import codesnipps.designpatterns.simplefactory.CarFactory.CarType;
 
 /**
- * Cleint useing a factory to retrieve a car.
+ * Client useing a fsimple actory to retrieve a car.
  * @author gepo
  *
  */
