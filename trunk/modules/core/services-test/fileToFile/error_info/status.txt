@@ -1,2 +1,0 @@
-timestamp=1089301824561
-numberOfErrors=18

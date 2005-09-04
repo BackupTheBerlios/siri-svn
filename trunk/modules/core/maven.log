@@ -1,4 +1,0 @@
-2004-06-28 16:11:06,043 WARN  org.apache.commons.jelly.tags.ant.AntTag - Could not convert tag: postgoal into an Ant task, data type or property
-2004-06-28 16:11:17,059 INFO  org.apache.maven.cli.App - Total time: 14 seconds
-2004-06-28 16:11:17,059 INFO  org.apache.maven.cli.App - Finished at: Mon Jun 28 16:11:17 CEST 2004
-2004-06-28 16:11:17,059 INFO  org.apache.maven.cli.App - 
