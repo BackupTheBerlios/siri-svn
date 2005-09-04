@@ -8,9 +8,9 @@ import codesnipps.designpatterns.simplefactory.CarFactory.CarType;
  *
  */
 public class Client {
+	private static CarFactory factory = new CarFactory();
 	
 	public static void main(String[] args) {
-		CarFactory factory = new CarFactory();
 		Car myCar = factory.createCar(CarType.AUDI);
 		String mycolor = myCar.getColor();		
 		System.out.println("All audi cars are of color : " + mycolor);
