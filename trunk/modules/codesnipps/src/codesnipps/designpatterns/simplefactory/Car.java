@@ -1,11 +1,8 @@
 package codesnipps.designpatterns.simplefactory;
 
+import java.util.HashMap;
+
 public abstract class Car {
 	String color;
-	abstract Car setUpCar(String type);
-	
-	void String getColor()
-	{
-		return color;
-	}
+	abstract String getColor();
 }
