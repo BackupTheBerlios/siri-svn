@@ -1,5 +1,7 @@
 package codesnipps.designpatterns.factory;
 
+import codesnipps.designpatterns.simplefactory.Volvo;
+
 public class CarFactory {
 	public enum CarType {AUDI, VOLVO};
 	
