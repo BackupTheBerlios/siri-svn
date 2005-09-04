@@ -1,11 +1,10 @@
 package codesnipps.designpatterns.simplefactory;
 
-
-public class Volvo extends Car{
+public class Audi extends Car{
 
 	Car createCar(String type) {
-		
+		// TODO Auto-generated method stub
 		return null;
-	} 
+	}
 
 }
