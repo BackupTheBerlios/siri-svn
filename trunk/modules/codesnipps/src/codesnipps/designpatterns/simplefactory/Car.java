@@ -4,9 +4,13 @@ import java.util.HashMap;
 
 /**
  * Cars shoulds inherit from this abstract superclass.
- * @stereotype abstract 
+ * 
+ * @stereotype abstract
  */
-public abstract class Car {
-	String color;
-	abstract String getColor();
+public abstract class Car
+{
+    String color;
+
+    abstract String getColor();
+    
 }
