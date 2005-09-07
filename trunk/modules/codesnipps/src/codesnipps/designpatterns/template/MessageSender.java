@@ -5,6 +5,7 @@ import java.io.File;
 /**
  * Defines a template for hanlding messages.
  * @author gepo
+ * @stereotype abstract
  *
  */
 public abstract class MessageSender
