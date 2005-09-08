@@ -15,7 +15,7 @@ public abstract class MessageSender
      * The send message is handles by sub classes to this class.
      * @param message
      */
-    void handleMessage(String message)
+    final void handleMessage(String message)
     {
         File location = backupMessage(message);
         boolean sent = sendMessage(message);
