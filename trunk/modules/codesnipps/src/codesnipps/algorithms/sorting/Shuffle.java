@@ -4,6 +4,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Date 
+ * Author 
+ * Id 
+ * Revision
+ * @author gepo
+ *
+ */
 public class Shuffle
 {
     static String[] listarr =
