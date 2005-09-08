@@ -6,6 +6,12 @@ import java.util.Collections;
 
 /**
  * From http://java.sun.com/developer/JDCTechTips/2004/tt0716.html#1
+ * Date 
+ * Author 
+ * Id 
+ * Revision
+ * @author gepo
+ *
  */
 public class CutAndShuffle {   
 
