@@ -14,7 +14,7 @@ public abstract class MessageSender
      * Algorithm - each step is represented as a method call.
      * The send message is handles by sub classes to this class.
      * @param message
-     */
+     */ lotta
     final void handleMessage(String message)
     {
         File location = backupMessage(message);
