@@ -1,4 +1,4 @@
-package codesnipps.sets;
+package codesnipps.collections;
 
 import java.util.LinkedList;
 import java.util.PriorityQueue;
