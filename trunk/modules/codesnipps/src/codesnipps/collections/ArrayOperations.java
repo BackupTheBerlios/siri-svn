@@ -12,7 +12,7 @@ public class ArrayOperations
     static int[] arr2 =
     { 1, 2, 4, 55, 33, 23, 45, 78 };
 
-    static String[][] tictac1 =
+    static String[][] tictac1 = 
     {
     { "X", "O", "X" },
     { "X", "O", "X" },
