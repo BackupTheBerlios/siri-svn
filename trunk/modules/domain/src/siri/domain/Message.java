@@ -7,6 +7,6 @@ package siri.domain;
  * Time: 12:33:33
  * To change this template use File | Settings | File Templates.
  */
-public class Message
+public class Message   
 {
 }
