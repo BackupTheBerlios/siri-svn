@@ -2,6 +2,9 @@ package codesnipps.designpatterns.command;
 
 import java.util.Queue;
 
+/**
+ * A consumer.
+ */
 public class MessageConsumer implements Runnable
 {
     private Queue q;
