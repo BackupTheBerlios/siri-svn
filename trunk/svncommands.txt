@@ -1,0 +1,4 @@
+export SVN_SSH="ssh -l loginname"
+svn -m "import comment" import svn+ssh://svn.berlios.de/svnroot/repos/yourproject/trunk
+
+svn commit out/ -m "model in gif"
