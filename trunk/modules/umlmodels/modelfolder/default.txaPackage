@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="jevcj8eetwxver-52hohp">
+		<property name="$metaclass" value="Device20"/>
+		<property name="$name" value="Device1"/>
+	</node>
+	<node uin="-2452mfeetwxyahuctb7a">
+		<property name="$metaclass" value="ExecutionEnvironment20"/>
+		<property name="$name" value="j2ee server"/>
+		<node uin="cp4qweetx0f65-yfd0tm">
+			<property name="$metaclass" value="Node20"/>
+			<property name="$name" value="ear"/>
+		</node>
+	</node>
+	<node uin="-2452mfeetwzep74ulq69">
+		<property name="$metaclass" value="ExecutionEnvironment20"/>
+		<property name="$name" value="java process"/>
+		<node uin="hhpkmeetwzjkz-65g0nr">
+			<property name="$metaclass" value="Node20"/>
+			<property name="$name" value="feeder"/>
+		</node>
+		<link uin="ieje0reetx0mwcu7v5dc">
+			<property name="$metaclass" value="CommunicationPath20"/>
+			<property name="$doc" value="iiop"/>
+			<participant referencedUin="design:node:::-2452mfeetwzep74ulq69" role="Client"></participant>
+			<participant referencedUin="design:node:::-2452mfeetwxyahuctb7a" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

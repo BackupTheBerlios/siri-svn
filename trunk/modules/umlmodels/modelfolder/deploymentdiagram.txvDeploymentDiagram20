@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="Vpje57weetwtgp7g6dmzc">
+		<property name="$metaclass" value="DeploymentDiagram20"/>
+		<property name="#invoke_inplace" value=""/>
+		<property name="$name" value="deploymentdiagram"/>
+		<reference referencedUin="design:node:::-2452mfeetwxyahuctb7a">
+			<property name="bounds" value="315,35,301,241"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::cp4qweetx0f65-yfd0tm:-2452mfeetwxyahuctb7a">
+				<property name="bounds" value="59,57,81,80"/>
+				<property name="location_set_by_user" value="true"/>
+				<property name="bounds_setted_by_user" value="true"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:node:::-2452mfeetwzep74ulq69">
+			<property name="bounds" value="35,75,201,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::hhpkmeetwzjkz-65g0nr:-2452mfeetwzep74ulq69">
+				<property name="bounds" value="59,37,80,80"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
+		</reference>
+	</view>
+</nodeSet>
