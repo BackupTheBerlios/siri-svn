@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Queues are new for java 5.
  * @author gepo
- *
+ * 
  */
 public class QueueOperations
 {
