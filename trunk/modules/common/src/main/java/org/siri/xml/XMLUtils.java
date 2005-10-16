@@ -14,7 +14,7 @@ import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
  */
 public class XMLUtils
 {
-    /** Logger. */ 
+    /** Logger. */  
     private static Logger logger = Logger.getLogger(XMLUtils.class);
 
     /**
