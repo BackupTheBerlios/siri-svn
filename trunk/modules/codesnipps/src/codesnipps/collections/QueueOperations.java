@@ -18,7 +18,7 @@ public class QueueOperations
     private static PriorityQueue<Integer> pq = new PriorityQueue<Integer>(20);
     
     private static void doStuff()
-    {
+    {     
         q.add("1");
         q.add("2");
         q.add("3");

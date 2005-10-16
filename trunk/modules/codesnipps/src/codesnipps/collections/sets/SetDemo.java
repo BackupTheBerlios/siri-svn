@@ -11,7 +11,6 @@ import java.util.TreeSet;
 public class SetDemo
 {
     static final int MIN = 1;
-
     static final int MAX = 10;
 
     public static void main(String args[])
