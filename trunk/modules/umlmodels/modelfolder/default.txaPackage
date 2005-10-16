@@ -59,4 +59,14 @@
 			<property name="$name" value="swing gui"/>
 		</node>
 	</node>
+	<node uin="ba089neeu3io68dtto1x">
+		<property name="$metaclass" value="Component20"/>
+		<property name="$name" value="DesignSystem1"/>
+		<property name="@stereotype" value="subsystem"/>
+		<property name="@stereotype" value="designSystem"/>
+		<node uin="7nuzaeeu3iraneim7ln">
+			<property name="$metaclass" value="Component20"/>
+			<property name="$name" value="feeder"/>
+		</node>
+	</node>
 </nodeSet>

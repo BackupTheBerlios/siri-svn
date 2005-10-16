@@ -16,6 +16,10 @@
 				<property name="location_set_by_user" value="true"/>
 				<property name="bounds_setted_by_user" value="true"/>
 			</reference>
+			<reference referencedUin="design:link:::ieje0reetx6skd-sqslak:-2452mfeetwxyahuctb7a">
+				<property name="sourceAnchor" value="341,180"/>
+				<property name="targetAnchor" value="580,180"/>
+			</reference>
 		</reference>
 		<reference referencedUin="design:node:::-2452mfeetwzep74ulq69">
 			<property name="bounds" value="35,435,201,181"/>
