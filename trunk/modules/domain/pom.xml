@@ -7,10 +7,10 @@
   </parent>  
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.siri</groupId>
-  <artifactId>common</artifactId>
+  <artifactId>domain</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Siri common artifact</name>
+  <name>Siri domain artifact</name>
   <url>http://maven.apache.org</url>
   <dependencies>  
   	<dependency>
