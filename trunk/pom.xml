@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   <ciManagement>
     <notifiers>
-      <notifier>
+      <notifier> 
         <type>mail</type>
         <configuration>
           <address>gepo01@siri.org</address>
