@@ -15,7 +15,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Types;
 
-import oracle.sql.BLOB;
+// Need to handle oracle jars....
+// import oracle.sql.BLOB;
 import org.hibernate.HibernateException;
 import org.hibernate.usertype.UserType;
 
@@ -164,7 +165,7 @@ public class BinaryBlobUserType  implements UserType
             }
         }
 
-        BLOB tempBlob = null;
+   // ORACLE     BLOB tempBlob = null;
         OutputStream tempBlobWriter = null;
         try
         {
@@ -174,8 +175,8 @@ public class BinaryBlobUserType  implements UserType
                   + " for update";
             rs = sta.executeQuery(sql);
             rs.next();
-            tempBlob = (BLOB) rs.getBlob(1); //Oracle class!!
-            tempBlobWriter = tempBlob.getBinaryOutputStream();
+   // ORACLE         tempBlob = (BLOB) rs.getBlob(1); //Oracle class!!
+   // ORACLE         tempBlobWriter = tempBlob.getBinaryOutputStream();
             try
             {
                 tempBlobWriter.write((byte[]) value);
@@ -189,7 +190,7 @@ public class BinaryBlobUserType  implements UserType
                 {
                     tempBlobWriter.flush();
                     tempBlobWriter.close();
-                    tempBlob.close();
+   // ORACLE                 tempBlob.close();
                 } catch (IOException ex2)
                 {
                     //ignore
@@ -214,7 +215,8 @@ public class BinaryBlobUserType  implements UserType
 
         try
         {
-            preparedStatment.setBlob(index, tempBlob);
+   // ORACLE         preparedStatment.setBlob(index, tempBlob);
+            preparedStatment.setBlob(index, null);  // Just so that it comiles...
         } catch (SQLException ex)
         {
             preparedStatment.close();        }

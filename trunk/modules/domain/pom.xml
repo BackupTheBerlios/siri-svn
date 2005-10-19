@@ -16,7 +16,7 @@
   	<dependency>
 	      <groupId>org.hibernate</groupId>
 	      <artifactId>hibernate</artifactId>
-	      <version>3.0.5</version>
+	      <!-- version>3.0.5</version Pull the version from the parent--> 
 		<!-- Excluding jars not needed from Hibernate POM.
 		     Also the javax jars needs to be downloaded from 
 		     Sun (or from an Hibernate installation) and installed

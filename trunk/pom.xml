@@ -39,7 +39,51 @@
           <artifactId>log4j</artifactId>
           <version>1.2.8</version>
     </dependency>
+    <dependency>
+          <groupId>commons-lang</groupId>
+          <artifactId>commons-lang</artifactId>
+          <version>2.1</version>
+    </dependency>
+    <dependency>
+          <groupId>commons-beanutils</groupId>
+          <artifactId>commons-beanutils</artifactId>
+          <version>1.7.0</version>
+    </dependency>
+    <dependency>
+          <groupId>commons-collections</groupId>
+          <artifactId>commons-collections</artifactId>
+          <version>3.1</version>
+    </dependency>
+    <!-- Dependencies to J2EE spec - using geronimo generated -->
+    <dependency>
+          <groupId>commons-collections</groupId>
+          <artifactId>commons-collections</artifactId>
+          <version>3.1</version>
+    </dependency>
+    <dependency>
+          <groupId>geronimo-spec</groupId>
+          <artifactId>geronimo-spec-jms</artifactId>
+          <version>1.1-rc4</version>
+    </dependency>
+    <dependency>
+          <groupId>geronimo-spec</groupId>
+          <artifactId>geronimo-spec-ejb</artifactId>
+          <version>2.1-rc4</version>
+    </dependency>
   </dependencies>
+  
+  
+  <dependencyManagement>
+          <dependencies>
+            <dependency>
+   		<groupId>org.hibernate</groupId>
+  	      	<artifactId>hibernate</artifactId>
+	      	<version>3.0.5</version>
+            </dependency>
+          </dependencies>
+  </dependencyManagement>
+  
+  
   
   <organization>
       <name>Capio</name>
@@ -67,10 +111,11 @@
           <module>modules/common</module>
   </modules>
   
-  
-  <!-- 
-  build>
-  	<directory>target</directory>
+  <!-- Need this to set java version using compiler plugin -->
+  <build>
+  	<!-- 
+  	Use defaults    
+  	directory>target</directory>
   	<outputDirectory>target/classes</outputDirectory>
   	<finalName>${artifactId}-${version}</finalName>
   	<testOutputDirectory>target/test-classes</testOutputDirectory>
@@ -86,9 +131,17 @@
   		<testResource>
   		<directory>src/test/resources</directory>
   		</testResource>
-  	</testResources>
-  </build
-  -->
+  	</testResources 
+  	-->
+        <plugins>
   
-  
+  		<plugin>
+        	<artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.5</source>
+                        <target>1.5</target>
+                    </configuration>
+                </plugin>
+          </plugins>
+  </build>
 </project>
