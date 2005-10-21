@@ -13,5 +13,10 @@
     <orderEntry type="library" name="log4j-1.2.8" level="application" />
     <orderEntryProperties />
   </component>
+  <component name="org.mevenide.idea.module.ModuleSettings">
+    <favoriteGoals>
+      <list size="0" />
+    </favoriteGoals>
+  </component>
 </module>
 
