@@ -59,6 +59,7 @@
             </resource>
         </resources -->
         
+	<!-- Usage of this plugin: http://mojo.codehaus.org/xmlbeans-maven-plugin/usage.html -->
         <plugins>
             <plugin>
 	        <groupId>org.codehaus.mojo</groupId>
