@@ -1,30 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.siri</groupId>
+    <artifactId>siri</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>  
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.siri</groupId>
-  <artifactId>siri</artifactId>
-  <packaging>pom</packaging>
+  <artifactId>domain</artifactId>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Siri parent project</name>
+  <name>Siri domain artifact</name>
   <url>http://maven.apache.org</url>
-  <ciManagement>
-    <notifiers>
-      <notifier> 
-        <type>mail</type>
-        <configuration>
-          <address>gepo01@siri.org</address>
-        </configuration>
-      </notifier>
-      <notifier>
-        <type>googletalk</type>
-        <configuration>
-          <host>irc.codehaus.org</host>
-          <port>6667</port>
-          <channel>#siri</channel>
-        </configuration>
-      </notifier>
-    </notifiers>
-  </ciManagement>
   
   <!-- Put all global dependencies here instead of spreading them out in different modules. -->  
   <dependencies>
@@ -109,6 +96,7 @@
   <modules>
           <module>modules/domain</module>
           <module>modules/common</module>
+          <module>modules/feeder/feederconfig</module>
   </modules>
   
   <!-- Need this to set java version using compiler plugin -->

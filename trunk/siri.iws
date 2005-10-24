@@ -207,10 +207,8 @@
       <file leaf-file-name="PluginInvoker.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09586466">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="21" column="6" selection-start="577" selection-end="577" vertical-scroll-proportion="0.67105263">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -748,10 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.09586466">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="21" column="6" selection-start="577" selection-end="577" vertical-scroll-proportion="0.67105263">
+          <folding />
         </state>
       </provider>
     </entry>
