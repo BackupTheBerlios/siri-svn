@@ -183,7 +183,6 @@
       <module fileurl="file://$PROJECT_DIR$/modules/feeder/feeder/feeder.iml" filepath="$PROJECT_DIR$/modules/feeder/feeder/feeder.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/feeder/feederconfig/feederconfig.iml" filepath="$PROJECT_DIR$/modules/feeder/feederconfig/feederconfig.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/feeder/feederplugin/feederplugin.iml" filepath="$PROJECT_DIR$/modules/feeder/feederplugin/feederplugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/client/swing/swing.iml" filepath="$PROJECT_DIR$/modules/client/swing/swing.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" />
@@ -194,7 +193,78 @@
     <option name="GENERATE_IIOP_STUBS" value="false" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
-  <component name="libraryTable" />
+  <component name="libraryTable">
+    <library name="log4j-1.2.8">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/log4j/log4j/1.2.8/log4j-1.2.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-collections-2.1.1">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-logging-1.0.4">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate-3.0.5">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/org/hibernate/hibernate/3.0.5/hibernate-3.0.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org">
+      <CLASSES>
+        <root url="file://C:/Documents and Settings/geopol.INTERNET/.m2/repository/org" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="geronimo-spec-ejb-2.1-rc4">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/geronimo-spec/geronimo-spec-ejb/2.1-rc4/geronimo-spec-ejb-2.1-rc4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="geronimo-spec-jms-1.1-rc4">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/geronimo-spec/geronimo-spec-jms/1.1-rc4/geronimo-spec-jms-1.1-rc4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-beanutils-1.7.0">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-collections-3.1">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-lang-2.1">
+      <CLASSES>
+        <root url="jar://C:/Documents and Settings/geopol.INTERNET/.m2/repository/commons-lang/commons-lang/2.1/commons-lang-2.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
   <component name="uidesigner-configuration">
     <option name="INSTRUMENT_CLASSES" value="true" />
     <option name="COPY_FORMS_RUNTIME_TO_OUTPUT" value="true" />
