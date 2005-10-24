@@ -10,16 +10,16 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="commons-beanutils-1.7.0" level="application" />
-    <orderEntry type="library" name="commons-collections-2.1.1" level="application" />
-    <orderEntry type="library" name="commons-collections-3.1" level="application" />
-    <orderEntry type="library" name="commons-logging-1.0.4" level="application" />
-    <orderEntry type="library" name="junit-3.8.1" level="application" />
-    <orderEntry type="library" name="log4j-1.2.8" level="application" />
-    <orderEntry type="library" name="geronimo-spec-jms-1.1-rc4" level="application" />
-    <orderEntry type="library" name="geronimo-spec-ejb-2.1-rc4" level="application" />
-    <orderEntry type="library" name="hibernate-3.0.5" level="application" />
-    <orderEntry type="library" name="commons-lang-2.1" level="application" />
+    <orderEntry type="library" name="log4j-1.2.8" level="project" />
+    <orderEntry type="library" name="commons-collections-2.1.1" level="project" />
+    <orderEntry type="library" name="commons-logging-1.0.4" level="project" />
+    <orderEntry type="library" name="hibernate-3.0.5" level="project" />
+    <orderEntry type="library" name="org" level="project" />
+    <orderEntry type="library" name="geronimo-spec-ejb-2.1-rc4" level="project" />
+    <orderEntry type="library" name="geronimo-spec-jms-1.1-rc4" level="project" />
+    <orderEntry type="library" name="commons-beanutils-1.7.0" level="project" />
+    <orderEntry type="library" name="commons-collections-3.1" level="project" />
+    <orderEntry type="library" name="commons-lang-2.1" level="project" />
     <orderEntryProperties />
   </component>
   <component name="org.mevenide.idea.module.ModuleSettings">
