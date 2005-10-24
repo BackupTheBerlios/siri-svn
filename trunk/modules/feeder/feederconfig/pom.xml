@@ -62,7 +62,7 @@
         <plugins>
             <plugin>
 	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>maven-xmlbeans-plugin</artifactId>
+	        <artifactId>xmlbeans-maven-plugin</artifactId>
 	        <version>2.0-beta-1</version>
 	        <executions>
 	           <execution>
