@@ -1,9 +1,8 @@
 package org.siri.core.config;
 
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
+//import com.thoughtworks.xstream.XStream;
+//import com.thoughtworks.xstream.io.xml.DomDriver;
 
-import java.io.Writer;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -30,23 +29,23 @@ public class ConfigHandler
         }
     }
 
-    XStream xstream = new XStream(new DomDriver());
+  //  XStream xstream = new XStream(new DomDriver());
 
     private String readXMLConfig(String xml)
     {
-        xstream.fromXML(xml);
+    //    xstream.fromXML(xml);
 
         logger.debug(xml);
         return "";
     }
-
+        /*
     private String writeXMLConfig(SystemConfig systemConfig)
     {
-        String xml = xstream.toXML(systemConfig);
-        logger.debug(xml);
+  //      String xml = xstream.toXML(systemConfig);
+      //  logger.debug(xml);
 
         return xml;
-    }
+    }       */
 
     public static void main(String[] args)
     {
@@ -62,6 +61,6 @@ public class ConfigHandler
 
         globalSettings.setArchiveHandler(archiveHandler);
         systemConfig.setGlobalSettings(globalSettings);
-        configReader.writeXMLConfig(systemConfig);
+ //       configReader.writeXMLConfig(systemConfig);
     }
 }

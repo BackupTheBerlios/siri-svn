@@ -1,6 +1,5 @@
 package org.siri.command;
 
-import org.siri.core.config.ServiceNodeConfig;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**

@@ -120,37 +120,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AcknowledgeMode.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/AcknowledgeMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.26626506">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="28" selection-start="745" selection-end="745" vertical-scroll-proportion="0.020481927">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Destination.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/Destination.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="441" selection-end="441" vertical-scroll-proportion="0.020481927">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RemoteSiriException.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/exception/RemoteSiriException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -204,10 +173,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PluginInvoker.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
+      <file leaf-file-name="Command.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/command/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="25" selection-start="174" selection-end="174" vertical-scroll-proportion="0.12289157">
+            <state line="26" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5325301">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigHandler.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/core/config/ConfigHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="32" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.5202454">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="4" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.83614457">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="47" selection-start="684" selection-end="684" vertical-scroll-proportion="0.34819278">
               <folding />
             </state>
           </provider>
@@ -269,7 +267,7 @@
     <setting name="SHOW_AS_DEPLOYMENT_VIEW" value="false" />
   </component>
   <component name="ModuleEditorState">
-    <option name="LAST_EDITED_MODULE_NAME" value="common" />
+    <option name="LAST_EDITED_MODULE_NAME" value="feeder" />
     <option name="LAST_EDITED_TAB_NAME" value="Libraries (Classpath)" />
   </component>
   <component name="NamedScopeManager" />
@@ -334,8 +332,46 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="common" />
+        <option name="myItemId" value="feeder" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="feeder" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feeder" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="domain" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="domain" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
     <PATH>
@@ -346,28 +382,6 @@
       <PATH_ELEMENT>
         <option name="myItemId" value="common" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="common" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common\src" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
   </component>
@@ -375,7 +389,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -394,6 +408,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_opened_file_path" value="C:\gepo\siri" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
   </component>
   <component name="ReadonlyStatusHandler">
@@ -495,7 +510,7 @@
     <layout>
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.23624596" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.24838188" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3295583" order="8" />
@@ -581,13 +596,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/QueueDestination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="670" column="107" selection-start="25191" selection-end="25191" vertical-scroll-proportion="0.33655706">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/AcknowledgeMode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.26626506">
@@ -613,46 +621,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/exception/RemoteSiriException.java">
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.26626506">
+        <state line="10" column="30" selection-start="217" selection-end="217" vertical-scroll-proportion="0.31954888">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jndi/GenericServiceLocator.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="750" selection-end="750" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/BinaryBlobUserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="58" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/TopicDestination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="61" selection-start="818" selection-end="818" vertical-scroll-proportion="0.020858895">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="156" column="17" selection-start="5696" selection-end="5696" vertical-scroll-proportion="0.60150373">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -680,10 +659,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
+    <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="174" selection-end="174" vertical-scroll-proportion="0.12289157">
+        <state line="17" column="47" selection-start="684" selection-end="684" vertical-scroll-proportion="0.34819278">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="4" selection-start="1619" selection-end="1619" vertical-scroll-proportion="0.83614457">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5325301">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/TopicDestination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="61" selection-start="818" selection-end="818" vertical-scroll-proportion="0.020858895">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/BinaryBlobUserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="58" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.020481927">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="45" selection-start="750" selection-end="750" vertical-scroll-proportion="0.020481927">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jndi/GenericServiceLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.020481927">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/exception/RemoteSiriException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.26626506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/core/config/ConfigHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="32" selection-start="1163" selection-end="1163" vertical-scroll-proportion="0.5202454">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
