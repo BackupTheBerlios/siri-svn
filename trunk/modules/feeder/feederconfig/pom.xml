@@ -1,17 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  	
-  <parent>
-    <groupId>org.siri</groupId>
-    <artifactId>siri</artifactId>
-    <version>1.0-SNAPSHOT</version>
-  </parent>  
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>org.siri</groupId>
+        <artifactId>siri</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <inceptionYear>2005</inceptionYear>
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.siri</groupId>
     <artifactId>feederconfig</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
+    <name>Siri feeder config artifact</name>
+    <url>http://maven.apache.org</url>
     <dependencies>
 
 
@@ -42,7 +44,7 @@
         </dependency -->
 
 
-	
+
 
     </dependencies>
 
@@ -58,25 +60,41 @@
                 </includes>
             </resource>
         </resources -->
-        
-	<!-- Usage of this plugin: http://mojo.codehaus.org/xmlbeans-maven-plugin/usage.html -->
+
+        <!-- Usage of this plugin: http://mojo.codehaus.org/xmlbeans-maven-plugin/xmlbeans-mojo.html -->
         <plugins>
             <plugin>
-	        <groupId>org.codehaus.mojo</groupId>
-	        <artifactId>xmlbeans-maven-plugin</artifactId>
-	        <version>2.0-beta-1</version>
-	        <executions>
-	           <execution>
-	              <goals>
-	                 <goal>xmlbeans</goal>
-	              </goals>
-	           </execution>
-	        </executions>
-	        <inherited>true</inherited>
-	        <configuration>
-	           <schemaDirectory>src/xsd</schemaDirectory>
-	        </configuration>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>xmlbeans-maven-plugin</artifactId>
+                <version>2.0-beta-1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>xmlbeans</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <inherited>true</inherited>
+                <configuration>
+                    <schemaDirectory>src/xsd</schemaDirectory>
+                </configuration>
             </plugin>
+            <!--plugin>
+	    	<groupId>maven</groupId>
+	    	<artifactId>maven-castor-plugin</artifactId>
+	    	<version>1.2</version>
+	    	<executions>
+	    	    <execution>
+	    	        <goals>
+	    	                 <goal>generate</goal>
+	    	              </goals>
+	    	           </execution>
+	    	        </executions>
+	    	        <inherited>true</inherited>
+	    	        <configuration>
+	    	           <schema>src/xsd</schema>
+	    	        </configuration>
+            </plugin-->
         </plugins>
     </build>
 
