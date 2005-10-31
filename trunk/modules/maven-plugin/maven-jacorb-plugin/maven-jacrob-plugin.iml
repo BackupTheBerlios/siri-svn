@@ -9,7 +9,14 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="commons-io-1.0" level="project" />
+    <orderEntry type="library" name="maven-plugin-api-2.0" level="project" />
     <orderEntryProperties />
+  </component>
+  <component name="org.mevenide.idea.module.ModuleSettings">
+    <favoriteGoals>
+      <list size="0" />
+    </favoriteGoals>
   </component>
 </module>
 

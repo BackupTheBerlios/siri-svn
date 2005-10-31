@@ -20,7 +20,7 @@ import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.commons.io.FileUtils;
 
-import org.exolab.castor.builder.SourceGenerator;
+//import org.exolab.castor.builder.SourceGenerator;
 
 import java.util.ArrayList;
 import java.io.File;
@@ -212,13 +212,13 @@ public class JacorbPlugin  extends AbstractMojo
             {
                 a.add( "-dest" + getDest() );
             }
-            SourceGenerator sourceGenerator = new SourceGenerator();
+          //  SourceGenerator sourceGenerator = new SourceGenerator();
             String args[] = new String[a.size()];
             for ( int i = 0; i < a.size(); i++ )
             {
                 args[i] = ( String ) a.get( i );
             }
-            sourceGenerator.main( args );
+          //  sourceGenerator.main( args );
         }
         else
         {

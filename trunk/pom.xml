@@ -5,7 +5,7 @@
     <artifactId>siri</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-  <name>Capio parent project</name>
+  <name>Siri parent project</name>
   <url>http://maven.apache.org</url>
     <!-- If you have any internal repository you can put it here. -->
     <repositories>
@@ -66,6 +66,54 @@
             <version>1.2.5</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+	      <groupId>org.hibernate</groupId>
+	      <artifactId>hibernate</artifactId>
+	      <version>3.0.5</version> <!-- Pull the version from the parent--> 
+		<!-- Excluding jars not needed from Hibernate POM.
+		     Also the javax jars needs to be downloaded from 
+		     Sun (or from an Hibernate installation) and installed
+		     into repository for this build to work.
+		-->
+		<exclusions>
+	      	        <exclusion>
+	      	          <groupId>ant</groupId>
+	      	          <artifactId>ant</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>odmg</groupId>
+	      	          <artifactId>odmg</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>c3p0</groupId>
+	      	          <artifactId>c3p0</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>proxool</groupId>
+	      	          <artifactId>proxool</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>opensymphony</groupId>
+	      	          <artifactId>oscache</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>swarmcache</groupId>
+	      	          <artifactId>swarmcache</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>jboss</groupId>
+	      	          <artifactId>jboss-cache</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>javax.security</groupId>
+	      	          <artifactId>jacc</artifactId>
+	      	        </exclusion>
+	      	        <exclusion>
+	      	          <groupId>javax.transaction</groupId>
+	      	          <artifactId>jta</artifactId>
+	      	        </exclusion>
+      		</exclusions>
+    	</dependency>    	
         <!-- dependency>
                                <groupId>springframework</groupId>
                                <artifactId>spring-mock</artifactId>
@@ -85,7 +133,7 @@
     </dependencies>
 
 
-    <dependencyManagement>
+    <!-- dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -93,7 +141,7 @@
                 <version>3.0.5</version>
             </dependency>
         </dependencies>
-    </dependencyManagement>
+    </dependencyManagement -->
 
 
 
@@ -121,7 +169,8 @@
     <modules>
         <module>modules/domain</module>
         <module>modules/common</module>
-        <module>modules/feeder/feederconfig</module>
+         <module>modules/feeder/feeder</module>
+        <!-- module>modules/feeder/feederconfig</module -->
     </modules>
 
     <!-- Need this to set java version using compiler plugin -->
