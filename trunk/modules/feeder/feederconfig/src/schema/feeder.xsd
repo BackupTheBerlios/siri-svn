@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema  targetNamespace="http://siri.org/feederconfig/SystemConfig"
+            xmlns="http://siri.org/feederconfig/SystemConfig"
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
 	<xs:complexType name="appenderType">
 		<xs:sequence>
 			<xs:element ref="maxfilesize" minOccurs="0"/>
