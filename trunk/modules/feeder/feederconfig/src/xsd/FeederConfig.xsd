@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema  targetNamespace="http://feederconfig.siri.org/feeder.xsd"
-            xmlns="http://feederconfig.siri.org/feeder.xsd"
+<xs:schema  targetNamespace="http://feederconfig.siri.org/FeederConfig.xsd"
+            xmlns="http://feederconfig.siri.org/FeederConfig.xsd"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            xmlns:mstns="http://feederconfig.siri.org/feeder.xsd"
+            xmlns:mstns="http://feederconfig.siri.org/FeederConfig.xsd"
             elementFormDefault="qualified">
 	<xs:complexType name="appenderType">
 		<xs:sequence>
