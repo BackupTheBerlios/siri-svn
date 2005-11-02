@@ -13,21 +13,22 @@ public class FeederPluginImpl implements FeederPlugin
      * Logger.
      */
     private static Logger logger = Logger.getLogger(FeederPluginImpl.class);
+    private String description;
 
-    public String getName()
+    public String getDescription()
     {
-        return name;
+        return description;
     }
 
-    public void setName(String name)
+    public void setDescription(String description)
     {
-        this.name = name;
+        this.description = description;
     }
 
-    String name;
+
 
     public void execute()
     {
-        logger.debug("");
+        logger.debug("->" + description);
     }
 }
