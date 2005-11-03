@@ -91,48 +91,6 @@ public class HibernateUtil
         return configuration;
     }
 
-    /**
-     * Rebuild the SessionFactory with the static Configuration.
-     *
-     */
-    /*
-    public static void rebuildSessionFactory() throws InfrastructureException
-    {
-        synchronized (sessionFactory)
-        {
-            try
-            {
-                sessionFactory = getConfiguration().buildSessionFactory();
-            }
-            catch (Exception ex)
-            {
-                throw new InfrastructureException(ex);
-            }
-        }
-    }*/
-
-    /**
-     * Rebuild the SessionFactory with the given Hibernate Configuration.
-     *
-     * @param cfg
-     */
-    /*
-    public static void rebuildSessionFactory(Configuration cfg) throws
-        InfrastructureException
-    {
-        synchronized (sessionFactory)
-        {
-            try
-            {
-                sessionFactory = cfg.buildSessionFactory();
-                configuration = cfg;
-            }
-            catch (Exception ex)
-            {
-                throw new InfrastructureException(ex);
-            }
-        }
-    }*/
 
     /**
      * Retrieves the current Session local to the thread.
