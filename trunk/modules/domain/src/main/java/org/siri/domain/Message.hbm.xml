@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+  <class name="org.siri.domain.Message" table="MESSAGE" >
+    <id column="MESSAGEID" name="id" type="java.lang.String" >
+      <generator class="assigned"/>
+    </id>
+    <property name="creationTime" not-null="false" type="timestamp" column="CREATEDTIMESTAMP"/>
+	<property name="message" not-null="false" type="java.lang.String" column="MESSAGECONTENT"/>
+	<set name="receivers" cascade="all" lazy="true" inverse="true" table="RECEIVER" >
+      <key>
+        <column name="RECEIVERID" not-null="true"/><!-- id column in other table -->
+      </key>
+      <one-to-many class="org.siri.domain.Receiver"/>
+    </set>
+    <many-to-one
+        name="rfsignal"
+        not-null="false"
+        class="org.siri.domain.Sender"
+        column="SENDERID"<!-- column in this table -->
+        cascade="none">
+    </many-to-one>
+  </class>
+</hibernate-mapping>
