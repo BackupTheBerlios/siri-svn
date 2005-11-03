@@ -14,6 +14,7 @@ public class PluginInvoker
 {
     /** Logger. */
     private static Logger logger = Logger.getLogger(PluginInvoker.class);
+    private String beansConfigFile;
 
     static
     {
@@ -29,14 +30,19 @@ public class PluginInvoker
         }
     }
 
+    public PluginInvoker(String beansConfigFile, String beanName)
+    {
+        this.beansConfigFile = beansConfigFile;
+        BeanFactory factory = new ClassPathXmlApplicationContext(beansConfigFile);
+        FeederPlugin ref = (XSLTransformerFeederPluginImpl)factory.getBean(beanName);
+        ref.execute();
+    }
 
 
     public static final void main(String[] args) {
         String beansConfigFile = "plugin-xsltransformer.xml";
-        //ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(beansConfigFile);
-        BeanFactory factory = new ClassPathXmlApplicationContext(beansConfigFile);
-        FeederPlugin ref = (FeederPluginImpl)factory.getBean("xsltransformplugin");
-        ref.execute();
+        String beanId = "xsltransformplugin";
+        PluginInvoker pluginInvoker = new PluginInvoker(beansConfigFile,beanId);
     }
 
 }

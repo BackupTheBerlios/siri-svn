@@ -120,15 +120,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GuidGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/guid/GuidGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.020481927">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HibernateTemplate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -169,10 +160,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConfigHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/config/ConfigHandler.java">
+      <file leaf-file-name="feederconfig.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/test-data/feederconfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="8" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.57831323">
+            <state line="46" column="38" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.19277108">
+              <folding>
+                <marker date="1130941859343" expanded="true" signature="4250:4254" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeederPlugin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/FeederPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.18433735">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XSLTransformerFeederPluginImpl.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/XSLTransformerFeederPluginImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="36" selection-start="110" selection-end="110" vertical-scroll-proportion="0.12289157">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,41 +191,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="feeder.xsd" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/schema/feeder.xsd">
+      <file leaf-file-name="Log4JInit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/logging/Log4JInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="51" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.4506024">
+            <state line="13" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.18773006">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin-xsltransformer.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/test-data/plugin-xsltransformer.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="23" selection-start="356" selection-end="356" vertical-scroll-proportion="0.14337349">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PluginInvoker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="5" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.6662577">
               <folding>
-                <element signature="tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-                <element signature="tag#xs:sequence#0;tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feeder.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/schema/feeder.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="40" selection-end="52" vertical-scroll-proportion="0.020858895">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlOptions.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPO$/xmlbeans/xbean/2.0.0/xbean-2.0.0.jar!/org/apache/xmlbeans/XmlOptions.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.020858895">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="64" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.5325301">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -249,8 +250,8 @@
     <setting name="SHOW_AS_DEPLOYMENT_VIEW" value="false" />
   </component>
   <component name="ModuleEditorState">
-    <option name="LAST_EDITED_MODULE_NAME" value="feeder" />
-    <option name="LAST_EDITED_TAB_NAME" value="Libraries (Classpath)" />
+    <option name="LAST_EDITED_MODULE_NAME" value="feederplugin" />
+    <option name="LAST_EDITED_TAB_NAME" value="Paths" />
   </component>
   <component name="NamedScopeManager" />
   <component name="PackagesPane">
@@ -270,21 +271,11 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
+        <option name="myItemId" value="feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="org.siri" />
+        <option name="myItemId" value="org.msgrouter.feeder" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -292,56 +283,6 @@
       <PATH_ELEMENT>
         <option name="myItemId" value="siri.ipr" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feeder" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feeder" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="org.siri" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feeder" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="org.siri" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="config" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-      </PATH_ELEMENT>
-    </PATH>
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="domain" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="Libraries" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
       </PATH_ELEMENT>
     </PATH>
     <PATH>
@@ -352,6 +293,38 @@
       <PATH_ELEMENT>
         <option name="myItemId" value="common" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="org.siri" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="org.siri" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
       </PATH_ELEMENT>
     </PATH>
   </component>
@@ -401,14 +374,8 @@
         <option name="myItemId" value="siri.ipr" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
-    </PATH>
-    <PATH>
       <PATH_ELEMENT>
-        <option name="myItemId" value="siri.ipr" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
+        <option name="myItemId" value="feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -418,11 +385,11 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
+        <option name="myItemId" value="feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -432,15 +399,19 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
+        <option name="myItemId" value="feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig\src" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin\src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin\src\test-data" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -450,19 +421,15 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="feederconfig" />
+        <option name="myItemId" value="feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig\src" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederconfig\src\schema" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\feeder\feederplugin\src" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -470,10 +437,6 @@
       <PATH_ELEMENT>
         <option name="myItemId" value="siri.ipr" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="feeder" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
     </PATH>
     <PATH>
@@ -510,12 +473,26 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" splitterProportion="0.5">
+    <navigator currentView="PackagesPane" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -533,9 +510,11 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="RunManagerConfig.compileBeforeRunning" value="true" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="last_opened_file_path" value="C:\gepo\siri" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="true" />
@@ -544,13 +523,17 @@
   <component name="RestoreUpdateTree" />
   <component name="RunManager">
     <activeType name="Application" />
-    <configuration selected="false" default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
+    <tempConfiguration selected="true" default="false" name="PluginInvoker" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.msgrouter.feeder.PluginInvoker" />
+      <option name="VM_PARAMETERS" value="-Dlog4j.configuration=log4j.xml" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/modules/feeder/feederplugin/classes" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <module name="feederplugin" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </tempConfiguration>
     <configuration selected="false" default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -567,15 +550,6 @@
         <value defaultName="wholeProject" />
       </option>
     </configuration>
-    <configuration selected="false" default="true" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <module name="" />
-    </configuration>
     <configuration selected="false" default="true" type="Applet" factoryName="Applet">
       <module name="" />
       <option name="MAIN_CLASS_NAME" />
@@ -587,6 +561,22 @@
       <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration selected="false" default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration selected="false" default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <module name="" />
     </configuration>
   </component>
   <component name="SelectInManager" />
@@ -632,12 +622,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1004" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.20064725" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="1" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.23058252" order="0" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3295583" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3295583" order="8" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="6" />
@@ -645,7 +635,7 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="Favorites" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.30464327" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="2" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="3" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.4" order="4" />
@@ -722,81 +712,40 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/command/Command.java">
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/xsd/EmailMessage.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="29" selection-start="460" selection-end="460" vertical-scroll-proportion="0.83082706">
+        <state line="4" column="47" selection-start="302" selection-end="302" vertical-scroll-proportion="0.08192771">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/exception/RemoteSiriException.java">
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/xsd/FeederConfig.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.26626506">
+        <state line="78" column="42" selection-start="3008" selection-end="3008" vertical-scroll-proportion="0.110843375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jndi/GenericServiceLocator.java">
+    <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="45" selection-start="750" selection-end="750" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/BinaryBlobUserType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.020481927">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/guid/GuidGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="592" selection-end="592" vertical-scroll-proportion="0.020481927">
+        <state line="30" column="24" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.5939759">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="150" selection-end="150" vertical-scroll-proportion="0.16385542">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="351" selection-end="351" vertical-scroll-proportion="0.020481927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/TopicDestination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="61" selection-start="818" selection-end="818" vertical-scroll-proportion="0.020858895">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPO$/xmlbeans/xbean/2.0.0/xbean-2.0.0.jar!/org/apache/xmlbeans/XmlOptions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.020858895">
+        <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.032882012">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/main/java/org/siri/config/ConfigHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="49" selection-start="4073" selection-end="4073" vertical-scroll-proportion="1.197546">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -809,35 +758,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/domain/pom.xml">
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/jms/TopicDestination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="64" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.5325301">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/feeder/feeder/src/main/java/org/siri/config/ConfigHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="8" selection-start="2816" selection-end="2816" vertical-scroll-proportion="0.57831323">
+        <state line="34" column="61" selection-start="818" selection-end="818" vertical-scroll-proportion="0.020858895">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/schema/feeder.xml">
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="40" selection-end="52" vertical-scroll-proportion="0.020858895">
+        <state line="17" column="27" selection-start="351" selection-end="351" vertical-scroll-proportion="0.020481927">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/schema/feeder.xsd">
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="51" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.4506024">
+        <state line="8" column="17" selection-start="150" selection-end="150" vertical-scroll-proportion="0.16385542">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/FeederPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="121" selection-end="121" vertical-scroll-proportion="0.18433735">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/PluginInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="5" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.6662577">
           <folding>
-            <element signature="tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:sequence#0;tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederconfig/src/test-data/feederconfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="38" selection-start="2258" selection-end="2258" vertical-scroll-proportion="0.19277108">
+          <folding>
+            <marker date="1130941859343" expanded="true" signature="4250:4254" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/test-data/plugin-xsltransformer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="356" selection-end="356" vertical-scroll-proportion="0.14337349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/logging/Log4JInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.18773006">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/feeder/feederplugin/src/main/java/org/msgrouter/feeder/XSLTransformerFeederPluginImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="36" selection-start="110" selection-end="110" vertical-scroll-proportion="0.12289157">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

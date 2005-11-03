@@ -278,6 +278,27 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="xerces-1.4.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/xerces/xerces/1.4.0/xerces-1.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="xmlbeans-jsr173-api-2.0-dev">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/xmlbeans/xmlbeans-jsr173-api/2.0-dev/xmlbeans-jsr173-api-2.0-dev.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="spring-1.2.5">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/springframework/spring/1.2.5/spring-1.2.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
   <component name="uidesigner-configuration">
     <option name="INSTRUMENT_CLASSES" value="true" />

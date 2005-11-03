@@ -16,23 +16,23 @@
         </ArchiveHandler>
         <Email  sendintervallInMilliSeconds="10000">
             <smtp>
-                <smtpserver id="1">tdvmail</smtpserver>
-                <smtpserver id="2">tdvmail2</smtpserver>
+                <smtpserver id="1">mailserverl</smtpserver>
+                <smtpserver id="2">mailserver2</smtpserver>
             </smtp>
             <pop>
-                <popserver id="1">tdvmail</popserver>
-                <popserver id="2">tdvmail2</popserver>
+                <popserver id="1">mailserverl</popserver>
+                <popserver id="2">mailserver2</popserver>
             </pop>
             <imap>
-                <imapserver id="1">tdvmail</imapserver>
-                <imapserver id="2">tdvmail2</imapserver>
+                <imapserver id="1">mailserverl</imapserver>
+                <imapserver id="2">mailserver2</imapserver>
             </imap>
         </Email>
     </GlobalSettings>
     
     <FeederNode type="file-file" id="filetest-filetest" createuniquename="true" usesrelativerootpath="false">
         <infolder>
-            <infolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/in/</infolderpath>
+            <infolderpath>in</infolderpath>
             <intervallInMilliSeconds>5000</intervallInMilliSeconds>
             <skipfirstblankline>false</skipfirstblankline>
             <infoldersendchunks sendinfolderchunkson="false">
@@ -41,33 +41,33 @@
             </infoldersendchunks>
         </infolder>
         <outfolder>
-            <outfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/out/</outfolderpath>
+            <outfolderpath>out</outfolderpath>
         </outfolder>
         <backup backuphandleron="true" archiveron="true">
-            <backupfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/backup/</backupfolderpath>
-            <archivefolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/archived/</archivefolderpath>
+            <backupfolderpath>backup/</backupfolderpath>
+            <archivefolderpath>archived/</archivefolderpath>
         </backup>
         <transform transformon="false"/>
         <error  errorhandleron="true">
-            <errorfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/error/</errorfolderpath>
-            <errorinfofolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/error_info/</errorinfofolderpath>
+            <errorfolderpath>error/</errorfolderpath>
+            <errorinfofolderpath>error_info</errorinfofolderpath>
             <sortonresend>false</sortonresend>
             <CronJob>Every minute@0/20 * * * * ?</CronJob>
             <errornotification errornotificationon="true">
                 <notifyeveryintervallInMilliSeconds>180000</notifyeveryintervallInMilliSeconds>
                 <numberoferrors>1</numberoferrors>
                 <emailnotification>
-                    <emailonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/template/emailerrornotification.xml</emailonfailure>
+                    <emailonfailure>/template/emailerrornotification.xml</emailonfailure>
                 </emailnotification>
                 <sms>
-                    <smsonfailure>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/template/down.xml</smsonfailure>
-                    <smsservice>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/in/</smsservice>
+                    <smsonfailure>/template/down.xml</smsonfailure>
+                    <smsservice>/in</smsservice>
                 </sms>
             </errornotification>
         </error>
         <inactivity inactivityOn="false">
             <maxInactivityPeriodInMilliSeconds>120000</maxInactivityPeriodInMilliSeconds>
-            <emailOnInactivity>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/template/erroronincativity.xml</emailOnInactivity>
+            <emailOnInactivity>/template/erroronincativity.xml</emailOnInactivity>
         </inactivity>
         <!--applicationlogger>
             <appender type="RollingFileAppender">
@@ -75,7 +75,7 @@
                 <maxbackupindex>10</maxbackupindex>
             </appender>
             <logpattern>%d{yyyy-MM-dd HH:mm:ss};%p;%t;%x;%m;%n</logpattern>
-            <logfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/log/</logfolderpath>
+            <logfolderpath>/log</logfolderpath>
             <loglevel>DEBUG</loglevel>
         </applicationlogger>
         <messagelogger>
@@ -83,7 +83,7 @@
                 <rollingschedule>'.'yyyy-MM-dd-a</rollingschedule>
             </appender>
             <logpattern>%d{yyyy-MM-dd HH:mm:ss};%p;%t;%x;%m;%n</logpattern>
-            <logfolderpath>C:/gepo/mycvsprojects/iris/modules/core-server/services-test/filetest-filetest/log/</logfolderpath>
+            <logfolderpath>/log</logfolderpath>
             <loglevel>DEBUG</loglevel>
         </messagelogger-->
     </FeederNode>

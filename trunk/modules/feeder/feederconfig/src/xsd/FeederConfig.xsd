@@ -14,7 +14,8 @@
 			<xs:attribute name="name" type="xs:string" use="required"/>
 		</xs:complexType>
 	</xs:element>
-		
+
+	<!-- First level 	-->		
 	<!-- GlobalSettings -->	
 	<xs:complexType name="globalSettingsType">
 		<xs:sequence>
@@ -163,11 +164,7 @@
 	
 	<xs:element name="errorfolderpath" type="xs:anyURI"/>
 	<xs:element name="errorinfofolderpath" type="xs:anyURI"/>
-	<!--xs:complexType name="errorhandlerType">
-		<xs:sequence>
-			<xs:element ref="cronintervall"/>
-		</xs:sequence>
-	</xs:complexType -->
+
 	<xs:complexType name="errornotificationType">
 		<xs:sequence>
 			<xs:element ref="notifyeveryintervallInMilliSeconds" minOccurs="0"/>
@@ -207,7 +204,7 @@
 			<xs:element ref="logfolderpath"/>
 			<xs:element ref="loglevel"/>
 		</xs:sequence>
-	</xs:complexType-->
+	</xs:complexType>
 	<xs:element name="logpattern" type="xs:string"/>
 	<xs:element name="loglevel" type="loglevelType"/>
 	<xs:simpleType name="loglevelType">
@@ -218,7 +215,7 @@
 			<xs:enumeration value="ERROR"/>
 			<xs:enumeration value="FATAL"/>
 		</xs:restriction>
-	</xs:simpleType>
+	</xs:simpleType-->
 	<xs:element name="maxbackupindex" type="xs:short"/>
 	<xs:element name="maxfilesize" type="xs:string"/>
 	<xs:element name="rollingschedule" type="xs:string"/>
