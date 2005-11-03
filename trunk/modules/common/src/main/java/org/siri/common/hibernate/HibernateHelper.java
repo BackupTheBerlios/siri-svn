@@ -1,4 +1,4 @@
-package rigel.persistence.util;
+package org.siri.common.hibernate;
 
 import java.util.Iterator;
 import java.util.Map;
