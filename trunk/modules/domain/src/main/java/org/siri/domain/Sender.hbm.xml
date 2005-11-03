@@ -7,14 +7,8 @@
       <generator class="assigned"/>
     </id>
 	<!-- "transactional|read-write|nonstrict-read-write|read-only -->
-    <cache usage="read-only" />
+    <!-- cache usage="read-only" / -->
     <property name="message" not-null="false" type="java.lang.String" column="MESSAGE"/>
-    <many-to-one
-        name="receivers"
-        not-null="false"
-        class="Receivers"
-        column="MESSAGEID"
-        cascade="none">
-    </many-to-one>
+    
   </class>
 </hibernate-mapping>

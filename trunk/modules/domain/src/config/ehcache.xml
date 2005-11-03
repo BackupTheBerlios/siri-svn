@@ -64,7 +64,7 @@
         disk cache, which in this configuration will go to wherever java.io.tmp is
         defined on your system. On a standard Linux system this will be /tmp"
         -->
-    <cache name="configdata"
+    <cache name="data"
         maxElementsInMemory="10000"
         eternal="false"
         timeToIdleSeconds="300"

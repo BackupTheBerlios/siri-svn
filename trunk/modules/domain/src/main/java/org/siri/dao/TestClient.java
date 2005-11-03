@@ -1,5 +1,7 @@
 package org.siri.dao;
 
+import org.siri.common.hibernate.HibernateUtil;
+
 /**
  * Created by IntelliJ IDEA.
  * User: geopol
@@ -9,6 +11,8 @@ package org.siri.dao;
  */
 public class TestClient {
     public static void main(String[] args) {
+        HibernateUtil.setOfflineMode();
+
         MessageDAO messageDAO = DAOFactory.HIBERNATE.getMessageDAO();
         messageDAO.findById("",true);
 

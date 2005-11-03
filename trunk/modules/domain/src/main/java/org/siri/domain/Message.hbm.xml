@@ -16,11 +16,11 @@
       <one-to-many class="org.siri.domain.Receiver"/>
     </set>
     <many-to-one
-        name="rfsignal"
+        name="sender"
         not-null="false"
         class="org.siri.domain.Sender"
-        column="SENDERID"<!-- column in this table -->
-        cascade="none">
+        column="SENDERID"
+        cascade="none">  <!-- column is for this table -->
     </many-to-one>
   </class>
 </hibernate-mapping>

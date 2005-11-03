@@ -27,6 +27,7 @@ import org.siri.common.hibernate.HibernateUtil;
 public class HibernateDAOFactory extends DAOFactory
 {
     protected Session getCurrentSession() {
+     //   HibernateUtil.beginTransaction();
         return HibernateUtil.getSessionFactory().getCurrentSession();
    }
 
