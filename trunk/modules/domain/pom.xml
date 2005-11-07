@@ -77,7 +77,7 @@
      <build>
         <testResources>
             <testResource>
-            <directory>src/test/resources</directory>
+            <directory>src/main/javav/*.hbm.xml</directory>
             </testResource>
         </testResources
 	</build>
