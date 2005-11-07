@@ -3,23 +3,34 @@ package org.siri.domain;
 
 public class Sender
 {
-    public String getMessage() {
-        return message;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    String id;
+String name;
+    public String getName() {
+        return name;
     }
 
-    String message;
+    public Sender(String name) {
+       this.name = name;
+
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
 
     public String getId() {
         return id;
     }
 
-    String id;
+
     public Sender(String message, String id) {
-        this.message = message;
+        this.name = message;
         this.id = id;
     }
 

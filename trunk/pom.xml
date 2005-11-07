@@ -66,6 +66,11 @@
             <artifactId>geronimo-spec-ejb</artifactId>
             <version>2.1-rc4</version>
         </dependency>
+        <dependency>
+	     <groupId>geronimo-spec</groupId>
+	     <artifactId>geronimo-spec-jta</artifactId>
+	     <version>1.0.1B-rc4</version>
+        </dependency>
 
         <dependency>
 	      <groupId>org.hibernate</groupId>

@@ -43,6 +43,7 @@ public class HibernateUtil
     /** If running unit tests set to true.     */
     private static boolean offlineMode = false;
 
+    private static SessionFactory sessionFactory;
 
     /**
      * Go offline when doing unit tests.
@@ -61,25 +62,34 @@ public class HibernateUtil
      */
     public static SessionFactory getSessionFactory()
     {
-        SessionFactory sessionFactory = null;
-        if (offlineMode)
+        if(sessionFactory==null)
         {
-            configuration = new Configuration();
-            sessionFactory = configuration.configure().buildSessionFactory();
-        }
-        else
-        {
-            try
+            if (offlineMode)
             {
-                Context ctx = new InitialContext();
-                sessionFactory = (SessionFactory) ctx.lookup(JNDI_SESSIONFACTORY);
-            } catch (NamingException ex)
+                configuration = new Configuration();
+                sessionFactory = configuration.configure().buildSessionFactory();
+            }
+            else
             {
-                throw new InfrastructureException(ex);
+                try
+                {
+                    Context ctx = new InitialContext();
+                    sessionFactory = (SessionFactory) ctx.lookup(JNDI_SESSIONFACTORY);
+                } catch (NamingException ex)
+                {
+                    throw new InfrastructureException(ex);
+                }
             }
         }
         return sessionFactory;
     }
+
+
+    public static void setSessionFactory(SessionFactory sessionFactory)
+    {
+        HibernateUtil.sessionFactory = sessionFactory;
+    }
+
 
     /**
      * Returns the original Hibernate configuration.

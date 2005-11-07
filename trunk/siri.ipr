@@ -327,6 +327,27 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="junit-3.8.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/junit/junit/3.8.1/junit-3.8.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hsqldb-1.8.0.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/hsqldb/hsqldb/1.8.0.1/hsqldb-1.8.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="geronimo-spec-jta-1.0.1B-rc4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/geronimo-spec/geronimo-spec-jta/1.0.1B-rc4/geronimo-spec-jta-1.0.1B-rc4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
   <component name="uidesigner-configuration">
     <option name="INSTRUMENT_CLASSES" value="true" />

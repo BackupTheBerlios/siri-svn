@@ -2,6 +2,22 @@ package org.siri.domain;
 
 
 public class Receiver {
+    String id;
+    String name;
+
+    public Receiver() {
+    }
+
+    public Message getMessage() {
+        return message;
+    }
+
+    public void setMessage(Message message) {
+        this.message = message;
+    }
+
+    Message message;
+
     public String getName() {
         return name;
     }
@@ -20,6 +36,11 @@ public class Receiver {
     }
 
 
-    String name;
-    String id;
+
+
+    private void setId(String id) {
+        this.id = id;
+    }
+
+
 }

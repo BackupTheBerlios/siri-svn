@@ -4,8 +4,9 @@
 <hibernate-mapping>
 
   <class name="org.siri.domain.Message" table="MESSAGE" >
+
     <id column="MESSAGEID" name="id" type="java.lang.String" >
-      <generator class="assigned"/>
+      <generator class="uuid"/>
     </id>
     <property name="creationTime" not-null="false" type="timestamp" column="CREATEDTIMESTAMP"/>
 	<property name="message" not-null="false" type="java.lang.String" column="MESSAGECONTENT"/>
@@ -15,12 +16,14 @@
       </key>
       <one-to-many class="org.siri.domain.Receiver"/>
     </set>
-    <many-to-one
+
+    <!-- column is for this table -->
+    <!-- many-to-one
         name="sender"
         not-null="false"
         class="org.siri.domain.Sender"
         column="SENDERID"
-        cascade="none">  <!-- column is for this table -->
-    </many-to-one>
+        cascade="none">
+    </many-to-one-->
   </class>
 </hibernate-mapping>

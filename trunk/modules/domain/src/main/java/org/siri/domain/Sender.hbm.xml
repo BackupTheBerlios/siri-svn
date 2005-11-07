@@ -8,7 +8,7 @@
     </id>
 	<!-- "transactional|read-write|nonstrict-read-write|read-only -->
     <!-- cache usage="read-only" / -->
-    <property name="message" not-null="false" type="java.lang.String" column="MESSAGE"/>
+    <property name="name" not-null="false" type="java.lang.String" column="MESSAGE"/>
     
   </class>
 </hibernate-mapping>
