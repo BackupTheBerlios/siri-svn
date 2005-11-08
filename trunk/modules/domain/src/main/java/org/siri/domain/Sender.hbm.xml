@@ -9,6 +9,14 @@
 	<!-- "transactional|read-write|nonstrict-read-write|read-only -->
     <!-- cache usage="read-only" / -->
     <property name="name" not-null="false" type="java.lang.String" column="MESSAGE"/>
-    
+
+    <!-- set-key-column-name is the foreign key in the set-table  -->
+    <set name="messages" cascade="all" lazy="true" inverse="true" table="MESSAGE" >
+      <key>
+        <column name="MESSAGEID" not-null="true"/><!-- id column in other table -->
+      </key>
+      <one-to-many class="org.siri.domain.Message"/>
+    </set>
+
   </class>
 </hibernate-mapping>

@@ -18,12 +18,12 @@
     </set>
 
     <!-- column is for this table -->
-    <!-- many-to-one
+    <many-to-one
         name="sender"
         not-null="false"
         class="org.siri.domain.Sender"
         column="SENDERID"
         cascade="none">
-    </many-to-one-->
+    </many-to-one>
   </class>
 </hibernate-mapping>

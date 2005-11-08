@@ -33,8 +33,6 @@ public class MessageTest extends AbstractDomainTest
 
     public void testSaveMessage() throws Exception
     {
-        logger.debug("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
-        System.out.println("##########################################################################3");
         Message transientMessage = new Message("a message", new HashSet(), new Sender("a sender"));
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
