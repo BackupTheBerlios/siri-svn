@@ -12,7 +12,7 @@ import java.util.*;
  *
  * @author christian.bauer@jboss.com
  */
-public class MessageDAOHibernate  extends GenericHibernateDAO<Message, String> implements  MessageDAO
+public class MessageDAOHibernate extends GenericHibernateDAO<Message, String> implements MessageDAO
 {
 
     public MessageDAOHibernate(Session session)

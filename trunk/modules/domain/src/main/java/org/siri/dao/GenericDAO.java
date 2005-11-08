@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 /**
  * An interface shared by all business data access objects.
- * <p>
+ * <p/>
  * All CRUD (create, read, update, delete) basic data access operations are
  * isolated in this interface and shared accross all DAO implementations.
  * The current design is for a state-management oriented persistence layer

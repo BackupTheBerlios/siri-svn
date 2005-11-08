@@ -6,7 +6,7 @@ import java.util.*;
 
 /**
  * Business DAO operations related to the <tt>BillingDetails</tt> entity.
- * <p>
+ * <p/>
  *
  * @author christian.bauer@jboss.com
  */

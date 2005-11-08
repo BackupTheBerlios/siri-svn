@@ -1,44 +1,51 @@
 package org.siri.domain;
 
 
-public class Receiver {
-    String id;
-    String name;
+public class Receiver
+{
+    private String id;
+    private String name;
 
-    public Receiver() {
+    public Receiver()
+    {
     }
 
-    public Message getMessage() {
+    public Message getMessage()
+    {
         return message;
     }
 
-    public void setMessage(Message message) {
+    public void setMessage(Message message)
+    {
         this.message = message;
     }
 
     Message message;
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
-    public String getId() {
+    public String getId()
+    {
         return id;
     }
 
-    public Receiver(String name, String id) {
+    public Receiver(String name, String id)
+    {
         this.name = name;
         this.id = id;
     }
 
 
-
-
-    private void setId(String id) {
+    private void setId(String id)
+    {
         this.id = id;
     }
 

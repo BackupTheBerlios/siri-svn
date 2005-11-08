@@ -17,7 +17,8 @@ import java.util.HashSet;
  */
 public class MessageTest extends AbstractDomainTest
 {
-    public MessageTest() {
+    public MessageTest()
+    {
     }
 
     protected void setUp() throws Exception
@@ -33,16 +34,20 @@ public class MessageTest extends AbstractDomainTest
 
     public void testSaveMessage() throws Exception
     {
-        Message transientMessage = new Message("a message", new HashSet(), new Sender("a sender"));
+        Sender sender = new Sender("a sender");
+        Message transientMessage = new Message("a message", new HashSet(), sender);
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
-        try {
+        try
+        {
+            session.save(sender);
             session.save(transientMessage);
             transaction.commit();
-            Message persistentMessage = (Message) session.load(Message.class,transientMessage.getId());
-            assertNotNull("Message created was incorrectly null",persistentMessage);
+            Message persistentMessage = (Message) session.load(Message.class, transientMessage.getId());
+            assertNotNull("Message created was incorrectly null", persistentMessage);
         }
-        finally {
+        finally
+        {
             session.close();
         }
     }

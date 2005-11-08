@@ -7,9 +7,10 @@ package org.siri.domain;
  * Time: 15:30:12
  * To change this template use File | Settings | File Templates.
  */
-public class Address {
+public class Address
+{
     String id;
     String name;
     String address;
-    
+
 }

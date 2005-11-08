@@ -12,9 +12,8 @@
     <version>1.0-SNAPSHOT</version>
     <name>Siri domain artifact</name>
     <url>http://maven.apache.org</url>
-    
-    
-    
+
+
     <dependencies>
         <dependency>
             <groupId>org.siri</groupId>
@@ -22,19 +21,19 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-	    <groupId>hsqldb</groupId>
-	    <artifactId>hsqldb</artifactId>
-	    <version>1.8.0.1</version>
+            <groupId>hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.1</version>
         </dependency>
         <dependency>
-		     <groupId>geronimo-spec</groupId>
-		     <artifactId>geronimo-spec-jta</artifactId>
-		     <version>1.0.1B-rc4</version>
+            <groupId>geronimo-spec</groupId>
+            <artifactId>geronimo-spec-jta</artifactId>
+            <version>1.0.1B-rc4</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate</artifactId>
-            <version>3.0.5</version> 
+            <version>3.0.5</version>
             <!-- Pull the version from the parent-->
             <!-- Excluding jars not needed from Hibernate POM.
                 Also the javax jars needs to be downloaded from
@@ -81,35 +80,35 @@
             </exclusions>
         </dependency>
     </dependencies>
-    
+
     <reporting>
         <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-project-info-reports-plugin</artifactId>
-          </plugin>
-    	</plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+            </plugin>
+        </plugins>
     </reporting>
-    
+
     <build>
-    	<resources>
-    		<!-- Bring on all mapping files for Hibernate -->
- 		<resource>
-                	<directory>${basedir}/src/main/java</directory>
-                </resource>
-                 <resource>
-		         <directory>${basedir}/src/config</directory>
-                </resource>
+        <resources>
+            <!-- Bring on all mapping files for Hibernate -->
+            <resource>
+                <directory>${basedir}/src/main/java</directory>
+            </resource>
+            <resource>
+                <directory>${basedir}/src/config</directory>
+            </resource>
         </resources>
         <testResources>
-	        <!-- Bring on log4j.xml to test classes output folder -->
-		<testResource>
-			<directory>${basedir}/src/config</directory>
-		</testResource>
+            <!-- Bring on log4j.xml to test classes output folder -->
+            <testResource>
+                <directory>${basedir}/src/config</directory>
+            </testResource>
         </testResources>
-        
-            	
-     </build>
-	
-    
+
+
+    </build>
+
+
 </project>

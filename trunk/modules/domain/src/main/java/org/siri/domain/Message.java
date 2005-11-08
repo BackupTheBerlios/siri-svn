@@ -7,27 +7,32 @@ import java.sql.Timestamp;
 
 public class Message
 {
-    String id;
-    String message;
-    /** No duplicate elements and the ordering is not relevant for us -> Set*/
-    Set<Receiver> receivers = new HashSet();
-    Sender sender;
-    Timestamp creationTime;
+    private String id;
+    private String message;
+    /**
+     * No duplicate elements and the ordering is not relevant for us -> Set
+     */
+    private Set<Receiver> receivers = new HashSet();
+    private Sender sender;
+    private Timestamp creationTime;
 
-    public Message() {
+    public Message()
+    {
     }
 
-    public Timestamp getCreationTime() {
+    public Timestamp getCreationTime()
+    {
         return creationTime;
     }
 
-    public void setCreationTime(Timestamp creationTime) {
+    public void setCreationTime(Timestamp creationTime)
+    {
         this.creationTime = creationTime;
     }
 
     public Message(String message, Set<Receiver> receivers, Sender sender)
     {
-        if(message == null || receivers == null || sender == null)
+        if (message == null || receivers == null || sender == null)
         {
             throw new IllegalArgumentException("Non null parameters not allowed for this domain object.");
         }
@@ -36,43 +41,53 @@ public class Message
         this.sender = sender;
     }
 
-    public String getId() {
+    public String getId()
+    {
         return id;
     }
 
-    public String getMessage() {
+    public String getMessage()
+    {
         return message;
     }
 
-    public void setMessage(String message) {
+    public void setMessage(String message)
+    {
         this.message = message;
     }
 
     /**
      * Prevent direct access to this Set.
+     *
      * @return
      */
-    protected Set<Receiver> getReceivers() {
+    protected Set<Receiver> getReceivers()
+    {
         return receivers;
     }
 
     /**
      * Prevent direct access to this Set.
+     *
      * @param receivers
      */
-    protected void setReceivers(Set<Receiver> receivers) {
+    protected void setReceivers(Set<Receiver> receivers)
+    {
         this.receivers = receivers;
     }
 
-    public Sender getSender() {
+    public Sender getSender()
+    {
         return sender;
     }
 
-    public void setSender(Sender sender) {
+    public void setSender(Sender sender)
+    {
         this.sender = sender;
     }
 
-    private void setId(String id) {
+    private void setId(String id)
+    {
         this.id = id;
     }
 
@@ -91,7 +106,6 @@ public class Message
     /**
      * Enforce bi-directionality in Java - nothing special
      * but needs to be done (in cotrast to ejb cmp).
-     *
      *
      * @param receiver
      */

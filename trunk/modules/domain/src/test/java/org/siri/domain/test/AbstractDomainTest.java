@@ -15,9 +15,9 @@ import java.util.HashSet;
 
 /**
  * Domain classes should extend this abstract class.
- *
+ * <p/>
  * AbstractDomainTest will create a sessionFactory from configuration
- * in this class. New domian classes must be added here for unit testing. 
+ * in this class. New domian classes must be added here for unit testing.
  */
 public class AbstractDomainTest extends TestCase
 {
@@ -27,23 +27,22 @@ public class AbstractDomainTest extends TestCase
     static
     {
         Configuration config = new Configuration().
-            setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect").
-            setProperty("hibernate.connection.driver_class", "org.hsqldb.jdbcDriver").
-            setProperty("hibernate.connection.url", "jdbc:hsqldb:mem:domaintest").
-            setProperty("hibernate.connection.username", "sa").
-            setProperty("hibernate.connection.password", "").
-            setProperty("hibernate.connection.pool_size", "1").
-            setProperty("hibernate.connection.autocommit", "true").
-            setProperty("hibernate.cache.provider_class", "org.hibernate.cache.HashtableCacheProvider").
-            setProperty("hibernate.hbm2ddl.auto", "create-drop").
-            setProperty("hibernate.show_sql", "true").
-            addClass(Message.class).
-            addClass(Receiver.class);
-           // addClass(Sender.class);
+                setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect").
+                setProperty("hibernate.connection.driver_class", "org.hsqldb.jdbcDriver").
+                setProperty("hibernate.connection.url", "jdbc:hsqldb:mem:domaintest").
+                setProperty("hibernate.connection.username", "sa").
+                setProperty("hibernate.connection.password", "").
+                setProperty("hibernate.connection.pool_size", "1").
+                setProperty("hibernate.connection.autocommit", "true").
+                setProperty("hibernate.cache.provider_class", "org.hibernate.cache.HashtableCacheProvider").
+                setProperty("hibernate.hbm2ddl.auto", "create-drop").
+                setProperty("hibernate.show_sql", "true").
+                addClass(Message.class).
+                addClass(Receiver.class).
+                addClass(Sender.class);
 
         HibernateUtil.setSessionFactory(config.buildSessionFactory());
     }
-
 
 /*
    public static void reset() throws SchemaException

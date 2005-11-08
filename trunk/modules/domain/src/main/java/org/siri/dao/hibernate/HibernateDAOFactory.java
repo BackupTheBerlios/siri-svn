@@ -7,12 +7,12 @@ import org.siri.common.hibernate.HibernateUtil;
 
 /**
  * Returns Hibernate-specific instances of DAOs.
- * <p>
+ * <p/>
  * One of the responsiblities of the factory is to inject a Hibernate Session
  * into the DAOs. You can customize the getCurrentSession() method if you
  * are not using the default strategy, which simply delegates to
  * Hibernates built-in "current Session" mechanism.
- * <p>
+ * <p/>
  * If for a particular DAO there is no additional non-CRUD functionality, we use
  * an inner class to implement the interface in a generic way. This allows clean
  * refactoring later on, should the interface implement business data access
@@ -26,13 +26,15 @@ import org.siri.common.hibernate.HibernateUtil;
  */
 public class HibernateDAOFactory extends DAOFactory
 {
-    protected Session getCurrentSession() {
-     //   HibernateUtil.beginTransaction();
+    protected Session getCurrentSession()
+    {
+        //   HibernateUtil.beginTransaction();
         return HibernateUtil.getSessionFactory().getCurrentSession();
-   }
+    }
 
     // Add your DAO interfaces here
-    public MessageDAO getMessageDAO() {
+    public MessageDAO getMessageDAO()
+    {
         return new MessageDAOHibernate(getCurrentSession());
     }
 }
