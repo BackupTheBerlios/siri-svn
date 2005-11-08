@@ -8,6 +8,7 @@ import org.siri.common.logging.Log4JInit;
 import org.siri.domain.Message;
 import org.siri.domain.Receiver;
 import org.siri.domain.Sender;
+import org.apache.log4j.Logger;
 import junit.framework.TestCase;
 
 import java.util.HashSet;
@@ -21,6 +22,7 @@ import java.util.HashSet;
 public class AbstractDomainTest extends TestCase
 {
     Log4JInit log4j = new Log4JInit();
+    Logger logger = Logger.getLogger(AbstractDomainTest.class);
 
     static
     {

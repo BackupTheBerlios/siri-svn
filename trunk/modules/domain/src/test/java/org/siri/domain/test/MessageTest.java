@@ -17,24 +17,35 @@ import java.util.HashSet;
  */
 public class MessageTest extends AbstractDomainTest
 {
-    public void testAddMessage() throws Exception
-    {
-        Message transientMessage = new Message("a message", new HashSet(), new Sender("a sender"));
+    public MessageTest() {
+    }
 
+    protected void setUp() throws Exception
+    {
+
+    }
+
+    protected void tearDown() throws Exception
+    {
+
+    }
+
+
+    public void testSaveMessage() throws Exception
+    {
+        logger.debug("¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤");
+        System.out.println("##########################################################################3");
+        Message transientMessage = new Message("a message", new HashSet(), new Sender("a sender"));
         Session session = HibernateUtil.getSession();
         Transaction transaction = session.beginTransaction();
         try {
             session.save(transientMessage);
             transaction.commit();
             Message persistentMessage = (Message) session.load(Message.class,transientMessage.getId());
-            assertNotNull(persistentMessage);
+            assertNotNull("Message created was incorrectly null",persistentMessage);
         }
         finally {
             session.close();
         }
-
-
-
     }
-
 }

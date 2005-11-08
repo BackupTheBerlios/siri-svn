@@ -132,7 +132,7 @@
       <file leaf-file-name="MessageTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/MessageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="45" selection-start="436" selection-end="436" vertical-scroll-proportion="0.34215885">
+            <state line="24" column="29" selection-start="529" selection-end="529" vertical-scroll-proportion="0.4114053">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,7 +163,7 @@
       <file leaf-file-name="AbstractDomainTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/AbstractDomainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="381" selection-end="381" vertical-scroll-proportion="0.27698573">
+            <state line="26" column="51" selection-start="788" selection-end="788" vertical-scroll-proportion="0.50509167">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,7 +174,7 @@
       <file leaf-file-name="log4j.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/domain/src/config/log4j.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="29" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9307536">
+            <state line="40" column="29" selection-start="1259" selection-end="1259" vertical-scroll-proportion="1.3849287">
               <folding />
             </state>
           </provider>
@@ -192,7 +192,7 @@
       <file leaf-file-name="Log4JInit.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/logging/Log4JInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="20" selection-start="431" selection-end="431" vertical-scroll-proportion="0.36764705">
+            <state line="43" column="86" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.85714287">
               <folding />
             </state>
           </provider>
@@ -247,7 +247,7 @@
   </component>
   <component name="ModuleEditorState">
     <option name="LAST_EDITED_MODULE_NAME" value="domain" />
-    <option name="LAST_EDITED_TAB_NAME" value="Paths" />
+    <option name="LAST_EDITED_TAB_NAME" value="Libraries (Classpath)" />
   </component>
   <component name="NamedScopeManager" />
   <component name="PackagesPane">
@@ -371,6 +371,46 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="org.siri" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="logging" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="org.siri" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="PerforceChangeBrowserSettings">
     <option name="USE_USER_FILTER" value="true" />
@@ -463,6 +503,24 @@
         <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="domain" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
       <PATH_ELEMENT>
         <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src\main\java" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -489,6 +547,10 @@
         <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src\config" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
     </PATH>
     <PATH>
       <PATH_ELEMENT>
@@ -496,19 +558,39 @@
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="domain" />
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="siri.ipr" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="common" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src" />
-        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-      </PATH_ELEMENT>
-      <PATH_ELEMENT>
-        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\domain\src\config" />
+        <option name="myItemId" value="PsiDirectory:C:\gepo\siri\modules\common\src" />
         <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
       </PATH_ELEMENT>
     </PATH>
@@ -517,7 +599,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" splitterProportion="0.5">
+    <navigator currentView="PackagesPane" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -659,11 +741,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1004" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="8" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.33" order="7" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.24838188" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="true" weight="0.24838188" order="0" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3295583" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.25" order="1" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="docked" type="docked" visible="false" weight="0.3295583" order="8" />
@@ -827,24 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/MessageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="45" selection-start="436" selection-end="436" vertical-scroll-proportion="0.34215885">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/AbstractDomainTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="381" selection-end="381" vertical-scroll-proportion="0.27698573">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/hibernate/HibernateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="296" column="13" selection-start="8223" selection-end="8223" vertical-scroll-proportion="0.7922607">
@@ -852,16 +916,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/AbstractDomainTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="51" selection-start="788" selection-end="788" vertical-scroll-proportion="0.50509167">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/domain/src/test/java/org/siri/domain/test/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="29" selection-start="529" selection-end="529" vertical-scroll-proportion="0.4114053">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/domain/src/config/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="29" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9307536">
+        <state line="40" column="29" selection-start="1259" selection-end="1259" vertical-scroll-proportion="1.3849287">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/common/src/main/java/org/siri/common/logging/Log4JInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="431" selection-end="431" vertical-scroll-proportion="0.36764705">
+        <state line="43" column="86" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.85714287">
           <folding />
         </state>
       </provider>
