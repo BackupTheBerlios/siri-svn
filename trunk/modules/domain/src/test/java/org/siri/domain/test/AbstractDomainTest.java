@@ -1,13 +1,14 @@
 package org.siri.domain.test;
 
 import org.hibernate.cfg.Configuration;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.siri.common.hibernate.HibernateUtil;
 import org.siri.common.logging.Log4JInit;
 import org.siri.domain.Message;
 import org.siri.domain.Receiver;
 import org.siri.domain.Sender;
+import org.siri.domain.systemuser.SystemUser;
+import org.siri.domain.systemuser.SystemGroup;
+import org.siri.domain.systemuser.Password;
 import org.apache.log4j.Logger;
 import junit.framework.TestCase;
 
@@ -37,6 +38,9 @@ public class AbstractDomainTest extends TestCase
                 setProperty("hibernate.cache.provider_class", "org.hibernate.cache.HashtableCacheProvider").
                 setProperty("hibernate.hbm2ddl.auto", "create-drop").
                 setProperty("hibernate.show_sql", "true").
+                addClass(SystemUser.class).
+                addClass(SystemGroup.class).
+                addClass(Password.class).
                 addClass(Message.class).
                 addClass(Receiver.class).
                 addClass(Sender.class);
