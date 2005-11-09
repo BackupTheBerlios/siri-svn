@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.HashSet;
 
 public class UserAccountDAOTest extends AbstractDomainTest
-{
+{      CHECK THIS IN
     UserAccountDAO userAccountDAO;
     Calendar validFrom = Calendar.getInstance();
     Calendar validTo = Calendar.getInstance();
@@ -24,7 +24,7 @@ public class UserAccountDAOTest extends AbstractDomainTest
 
         protected void setUp() throws Exception
         {
-                     
+
         }
 
         protected void tearDown() throws Exception
