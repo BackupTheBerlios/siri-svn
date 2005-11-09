@@ -24,7 +24,7 @@ public class UserAccountDAOTest extends AbstractDomainTest
 
         protected void setUp() throws Exception
         {
-
+                     
         }
 
         protected void tearDown() throws Exception
