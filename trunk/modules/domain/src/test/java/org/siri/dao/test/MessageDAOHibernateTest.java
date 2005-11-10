@@ -7,9 +7,10 @@ package org.siri.dao.hibernate.test;
  * To change this template use File | Settings | File Templates.
  */
 
-import junit.framework.*;
 import org.siri.dao.hibernate.MessageDAOHibernate;
+import org.siri.domain.test.AbstractDomainTest;
 
-public class MessageDAOHibernateTest extends TestCase {
+public class MessageDAOHibernateTest extends AbstractDomainTest
+{
     MessageDAOHibernate messageDAOHibernate;
 }

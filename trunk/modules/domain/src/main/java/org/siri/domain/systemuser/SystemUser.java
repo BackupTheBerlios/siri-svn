@@ -24,11 +24,10 @@ public class SystemUser implements Serializable
     private Calendar validFrom ;
     private Calendar validTo ;
 
-
     public SystemUser()
     {
-
     }
+
     public SystemUser (String name, String fullName, String description, boolean active, int loginRetries, Calendar validFrom, Calendar validTo)
     {
         setName (name) ;

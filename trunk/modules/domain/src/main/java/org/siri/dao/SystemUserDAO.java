@@ -2,8 +2,11 @@ package org.siri.dao;
 
 import java.util.Calendar;
 
-public interface UserAccountDAO
+public interface SystemUserDAO
 {
+    public void createSystemUser(String userName, String password, String fullName, String description,
+                                  Calendar validFrom, Calendar validTo, boolean active, boolean temporaryPassword,
+                                  int loginRetries, Calendar passwordLastChanged) ;
 /*
     public void createUserAccount(String userName, String password, String fullName, String description,
                                        Calendar validFrom, Calendar validTo, boolean active, boolean temporaryPassword,

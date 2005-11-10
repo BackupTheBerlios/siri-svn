@@ -18,14 +18,13 @@ package org.siri.dao;
  */
 public abstract class DAOFactory
 {
-
     // public static final DAOFactory EJB3_PERSISTENCE = new org.hibernate.ce.auction.dao.ejb3.Ejb3DAOFactory();
-
     public static final DAOFactory HIBERNATE = new org.siri.dao.hibernate.HibernateDAOFactory();
-
     public static final DAOFactory DEFAULT = HIBERNATE;
 
     // Add your DAO interfaces here
     public abstract MessageDAO getMessageDAO();
+    public abstract SystemUserDAO getSystemUserDAO();
+
 
 }

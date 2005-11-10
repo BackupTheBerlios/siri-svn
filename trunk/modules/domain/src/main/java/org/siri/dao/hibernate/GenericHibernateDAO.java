@@ -20,7 +20,6 @@ import java.io.Serializable;
  */
 public class GenericHibernateDAO<T, ID extends Serializable> implements GenericDAO<T, ID>
 {
-
     private Class<T> persistentClass;
     private Session session;
 
@@ -44,9 +43,13 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements GenericD
     {
         T entity;
         if (lock)
+        {
             entity = (T) getSession().load(getPersistentClass(), id, LockMode.UPGRADE);
+        }
         else
+        {
             entity = (T) getSession().load(getPersistentClass(), id);
+        }
 
         return entity;
     }

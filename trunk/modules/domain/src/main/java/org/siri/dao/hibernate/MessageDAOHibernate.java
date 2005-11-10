@@ -10,7 +10,6 @@ import java.util.*;
  * Hibernate-specific implementation of the <tt>MessageDAO</tt>
  * non-CRUD data access object.
  *
- * @author christian.bauer@jboss.com
  */
 public class MessageDAOHibernate extends GenericHibernateDAO<Message, String> implements MessageDAO
 {

@@ -3,6 +3,7 @@ package org.siri.dao.hibernate;
 import org.hibernate.Session;
 import org.siri.dao.MessageDAO;
 import org.siri.dao.DAOFactory;
+import org.siri.dao.SystemUserDAO;
 import org.siri.common.hibernate.HibernateUtil;
 
 /**
@@ -36,5 +37,9 @@ public class HibernateDAOFactory extends DAOFactory
     public MessageDAO getMessageDAO()
     {
         return new MessageDAOHibernate(getCurrentSession());
+    }
+
+    public SystemUserDAO getSystemUserDAO() {
+        return new SystemUserDAOHibernate(getCurrentSession());
     }
 }
