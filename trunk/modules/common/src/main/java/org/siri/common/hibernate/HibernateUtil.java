@@ -5,11 +5,8 @@ package org.siri.common.hibernate;
 
 
 import org.apache.log4j.Logger;
-import org.hibernate.HibernateException;
-import org.hibernate.Interceptor;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+//import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 import javax.naming.Context;
 import javax.naming.InitialContext;
@@ -80,6 +77,12 @@ public class HibernateUtil
                     throw new InfrastructureException(ex);
                 }
             }
+        }
+
+
+        if (sessionFactory == null)
+        {
+            throw new IllegalStateException("SessionFactory not available.");
         }
         return sessionFactory;
     }

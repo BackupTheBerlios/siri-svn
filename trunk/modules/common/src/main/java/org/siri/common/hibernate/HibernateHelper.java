@@ -14,6 +14,7 @@ import org.apache.log4j.Logger;
  */
 public class HibernateHelper
 {
+  
     private static Logger logger = Logger.getLogger(HibernateHelper.class);
 
     /**
