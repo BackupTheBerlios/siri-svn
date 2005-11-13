@@ -32,10 +32,11 @@ public class Message
 
     public Message(String message, Set<Receiver> receivers, Sender sender)
     {
-        if (message == null || receivers == null || sender == null)
+  /*      if (message == null || receivers == null || sender == null)
         {
             throw new IllegalArgumentException("Non null parameters not allowed for this domain object.");
         }
+    */
         this.message = message;
         this.receivers = receivers;
         this.sender = sender;

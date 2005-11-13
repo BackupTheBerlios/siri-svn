@@ -1,13 +1,17 @@
 package org.siri.dao;
 
+import org.siri.domain.Message;
+import org.siri.domain.systemuser.SystemUser;
+
 import java.util.Calendar;
 
-public interface SystemUserDAO
+public interface SystemUserDAO extends GenericDAO<SystemUser, Long>
 {
+/*
     public void createSystemUser(String userName, String password, String fullName, String description,
                                   Calendar validFrom, Calendar validTo, boolean active, boolean temporaryPassword,
                                   int loginRetries, Calendar passwordLastChanged) ;
-/*
+
     public void createUserAccount(String userName, String password, String fullName, String description,
                                        Calendar validFrom, Calendar validTo, boolean active, boolean temporaryPassword,
                                        int loginRetries, Calendar passwordLastChanged, Role[] roles) ;

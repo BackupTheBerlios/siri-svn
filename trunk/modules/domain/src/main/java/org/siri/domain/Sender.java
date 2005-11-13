@@ -30,11 +30,6 @@ public class Sender
         this.messages = messages;
     }
 
-
-
-
-
-
     public void setId(String id)
     {
         this.id = id;

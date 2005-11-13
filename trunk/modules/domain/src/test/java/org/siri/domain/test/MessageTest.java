@@ -40,8 +40,8 @@ public class MessageTest extends AbstractDomainTest
         Transaction transaction = session.beginTransaction();
         try
         {
-            session.save(sender);
-            session.save(transientMessage);
+     //       session.save(sender);
+       //     session.save(transientMessage);
             transaction.commit();
             Message persistentMessage = (Message) session.load(Message.class, transientMessage.getId());
             assertNotNull("Message created was incorrectly null", persistentMessage);
