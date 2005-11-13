@@ -15,8 +15,14 @@
     <name>Siri feeder config artifact</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-
-
+		<!--dependency>
+  			<groupId>xmlbeans</groupId>
+  			<artifactId>jsr173api</artifactId>
+  			<version>2.0.0</version>
+		</dependency-->
+        
+          
+  
         <!-- dependency>
             <groupId>jaxb</groupId>
             <artifactId>jaxb-api</artifactId>
