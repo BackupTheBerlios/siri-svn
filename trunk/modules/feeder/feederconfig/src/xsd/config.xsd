@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema  targetNamespace="http://feederconfig.siri.org/FeederConfig.xsd"
-            xmlns="http://feederconfig.siri.org/FeederConfig.xsd"
+<xs:schema  targetNamespace="http://feeder.siri.org/config.xsd"
+            xmlns="http://feeder.siri.org/config.xsd"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            xmlns:mstns="http://feederconfig.siri.org/FeederConfig.xsd"
+            xmlns:mstns="http://feeder.siri.org/config.xsd"
             elementFormDefault="qualified">
 	<!-- Root element  -->
 	<xs:element name="FeederConfig">

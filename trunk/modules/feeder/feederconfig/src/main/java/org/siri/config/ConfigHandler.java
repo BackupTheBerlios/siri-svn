@@ -8,7 +8,7 @@ import java.io.IOException;
 import org.apache.xmlbeans.*;
 
 
-import org.siri.feederconfig.feederConfig.SystemConfigDocument;
+import org.siri.feeder.config.FeederConfigDocument;
 
 
 /**
@@ -66,7 +66,7 @@ public class ConfigHandler
 
         validationOptions = new XmlOptions();
         validationOptions.setErrorListener(validationErrors);
-        SystemConfigDocument systemConfigDocument = (SystemConfigDocument)parseXml(xmlPath, null);
+        FeederConfigDocument systemConfigDocument = (FeederConfigDocument)parseXml(xmlPath, null);
 
         // During validation, errors are added to the ArrayList for
         // retrieval and printing by the printErrors method.
