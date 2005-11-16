@@ -37,10 +37,9 @@ public class Receiver
         return id;
     }
 
-    public Receiver(String name, String id)
+    public Receiver(String name)
     {
         this.name = name;
-        this.id = id;
     }
 
 

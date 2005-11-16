@@ -16,16 +16,18 @@ import java.io.Serializable;
  * You have to inject the <tt>Class</tt> object of the persistent class and a current
  * Hibernate <tt>Session</tt> to construct a DAO.
  *
- * @author christian.bauer@jboss.com
+ * See the Hibernate Caveat tutorial and complementary code by Christian Bauer @ jboss )
+ *
+ * @author Georges Polyzois
  */
 public class GenericHibernateDAO<T, ID extends Serializable> implements GenericDAO<T, ID>
 {
-    private Class<T> persistentClass;
+    private Class<T> entityClass;
     private Session session;
 
     public GenericHibernateDAO(Class<T> persistentClass, Session session)
     {
-        this.persistentClass = persistentClass;
+        this.entityClass = persistentClass;
         this.session = session;
     }
 
@@ -34,9 +36,9 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements GenericD
         return session;
     }
 
-    public Class<T> getPersistentClass()
+    public Class<T> getEntityClass()
     {
-        return persistentClass;
+        return entityClass;
     }
 
     public T findById(ID id, boolean lock)
@@ -44,11 +46,11 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements GenericD
         T entity;
         if (lock)
         {
-            entity = (T) getSession().load(getPersistentClass(), id, LockMode.UPGRADE);
+            entity = (T) getSession().load(getEntityClass(), id, LockMode.UPGRADE);
         }
         else
         {
-            entity = (T) getSession().load(getPersistentClass(), id);
+            entity = (T) getSession().load(getEntityClass(), id);
         }
 
         return entity;
@@ -67,13 +69,13 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements GenericD
     }
 
     @SuppressWarnings("unchecked")
-    public T makePersistent(T entity)
+    public T saveOrUpdate(T entity)
     {
         getSession().saveOrUpdate(entity);
         return entity;
     }
 
-    public void makeTransient(T entity)
+    public void delete(T entity)
     {
         getSession().delete(entity);
     }
@@ -84,7 +86,7 @@ public class GenericHibernateDAO<T, ID extends Serializable> implements GenericD
     @SuppressWarnings("unchecked")
     protected List<T> findByCriteria(Criterion... criterion)
     {
-        Criteria crit = getSession().createCriteria(getPersistentClass());
+        Criteria crit = getSession().createCriteria(getEntityClass());
         for (Criterion c : criterion)
         {
             crit.add(c);

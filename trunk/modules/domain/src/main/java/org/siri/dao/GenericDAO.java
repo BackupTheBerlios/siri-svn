@@ -5,8 +5,8 @@ import java.util.List;
 import java.io.Serializable;
 
 /**
- * An interface shared by all business data access objects.
- * <p/>
+ * Business data access objects share this interface.
+ * <br/>
  * All CRUD (create, read, update, delete) basic data access operations are
  * isolated in this interface and shared accross all DAO implementations.
  * The current design is for a state-management oriented persistence layer
@@ -14,13 +14,15 @@ import java.io.Serializable;
  * automatic transactional dirty checking of business objects in persistent
  * state.
  *
- * @author christian.bauer@jboss.com
+* See the Hibernate Caveat tutorial and complementary code by Christian Bauer @ jboss )
+ *
+ * @author Georges Polyzois
  */
 public interface GenericDAO<T, ID extends Serializable>
 {
     T findById(ID id, boolean lock);
     List<T> findAll();
     List<T> findByExample(T exampleInstance);
-    T makePersistent(T entity);
-    void makeTransient(T entity);
+    T saveOrUpdate(T entity);
+    void delete(T entity);
 }

@@ -1,9 +1,7 @@
 package org.siri.dao;
 
-import org.siri.domain.Message;
 import org.siri.domain.systemuser.SystemUser;
 
-import java.util.Calendar;
 
 public interface SystemUserDAO extends GenericDAO<SystemUser, Long>
 {

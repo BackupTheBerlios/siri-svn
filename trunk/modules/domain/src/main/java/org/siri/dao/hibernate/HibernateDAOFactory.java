@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.siri.dao.MessageDAO;
 import org.siri.dao.DAOFactory;
 import org.siri.dao.SystemUserDAO;
-import org.siri.common.hibernate.HibernateUtil;
+import org.siri.common.hibernate.HibernateUtilContextAware;
 
 /**
  * Returns Hibernate-specific instances of DAOs.
@@ -22,18 +22,18 @@ import org.siri.common.hibernate.HibernateUtil;
  * because they can't extend or implement an interface and they can't include
  * constructors.
  *
- * @author christian.bauer@jboss.com
- * @author gepo01
+ * See the Hibernate Caveat tutorial and complementary code by Christian Bauer @ jboss )
+ *
+ * @author Georges Polyzois
  */
 public class HibernateDAOFactory extends DAOFactory
 {
     protected Session getCurrentSession()
     {
-        //   HibernateUtil.beginTransaction();
-        return HibernateUtil.getSessionFactory().getCurrentSession();
+        return HibernateUtilContextAware.getSessionFactory().getCurrentSession();
     }
 
-    // Add your DAO interfaces here
+    // Add your DAO interfaces below here
     public MessageDAO getMessageDAO()
     {
         return new MessageDAOHibernate(getCurrentSession());

@@ -5,10 +5,10 @@ import org.siri.domain.Message;
 import java.util.*;
 
 /**
- * Business DAO operations related to the <tt>BillingDetails</tt> entity.
+ * Business DAO operations related to the <tt>Message</tt> entity.
  * <p/>
  *
- * @author christian.bauer@jboss.com
+ * @author Georges Polyzois
  */
 public interface MessageDAO extends GenericDAO<Message, String>
 {

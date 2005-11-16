@@ -1,6 +1,8 @@
 package org.siri.dao;
 
 /**
+ * See Caveat
+ *
  * Defines all DAOs and the concrete factories to get the conrecte DAOs.
  * <p/>
  * Either use the <tt>DEFAULT</tt> to get the same concrete DAOFactory
@@ -11,10 +13,10 @@ package org.siri.dao;
  * If you add a new persistence mechanism, add an additional concrete factory
  * for it to the enumeration of factories.
  * <p/>
- * It probably wouldn't be a bad idea to move the <tt>DEFAULT</tt> setting
- * into external configuration.
  *
- * @author christian.bauer@jboss.com
+ * See the Hibernate Caveat tutorial and complementary code by Christian Bauer @ jboss )
+ *
+ * @author Georges Polyzois
  */
 public abstract class DAOFactory
 {
