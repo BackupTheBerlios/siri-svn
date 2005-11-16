@@ -3,11 +3,10 @@ package org.siri.dao.test;
 import org.hibernate.*;
 import org.hibernate.context.ThreadLocalSessionContext;
 import org.hibernate.cfg.Configuration;
-//import org.hibernate.context.ThreadLocalSessionContext;
 import org.apache.commons.logging.*;
 import org.siri.dao.DAOFactory;
 import org.siri.common.logging.Log4JInit;
-import org.siri.common.hibernate.HibernateUtil;
+import org.siri.common.hibernate.HibernateUtilContextAware;
 import org.siri.domain.systemuser.SystemUser;
 import org.siri.domain.systemuser.SystemGroup;
 import org.siri.domain.systemuser.Password;
@@ -25,11 +24,11 @@ public abstract class HibernateTest extends TestCase
     protected static SessionFactory sessionFactory;
 
     protected boolean wrapInTransaction = true;
-    protected boolean rollback = true;
+    protected boolean rollback = false;
 
     static
     {
-        HibernateUtil.setOfflineMode();
+        //HibernateUtil.setOfflineMode();
 
         Configuration config = new Configuration().
                 setProperty("hibernate.dialect", "org.hibernate.dialect.HSQLDialect").
@@ -42,6 +41,7 @@ public abstract class HibernateTest extends TestCase
                 setProperty("hibernate.cache.provider_class", "org.hibernate.cache.HashtableCacheProvider").
                 setProperty("hibernate.hbm2ddl.auto", "create-drop").
                 setProperty("hibernate.show_sql", "true").
+                setProperty("hibernate.current_session_context_class", "thread").
                 addClass(SystemUser.class).
                 addClass(SystemGroup.class).
                 addClass(Password.class).
@@ -49,11 +49,11 @@ public abstract class HibernateTest extends TestCase
                 addClass(Receiver.class).
                 addClass(Sender.class);
 
-        HibernateUtil.setSessionFactory(config.buildSessionFactory());
+        HibernateUtilContextAware.buildSessionFactory(config);
 
 
 
-        sessionFactory = HibernateUtil.getSessionFactory();
+        sessionFactory = HibernateUtilContextAware.getSessionFactory();
     }
 
 

@@ -6,26 +6,11 @@ package org.siri.dao.test;
  * @author Georges Polyzois
  */
 
-import org.siri.dao.hibernate.MessageDAOHibernate;
-import org.siri.dao.hibernate.SystemUserDAOHibernate;
 import org.siri.dao.test.TestCaseWithData;
-import org.siri.dao.MessageDAO;
 import org.siri.dao.SystemUserDAO;
-import org.siri.domain.test.AbstractDomainTest;
-import org.siri.domain.Sender;
-import org.siri.domain.Message;
 import org.siri.domain.systemuser.SystemUser;
-import org.siri.common.hibernate.HibernateUtil;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.Query;
-import org.hibernate.context.ThreadLocalSessionContext;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-
-import java.util.HashSet;
-import java.util.Collection;
-import java.util.Iterator;
 
 public class SystemDAOHibernateTest extends TestCaseWithData
 {
@@ -55,7 +40,7 @@ public class SystemDAOHibernateTest extends TestCaseWithData
         assertNotNull("One user with id : " + super.systemUser1.getId()  ,systemUser);
         String expected = "Sir Donald";
         systemUser.setName("Sir Donald");
-        systemUserDAO.makePersistent(systemUser);
+        systemUserDAO.saveOrUpdate(systemUser);
         SystemUser systemUserAltered = systemUserDAO.findById(super.systemUser1.getId(), false);
         assertEquals(expected,systemUserAltered.getName());
     }

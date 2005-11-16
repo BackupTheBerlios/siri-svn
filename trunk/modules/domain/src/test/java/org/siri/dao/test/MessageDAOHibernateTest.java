@@ -9,38 +9,43 @@ package org.siri.dao.hibernate.test;
 import org.siri.dao.hibernate.MessageDAOHibernate;
 import org.siri.dao.test.TestCaseWithData;
 import org.siri.dao.MessageDAO;
-import org.siri.domain.test.AbstractDomainTest;
-import org.siri.domain.Sender;
 import org.siri.domain.Message;
-import org.siri.common.hibernate.HibernateUtil;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.context.ThreadLocalSessionContext;
-
-import java.util.HashSet;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 public class MessageDAOHibernateTest extends TestCaseWithData
 {
     MessageDAOHibernate messageDAOHibernate;
+    private static Log log = LogFactory.getLog(MessageDAOHibernateTest.class);
+
+    public void finder() throws Exception
+    {
+         MessageDAO messageDAO = DAOFACTORY.getMessageDAO();
+
+
+        Message amessage = messageDAO.findById(super.message.getId(), false);
+
+    }
 
 
     public void testSaveMessage() throws Exception
     {
 
         Message message = new Message("a test message",null,null);
-        Session s = HibernateUtil.getSessionFactory().getCurrentSession();
-        ThreadLocalSessionContext.bind(s);
-s.beginTransaction();
+        Session s = sessionFactory.getCurrentSession();
+      //  ThreadLocalSessionContext.bind(s);
+        s.beginTransaction();
 
-s.save(message);
+        s.save(message);
 
-s.getTransaction().commit();
+        s.getTransaction().commit();
 
-ThreadLocalSessionContext.unbind( HibernateUtil.getSessionFactory()).close(); // Only needed for non-JTA
+     //   ThreadLocalSessionContext.unbind(sessionFactory).close(); // Only needed for non-JTA
 
-        //MessageDAO messageDao = DAOFACTORY.getMessageDAO();
+//MessageDAO messageDao = DAOFACTORY.getMessageDAO();
 
-        //messageDao.makePersistent(message);
+//messageDao.saveOrUpdate(message);
 
     }
 }
