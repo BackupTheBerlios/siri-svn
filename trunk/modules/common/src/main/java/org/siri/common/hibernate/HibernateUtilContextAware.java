@@ -43,7 +43,7 @@ import javax.naming.*;
  * @author christian@hibernate.org
  * @author Georges Polyzois
  */
-public class HibernatePost3Util
+public class HibernateUtilContextAware
 {
     private static Log log = LogFactory.getLog(HibernateUtil.class);
     private static final String INTERCEPTOR_CLASS = "hibernate.util.interceptor_class";

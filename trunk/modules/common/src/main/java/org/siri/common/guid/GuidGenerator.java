@@ -48,7 +48,7 @@ public class GuidGenerator
   }
 
   /**
-   * Get instance.
+   * Get instance for this singelton.
    * @return instance.
    */
   public static GuidGenerator getInstance()
