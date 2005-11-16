@@ -50,6 +50,9 @@
         <!-- Print SQL to stdout. -->
         <property name="show_sql">true</property>
 
+        <!-- New for Hibernate 3.1!!!. Bind the getCurrentSession() method to the thread (don't use for EJBs) -->
+        <property name="current_session_context_class">thread</property>
+
         <!-- Domain mapping files. -->
         <mapping resource="org/siri/domain/Sender.hbm.xml"/>
         <mapping resource="org/siri/domain/Receiver.hbm.xml"/>
