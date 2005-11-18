@@ -57,6 +57,7 @@ public class SystemUserDAOTemplateHibernate extends GenericHibernateDAO<SystemUs
         }
         return result;
         */
+    	return null;
     }
 
     public void createSystemUser(String userName, String password, String fullName, String description, Calendar validFrom,

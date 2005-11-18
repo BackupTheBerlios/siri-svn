@@ -1,4 +1,4 @@
-package org.siri.dao.hibernate.test;
+package org.siri.dao.test;
 
 /**
  * Unit test MessageDAO interface.
