@@ -2,87 +2,86 @@ package org.siri.domain;
 
 import java.util.Set;
 
-
 public class Sender
 {
-    private String id;
-    private String name;
-    private Set<Message> messages;
 
+	/**
+	 * @directed true
+	 */
+	private Address address;
 
-    public Sender()
-    {
-    }
+	private String id;
 
-    public Sender(String name, String id)
-    {
-        this.name = name;
-        this.id = id;
-    }
+	private String name;
 
-    public Set<Message> getMessages()
-    {
-        return messages;
-    }
+	private Set<Message> messages;
 
-    public void setMessages(Set<Message> messages)
-    {
-        this.messages = messages;
-    }
+	public Sender()
+	{
+	}
 
-    public void setId(String id)
-    {
-        this.id = id;
-    }
+	public Sender(String name, String id)
+	{
+		this.name = name;
+		this.id = id;
+	}
 
+	public Set<Message> getMessages()
+	{
+		return messages;
+	}
 
-    public String getName()
-    {
-        return name;
-    }
+	public void setMessages(Set<Message> messages)
+	{
+		this.messages = messages;
+	}
 
-    public Sender(String name)
-    {
-        this.name = name;
+	public void setId(String id)
+	{
+		this.id = id;
+	}
 
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+	public Sender(String name)
+	{
+		this.name = name;
 
+	}
 
-    public String getId()
-    {
-        return id;
-    }
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
+	public String getId()
+	{
+		return id;
+	}
 
+	/**
+	 * Enforce bi-directionality in Java - nothing special but needs to be done (in cotrast to ejb cmp).
+	 * 
+	 * @param message
+	 */
+	public void addToMessages(Message message)
+	{
+		this.getMessages().add(message);
+		message.setSender(this);
+	}
 
-
-     /**
-     * Enforce bi-directionality in Java - nothing special
-     * but needs to be done (in cotrast to ejb cmp).
-     *
-     * @param message
-     */
-    public void addToMessages(Message message)
-    {
-        this.getMessages().add(message);
-        message.setSender(this);
-    }
-
-    /**
-     * Enforce bi-directionality in Java - nothing special
-     * but needs to be done (in cotrast to ejb cmp).
-     *
-     * @param message
-     */
-    public void removeFromMessages(Message message)
-    {
-        this.getMessages().remove(message);
-        message.setSender(null);
-    }
+	/**
+	 * Enforce bi-directionality in Java - nothing special but needs to be done (in cotrast to ejb cmp).
+	 * 
+	 * @param message
+	 */
+	public void removeFromMessages(Message message)
+	{
+		this.getMessages().remove(message);
+		message.setSender(null);
+	}
 
 }

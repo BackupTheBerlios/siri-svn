@@ -8,48 +8,48 @@ import java.util.HashSet;
  */
 public class Country
 {
-    String id;
-    String name;
-    String timeZone;
-    Set<Address> addresses = new HashSet();
+	String id;
+	String name;
+	String timeZone;
+	Set<Address> addresses = new HashSet();
 
-    public Set<Address> getAddresses()
-    {
-        return addresses;
-    }
+	public Set<Address> getAddresses()
+	{
+		return addresses;
+	}
 
-    public void setAddresses(Set<Address> addresses)
-    {
-        this.addresses = addresses;
-    }
+	public void setAddresses(Set<Address> addresses)
+	{
+		this.addresses = addresses;
+	}
 
-    public String getId()
-    {
-        return id;
-    }
+	public String getId()
+	{
+		return id;
+	}
 
-    public void setId(String id)
-    {
-        this.id = id;
-    }
+	public void setId(String id)
+	{
+		this.id = id;
+	}
 
-    public String getName()
-    {
-        return name;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
-    public String getTimeZone()
-    {
-        return timeZone;
-    }
+	public String getTimeZone()
+	{
+		return timeZone;
+	}
 
-    public void setTimeZone(String timeZone)
-    {
-        this.timeZone = timeZone;
-    }
+	public void setTimeZone(String timeZone)
+	{
+		this.timeZone = timeZone;
+	}
 }
