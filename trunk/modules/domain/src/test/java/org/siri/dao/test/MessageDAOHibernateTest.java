@@ -23,7 +23,7 @@ public class MessageDAOHibernateTest extends TestCaseWithData
     {
          MessageDAO messageDAO = DAOFACTORY.getMessageDAO();
 
-
+ 
         Message amessage = messageDAO.findById(super.message.getId(), false);
 
     }
