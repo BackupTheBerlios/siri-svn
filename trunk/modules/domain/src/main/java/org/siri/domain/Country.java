@@ -23,8 +23,6 @@ public class Country
         this.addresses = addresses;
     }
 
-
-
     public String getId()
     {
         return id;
@@ -54,7 +52,4 @@ public class Country
     {
         this.timeZone = timeZone;
     }
-
-
-
 }

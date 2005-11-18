@@ -5,7 +5,8 @@ public class Receiver
 {
     private String id;
     private String name;
-
+    private Message message;
+    
     public Receiver()
     {
     }
@@ -20,7 +21,7 @@ public class Receiver
         this.message = message;
     }
 
-    Message message;
+    
 
     public String getName()
     {
