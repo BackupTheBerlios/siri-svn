@@ -1,5 +1,5 @@
 /**
- * HibernateManager.java
+ * HibernateManager.java gggg
  */
 package org.siri.common.hibernate;
 
@@ -15,13 +15,13 @@ import org.hibernate.Session;
  *
  */
 public class HibernateTemplateHandler
-{
+{ 
     /**
-     * logger.
+     * Logger.
      */
     private static Logger logger = Logger.getLogger(HibernateTemplateHandler.class);
     /**
-     * hibernate util instance.
+     * Hibernate util instance.
      */
     HibernateUtil myHibernateUtil;
 
@@ -48,7 +48,7 @@ public class HibernateTemplateHandler
         catch (MappingException ex)
         {
             myHibernateUtil.rollbackTransaction();
-            throw new Exception("Bootstrapping mapping failure in Hibernate", ex);
+            throw new Exception("Mapping failure in Hibernate", ex);
         }
         catch (HibernateException ex)
         {
