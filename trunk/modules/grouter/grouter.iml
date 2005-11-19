@@ -25,7 +25,8 @@
     <orderEntry type="library" name="commons-logging-1.0.4" level="project" />
     <orderEntry type="library" name="xbean-2.0.0" level="project" />
     <orderEntry type="library" name="siri-1.0-SNAPSHOT" level="project" />
-    <orderEntry type="module" module-name="feederconfig" />
+    <orderEntry type="module" module-name="grouterconfig" />
+    <orderEntry type="module" module-name="common" />
     <orderEntryProperties />
   </component>
   <component name="org.mevenide.idea.module.ModuleSettings">
