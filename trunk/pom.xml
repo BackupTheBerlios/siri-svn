@@ -14,10 +14,17 @@
     <repositories>
        <repository>
                 <id>maven2</id>
-                <name>Danish Maven2 repository</name>
-                <url>http://mirrors.sunsite.dk/maven2</url>
+                <name>ibiblio repository</name>
+                <url>http://www.ibiblio.org/maven2</url>
                 <!--mirrorOf>central</mirrorOf-->
         </repository>
+    
+       <!-- repository>
+                <id>maven2</id>
+                <name>Danish Maven2 repository</name>
+                <url>http://mirrors.sunsite.dk/maven2</url-->
+                <!--mirrorOf>central</mirrorOf-->
+        <!--/repository -->
         <!--repository>
             <id>maven2</id>
             <name>Default Maven2 repository</name>
@@ -74,15 +81,16 @@
         </dependency>
         
 
+	
+	<groupId>org.hibernate</groupId>
+	      <artifactId>hibernate</artifactId>
+	      <version>3.1beta3</version>  
+
         <dependency>
 	      <groupId>org.hibernate</groupId>
 	      <artifactId>hibernate</artifactId>
-	      <version>3.0.5</version> <!-- Pull the version from the parent--> 
-		<!-- Excluding jars not needed from Hibernate POM.
-		     Also the javax jars needs to be downloaded from 
-		     Sun (or from an Hibernate installation) and installed
-		     into repository for this build to work.
-		-->
+	      <version>3.1beta3</version>  
+		
 		<exclusions>
 	      	        <exclusion>
 	      	          <groupId>ant</groupId>
