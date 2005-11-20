@@ -180,9 +180,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/modules/common/common.iml" filepath="$PROJECT_DIR$/modules/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/domain/domain.iml" filepath="$PROJECT_DIR$/modules/domain/domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/feeder/feeder/feeder.iml" filepath="$PROJECT_DIR$/modules/feeder/feeder/feeder.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/feeder/feederconfig/feederconfig.iml" filepath="$PROJECT_DIR$/modules/feeder/feederconfig/feederconfig.iml" />
-      <module fileurl="file://$PROJECT_DIR$/modules/feeder/feederplugin/feederplugin.iml" filepath="$PROJECT_DIR$/modules/feeder/feederplugin/feederplugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/grouter/grouter.iml" filepath="$PROJECT_DIR$/modules/grouter/grouter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/grouterconfig/grouterconfig.iml" filepath="$PROJECT_DIR$/modules/grouterconfig/grouterconfig.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" />
@@ -344,6 +343,100 @@
     <library name="geronimo-spec-jta-1.0.1B-rc4">
       <CLASSES>
         <root url="jar://$MAVEN_REPO$/geronimo-spec/geronimo-spec-jta/1.0.1B-rc4/geronimo-spec-jta-1.0.1B-rc4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate-3.1beta3">
+      <CLASSES>
+        <root url="jar://C:/java/hibernate-3.1/lib/xerces-2.6.2.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/ehcache-1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/asm-attrs.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/c3p0-0.9.0.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/jdbc2_0-stdext.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/asm.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/cglib-2.1.2.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/concurrent-1.3.2.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/commons-collections-2.1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/log4j-1.2.11.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/hibernate3.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/cleanimports.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="cglib-2.1.2">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPO$/cglib/cglib/2.1.2/cglib-2.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate-3.1rc1">
+      <CLASSES>
+        <root url="jar://C:/java/hibernate-3.1/lib/cglib-2.1.2.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/asm.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/asm-attrs.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/commons-collections-2.1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/concurrent-1.3.2.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/ehcache-1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/jdbc2_0-stdext.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/log4j-1.2.11.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/xml-apis.jar!/" />
+        <root url="jar://C:/java/hibernate-3.1/lib/xerces-2.6.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate3-caveat">
+      <CLASSES>
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/hibernate-entitymanager.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/ehcache-1.1.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/asm-attrs.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/hibernate-annotations.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/cglib-2.1.2.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/asm.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/commons-collections-2.1.1.jar!/" />
+        <root url="jar://C:/java/caveatemptor.HiA-SE/lib/concurrent.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/hibernate-3.1/hibernate3.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/cleanimports.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hibernate-snapshot">
+      <CLASSES>
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/xml-apis.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/antlr-2.7.5H3.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/xerces-2.6.2.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/swarmcache-1.0rc2.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/dom4j-1.6.1.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/syndiag2.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/connector.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/asm-attrs.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/concurrent-1.3.2.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/commons-logging-1.0.4.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/cglib-2.1.2.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/jaxen-1.1-beta-7.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/checkstyle-all.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/jaas.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/ehcache-1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/cleanimports.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/commons-collections-2.1.1.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/proxool-0.8.3.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/jacc-1_0-fr.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/jdbc2_0-stdext.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/jta.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/c3p0-0.9.0.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/versioncheck.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/Hibernate3/lib/asm.jar!/" />
+        <root url="jar://C:/java/hibernate-snapshot/hibernate-3.1/hibernate3.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
