@@ -4,8 +4,8 @@ import org.hibernate.*;
 import org.grouter.domain.dao.SystemUserDAO;
 import org.grouter.domain.Message;
 import org.grouter.domain.systemuser.SystemUser;
-import org.grouter.siri.common.hibernate.HibernateTemplate;
-import org.grouter.siri.common.hibernate.HibernateTemplateHandler;
+import org.grouter.common.hibernate.HibernateTemplate;
+import org.grouter.common.hibernate.HibernateTemplateHandler;
 import org.apache.log4j.Logger;
 
 import java.util.*;
@@ -15,7 +15,7 @@ import java.util.*;
  * non-CRUD data access object.
  *
  * This implementation uses the HibernateTemplate and HibernateTemplateHandler
- * classes from the package org.grouter.siri.common. Template method pattern hiding skeleton
+ * classes from the package org.grouter.common. Template method pattern hiding skeleton
  * code of opening closing sessions etc. Use from all Hibernate DAO implementation
  * classes to centralize exception handling and session opening and closing.
  *

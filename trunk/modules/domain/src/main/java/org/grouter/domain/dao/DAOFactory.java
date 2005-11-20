@@ -21,8 +21,8 @@ package org.grouter.domain.dao;
 public abstract class DAOFactory
 {
     // public static final DAOFactory EJB3_PERSISTENCE = new org.hibernate.ce.auction.dao.ejb3.Ejb3DAOFactory();
-    public static final DAOFactory HIBERNATE = new org.grouter.domain.dao.hibernate.HibernateDAOFactory();
-    public static final DAOFactory DEFAULT = HIBERNATE;
+    public static DAOFactory HIBERNATE = new org.grouter.domain.dao.hibernate.HibernateDAOFactory();
+    public static DAOFactory DEFAULT = HIBERNATE;
 
     // Add your DAO interfaces here
     public abstract MessageDAO getMessageDAO();

@@ -4,7 +4,7 @@ import org.hibernate.Session;
 import org.grouter.domain.dao.MessageDAO;
 import org.grouter.domain.dao.DAOFactory;
 import org.grouter.domain.dao.SystemUserDAO;
-import org.grouter.siri.common.hibernate.HibernateUtilContextAware;
+import org.grouter.common.hibernate.HibernateUtilContextAware;
 
 /**
  * Returns Hibernate-specific instances of DAOs.
