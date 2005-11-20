@@ -23,7 +23,7 @@
         <property name="connection.username">sa</property>
         <property name="connection.password"></property>
 
-        <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+        <!--property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
         <property name="connection.driver_class">oracle.jdbc.OracleDriver</property>
         <property name="connection.url">jdbc:oracle:thin:@server:1521:db1</property>
         <property name="connection.username">jeppe</property>
